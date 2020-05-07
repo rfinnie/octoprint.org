@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 May 2020 07:22:18 -0500</pubDate>
-    <lastBuildDate>Tue, 05 May 2020 07:22:18 -0500</lastBuildDate>
+    <pubDate>Thu, 07 May 2020 05:06:49 -0500</pubDate>
+    <lastBuildDate>Thu, 07 May 2020 05:06:49 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
+    <item>
+      <title>Official Discord server launched!</title>
+      <description>
+        <![CDATA[
+          OctoPrint now has an official Discord server, find the invite at discord.octoprint.org!
+        ]]>
+      </description>
+      <pubDate>Thu, 07 May 2020 05:00:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/05/07/discord-server-launched/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/05/07/discord-server-launched/</guid>
+      <category>OctoPrint News</category>
+    </item>
     <item>
       <title>Help to fight the Corona Crisis using your 3D printer</title>
       <description>
@@ -114,18 +126,6 @@
       <pubDate>Wed, 12 Jun 2019 06:15:00 -0500</pubDate>
       <link>https://octoprint.org/blog/2019/06/12/octoprint-on-air-24/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2019/06/12/octoprint-on-air-24/</guid>
-      <category>OctoPrint On Air</category>
-    </item>
-    <item>
-      <title>OctoPrint On Air #23</title>
-      <description>
-        <![CDATA[
-          The twentythird episode of a monthly live broadcast for Patrons which aired live on April 12th 2019.
-        ]]>
-      </description>
-      <pubDate>Fri, 12 Apr 2019 12:00:00 -0500</pubDate>
-      <link>https://octoprint.org/blog/2019/04/12/octoprint-on-air-23/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2019/04/12/octoprint-on-air-23/</guid>
       <category>OctoPrint On Air</category>
     </item>
   </channel>

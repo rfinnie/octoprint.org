@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/news.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 May 2020 07:22:18 -0500</pubDate>
-    <lastBuildDate>Tue, 05 May 2020 07:22:18 -0500</lastBuildDate>
+    <pubDate>Thu, 07 May 2020 05:06:49 -0500</pubDate>
+    <lastBuildDate>Thu, 07 May 2020 05:06:49 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Official Discord server launched!</title>
+        <description>
+          <![CDATA[
+            OctoPrint now has an official Discord server, find the invite at discord.octoprint.org!
+          ]]>
+        </description>
+        <pubDate>Thu, 07 May 2020 05:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/05/07/discord-server-launched/?utm_source=rss&amp;utm_medium=news</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/05/07/discord-server-launched/</guid>
+        <category>OctoPrint News</category>
+      </item>
     
       <item>
         <title>Help to fight the Corona Crisis using your 3D printer</title>

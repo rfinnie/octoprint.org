@@ -4,9 +4,9 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 May 2020 07:10:50 -0500</pubDate>
-    <lastBuildDate>Mon, 25 May 2020 07:10:50 -0500</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Mon, 25 May 2020 19:19:52 -0500</pubDate>
+    <lastBuildDate>Mon, 25 May 2020 19:19:52 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
     
       <item>
         <title>OctoPrint On Air #31</title>

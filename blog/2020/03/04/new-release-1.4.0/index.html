@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>OctoPrint.org - New release candidate: 1.4.0rc6</title>
+    <title>OctoPrint.org - New release: 1.4.0</title>
     <meta name="description" content="OctoPrint is the snappy web interface for your 3D printer that allows you to control and monitor all aspects of your printer and print jobs, right from your browser.">
     <meta name="author" content="Gina Häußge">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
@@ -55,22 +55,22 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
-    <meta name="twitter:title" content="New release candidate: 1.4.0rc6" />
-    <meta name="twitter:description" content="The sixth release candidate for the upcoming 1.4.0 release fixes some regressions observed with the prior ones." />
-    <meta name="twitter:image" content="https://octoprint.org/assets/img/blog/2020-02/2020-02-26-octoprint-1.4.0rc6-card.png" />
+    <meta name="twitter:title" content="New release: 1.4.0" />
+    <meta name="twitter:description" content="A new release that brings a new granular permission system, Python 3 compatibility and plenty more features, improvements and bug fixes!" />
+    <meta name="twitter:image" content="https://octoprint.org/assets/img/blog/2020-03/2020-03-04-octoprint-1.4.0-card.png" />
 
-    <meta property="og:title" content="New release candidate: 1.4.0rc6" />
+    <meta property="og:title" content="New release: 1.4.0" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://octoprint.org/assets/img/blog/2020-02/2020-02-26-octoprint-1.4.0rc6-poster.png" />
+    <meta property="og:image" content="https://octoprint.org/assets/img/blog/2020-03/2020-03-04-octoprint-1.4.0-poster.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:description" content="The sixth release candidate for the upcoming 1.4.0 release fixes some regressions observed with the prior ones." />
+    <meta property="og:description" content="A new release that brings a new granular permission system, Python 3 compatibility and plenty more features, improvements and bug fixes!" />
     <meta property="og:site_name" content="OctoPrint.org" />
-    <meta property="og:url" content="https://octoprint.org/blog/2020/02/26/new-release-candidate-1.4.0rc6/" />
+    <meta property="og:url" content="https://octoprint.org/blog/2020/03/04/new-release-1.4.0/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
-    <meta itemprop="headline" content="New release candidate: 1.4.0rc6" />
-    <meta itemprop="description" content="The sixth release candidate for the upcoming 1.4.0 release fixes some regressions observed with the prior ones." />
-    <meta itemprop="image" content="https://octoprint.org/assets/img/blog/2020-02/2020-02-26-octoprint-1.4.0rc6-poster.png" />
+    <meta itemprop="headline" content="New release: 1.4.0" />
+    <meta itemprop="description" content="A new release that brings a new granular permission system, Python 3 compatibility and plenty more features, improvements and bug fixes!" />
+    <meta itemprop="image" content="https://octoprint.org/assets/img/blog/2020-03/2020-03-04-octoprint-1.4.0-poster.png" />
 
     <script>
         var shiftWindow = function() { scrollBy(0, -40) };
@@ -205,7 +205,7 @@
         <div class="row">
             <div class="span12">
                 <div class="hero-content pageheader">
-                    <h1>New release candidate: 1.4.0rc6</h1>
+                    <h1>New release: 1.4.0</h1>
                     
                 </div>
             </div>
@@ -218,87 +218,175 @@
     <div class="row-fluid pagination">
         <div class="span12">
             
-                <small><a class="newer-posts" href="/blog/2020/02/27/octoprint-on-air-29/" title="Next Page">&laquo; OctoPrint On Air #29</a></small>
+                <small><a class="newer-posts" href="/blog/2020/03/19/octoprint-on-air-30-announcement/" title="Next Page">&laquo; Announcement: OctoPrint On Air #30 LIVE</a></small>
             
             &nbsp;
             
-                <small><a class="older-posts" href="/blog/2020/02/11/new-release-candidate-1.4.0rc5/" title="Previous Page">New release candidate: 1.4.0rc5 &raquo;</a></small>
+                <small><a class="older-posts" href="/blog/2020/02/27/octoprint-on-air-29/" title="Previous Page">OctoPrint On Air #29 &raquo;</a></small>
             
         </div>
     </div>
     <div class="row-fluid content">
         <div class="span8 text" id="blogpost-content">
-            <p>This sixth RC of 1.4.0 fixes some regressions and issues in the new functionality observed with the prior RCs:</p>
+            <p>After 3 years on 1.3.x and over 3 months of release candidate testing, it’s finally time to release 1.4.0!</p>
+
+<p>As every single release (and release candidate) of OctoPrint ever since early 2016 this was made possible only 
+through your continued <strong><a href="/support-octoprint/">support of my work</a></strong> 💕</p>
+
+<p><a href="https://github.com/foosel/OctoPrint/releases/tag/1.4.0">The full changelog</a> is packed with 
+new features, improvements and fixes of existing functionality. Some highlights:</p>
+
+<ul>
+  <li>1.4.0 introduces a <strong>new granular permission system</strong> that allows you to fully customize which users (and - new! - user 
+groups) are allowed to access which functionality. See the screenshots below for an idea of how all this looks
+visually. Special thanks to @Salandora for a lot of the legwork on this!</li>
+  <li>
+    <p>If you’ve followed me on <a href="https://www.youtube.com/playlist?list=PL9j2DtsIPVkOFIMRrnnbXsnXtQmwj1IId">OctoPrint On Air</a> 
+or paid some closer attention to the output of plugin manager
+or software updater in OctoPrint, you’ll have heard about the pending end of life of Python 2 in favor of the new
+version Python 3. OctoPrint so far only supported running under Python 2 - this has changed now with 1.4.0 which 
+allows OctoPrint to <strong>run problem free under both Python 2 and 3</strong>!</p>
+
+    <p>And to all the plugin authors among you, please also take note of the heads-up in the changelog and also quoted below.
+Huge thanks to everyone who helped in the adjustment effort needed to make this possible, especially @ByReaL, 
+@razerraz, @smurfix &amp; @tedder! Wouldn’t have been possible without y’all!</p>
+  </li>
+  <li>Additionally to the somewhat anachronistic MPEG2 format, OctoPrint now also supports to <strong>create timelapse recordings 
+in H264</strong>. Special thanks to @koenkooi for this!</li>
+  <li>If the underlying render engine supports it there’ll be a <strong>progress bar for ongoing timelapse rendering</strong> now thanks
+to @ZachNo!</li>
+  <li>A bunch of new events and plugin hooks allow for even more possibilities in regards to customization through
+plugins.</li>
+  <li>The Software Updater can now be configured to track Github Commits for OctoPrint right from the UI. A new version
+check <code class="language-plaintext highlighter-rouge">pypi_release</code> allows checking the Python Package Index for new releases of a package, and this is also used
+to optionally allow to keep <code class="language-plaintext highlighter-rouge">pip</code> updated right from within OctoPrint itself instead of having to go through the
+command line for that. Note that this is disabled by default since I do <em>not</em> control <code class="language-plaintext highlighter-rouge">pip</code> updates and hence cannot
+guarantee trouble free updates.</li>
+  <li>The Plugin Manager now has a search function and some filters to make it easier to navigate through the list
+of installed plugins. See the screenshot below. Additionally it will now offer to delete plugin data from plugins
+about to be uninstalled, and also offers a general clean-up function for left-over plugin data.</li>
+  <li>After a lot of begging in that regard, the Software Updater and the Plugin Manager both can now be configured to ignore
+the throttle state of the Pi by setting <code class="language-plaintext highlighter-rouge">ignore_throttled</code> in <code class="language-plaintext highlighter-rouge">config.yaml</code> for either or both. Note that this 
+setting is intentionally not exposed in the UI since too many people would use it to shoot themselves into the foot.
+Updating on a throttled system <em>has</em> caused corrupt installs in the past, same goes for new plugin installs, don’t 
+say I didn’t warn you.</li>
+  <li>There have of course also been a bunch of fixes for bugs reported in older versions, like a fix of a potential dead 
+lock when cancelling an SD print, overzealous filtering of history entries on the <code class="language-plaintext highlighter-rouge">/printer/{tool|bed|chamber}</code> 
+API endpoints, G2 and G3 arcs being misinterpreted in the GCODE viewer and more.</li>
+  <li>… and more.</li>
+</ul>
+
+<p>Due to the new Python 3 compatibility there’s a heads-up for plugin authors:</p>
 
 <blockquote>
-  <p><strong>Improvements</strong></p>
+  <p>This release officially adds support to run OctoPrint under Python 3 instead of 2, which has become EOL as of January 1st 2020. However, most third party plugins probably do not yet support Python 3. In order to allow Plugin Authors to test and if necessary adjust their plugins first before OctoPrint tries to load them under Python 3, a new plugin property <code class="language-plaintext highlighter-rouge">__plugin_pythoncompat__</code> has been introduced. Plugins should define the compatibly Python version via this property which OctoPrint will check on load and only proceed with loading the plugin under Python 3 if it signals compatibility.</p>
 
-  <ul>
-    <li><a href="https://github.com/foosel/OctoPrint/issues/3454">#3454</a>: Explicitly document changed <code class="language-plaintext highlighter-rouge">LineProcessorStream</code> behaviour under Python 3</li>
-    <li>Implement login dialog through a UiPlugin to work around various issues with regards to caching and general workflow with the current approach.</li>
-    <li>Docs for new access control situation.</li>
-    <li>Remove some left-overs of old login UI and fix some code comments.</li>
-  </ul>
+  <p>Additionally, the Plugin Repository has been expanded to include a new field <code class="language-plaintext highlighter-rouge">compatibility.python</code> which signals Python compatibility on the listing as well so that OctoPrint’s Plugin Manager will only show such plugins from the repository as installable under Python 3 which are configured as such.</p>
 
-  <p><strong>Bug fixes</strong></p>
+  <p>Please see <a href="https://docs.octoprint.org/en/master/plugins/python3_migration.html">this guide in the documentation</a> on how to go about compatibility testing and how to modify existing plugins to work with OctoPrint when running under Python 3.</p>
 
-  <ul>
-    <li><a href="https://github.com/foosel/OctoPrint/issues/3455">#3455</a> (regression): Fix a Python 3 bug with the <code class="language-plaintext highlighter-rouge">self._printer</code> wrapper injected into plugins.</li>
-    <li><a href="https://github.com/foosel/OctoPrint/issues/3456">#3456</a>: Fix firmware info not being reported to plugins if firmware autodetection is disabled. Not a regression, but severe enough to merit inclusion ASAP.</li>
-    <li><a href="https://github.com/foosel/OctoPrint/issues/3459">#3459</a> (regression): Fix login sessions not being persistent even with “Remember me” selected due to forced logout when becoming stale after 24h.</li>
-    <li>(regression) Fix buggy implementation of <code class="language-plaintext highlighter-rouge">octoprint.server.api.(before|after)_request</code> hooks.</li>
-    <li>(regression) Fix missing protection for blueprint plugins</li>
-    <li>(regression) Fix yet another Python 3 list vs iterator issue</li>
-  </ul>
+  <p>By default, OctoPrint will assume compatibility to Python 2 only.</p>
 </blockquote>
 
-<p>The heads-up regarding Plugins and Python 3 from 1.4.0rc1 still applies.</p>
+<p>You can find the full changelog and release notes as usual <a href="https://github.com/foosel/OctoPrint/releases/tag/1.4.0">on Github</a>.</p>
 
-<p>You can find the full changelog and release notes as usual <a href="https://github.com/foosel/OctoPrint/releases/tag/1.4.0rc6">on Github</a>.</p>
+<p>Also see the <strong>Further Information</strong> and <strong>Links</strong> below for more information,
+where to find help and how to roll back.</p>
 
-<p>Special thanks to everyone who contributed to this release candidate and provided full, analyzable bug reports, you help
-making the next release as stable as possible!</p>
+<p>Special thanks to everyone who contributed to this release candidate and provided full, analyzable bug reports and pull requests, especially <a href="https://github.com/balassy">balassy</a>, <a href="https://github.com/ByReaL">ByReaL</a>, <a href="https://github.com/cameroncros">cameroncros</a>, <a href="https://github.com/CapnBry">CapnBry</a>, <a href="https://github.com/cbxbiker61">cbxbiker61</a>, <a href="https://github.com/dforsi">dforsi</a>, <a href="https://github.com/eyal0">eyal0</a>, <a href="https://github.com/FHeilmann">FHeilmann</a>, <a href="https://github.com/fieldOfView">fieldOfView</a>, <a href="https://github.com/jammi">jammi</a>, <a href="https://github.com/justfalter">justfalter</a>, <a href="https://github.com/kantlivelong">kantlivelong</a>, <a href="https://github.com/kevans91">kevans91</a>, <a href="https://github.com/koenkooi">koenkooi</a>, <a href="https://github.com/mkobler">mkobler</a>, <a href="https://github.com/noahsmartin">noahsmartin</a>, <a href="https://github.com/povlhp">povlhp</a>, <a href="https://github.com/razerraz">razerraz</a>, <a href="https://github.com/RyuzakiKK">RyuzakiKK</a>, <a href="https://github.com/Salandora">Salandora</a>, <a href="https://github.com/smurfix">smurfix</a>, <a href="https://github.com/tedder">tedder</a> &amp; <a href="https://github.com/ZachNo">ZachNo</a> for their PRs!</p>
 
-<p>As the past RCs have shown me that a lot of people appear to be unaware of this: <strong>Please do <em>not</em> install this RC if you 
-expect a fully stable version</strong>. It is not a stable release, it is a release <em>candidate</em>, and of the next big release
-to boot: severe bugs may occur, and they might be bad enough that they make a manual downgrade to an earlier version 
-necessary - maybe even from the command line.</p>
+<p>And last but not least, another special <strong>Thank you!</strong> to everyone who reported back on the release candidates this time: <a href="https://github.com/1n5aN1aC">@1n5aN1aC</a>, <a href="https://github.com/Andy-ABTec">@Andy-ABTec</a>, <a href="https://github.com/BerndJM">@BerndJM</a>, <a href="https://github.com/bzed">@bzed</a>, <a href="https://github.com/CapnBry">@CapnBry</a>, <a href="https://github.com/ChrisHeerschap">@ChrisHeerschap</a>, <a href="https://github.com/ciordia9">@ciordia9</a>, <a href="https://github.com/CRCinAU">@CRCinAU</a>, <a href="https://github.com/Demigod001">@Demigod001</a>, <a href="https://github.com/Deneteus">@Deneteus</a>, <a href="https://github.com/devildant">@devildant</a>, <a href="https://github.com/dragonflybog">@dragonflybog</a>, <a href="https://github.com/elfelton">@elfelton</a>, <a href="https://github.com/Farami">@Farami</a>, <a href="https://github.com/fieldOfView">@fieldOfView</a>, <a href="https://github.com/FormerLurker">@FormerLurker</a>, <a href="https://github.com/gcurtis79">@gcurtis79</a>, <a href="https://github.com/gdombiak">@gdombiak</a>, <a href="https://github.com/gege2b">@gege2b</a>, <a href="https://github.com/gferon">@gferon</a>, <a href="https://github.com/jbjones27">@jbjones27</a>, <a href="https://github.com/jim-thompson">@jim-thompson</a>, <a href="https://github.com/jneilliii">@jneilliii</a>, <a href="https://github.com/JohnOFCII">@JohnOFCII</a>, <a href="https://github.com/kazibole">@kazibole</a>, <a href="https://github.com/krpepe">@krpepe</a>, <a href="https://github.com/Lantoit">@Lantoit</a>, <a href="https://github.com/loskexos">@loskexos</a>, <a href="https://github.com/louispires">@louispires</a>, <a href="https://github.com/MatejSpindler">@MatejSpindler</a>, <a href="https://github.com/mbelley">@mbelley</a>, <a href="https://github.com/MSeal">@MSeal</a>, <a href="https://github.com/NerdyProjects">@NerdyProjects</a>, <a href="https://github.com/NovaViper">@NovaViper</a>, <a href="https://github.com/OllisGit">@OllisGit</a>, <a href="https://github.com/PlasmaSoftUK">@PlasmaSoftUK</a>, <a href="https://github.com/reloxx13">@reloxx13</a>, <a href="https://github.com/rmoravcik">@rmoravcik</a>, <a href="https://github.com/santond">@santond</a>, <a href="https://github.com/schnello">@schnello</a>, <a href="https://github.com/schumar">@schumar</a>, <a href="https://github.com/sebaminguez">@sebaminguez</a> &amp; <a href="https://github.com/willhoh">@willhoh</a>.</p>
 
-<p>You should feel comfortable with and capable of possibly having to do this <em>before</em> installing an RC.</p>
+<p>If you are interested in some numbers, here’s some data extracted from the anonymous usage tracking for the six RCs that
+went before 1.4.0’s stable release:</p>
 
-<p>If you want to and can help test this release candidate, you can find information on how to switch to the 
-<strong>“Maintenance RCs”</strong> release channel <a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">in this guide</a>
-if not already done (also linked below).</p>
+<ul>
+  <li>1.4.0rc1: 123 instances, 58h or 2d accumulative printing time</li>
+  <li>1.4.0rc2: 152 instances, 347h or 14d accumulative printing time</li>
+  <li>1.4.0rc3: 668 instances, 22200h or 2.5y accumulative printing time</li>
+  <li>1.4.0rc4: 760 instances, 16000h or 1.8y accumulative printing time</li>
+  <li>1.4.0rc5: 808 instances, 19400h or 2.2y accumulative printing time</li>
+  <li>1.4.0rc6: 614 instances, 6570h or 0.75y accumulative printing time</li>
+</ul>
 
-<p><strong>Please provide feedback</strong> on this RC. For general feedback you can use 
-<a href="https://github.com/foosel/OctoPrint/issues/3463">this ticket on the tracker</a>.
-The information that everything works fine for you is also valuable feedback 😄. <strong>For bug reports</strong> please follow
-<a href="https://github.com/foosel/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">“How to file a bug report”</a> - 
-I need logs and reproduction steps to fix issues, not just the information that something doesn’t work so make sure to
-<strong>fill out all fields of the issue template</strong>.</p>
+<h3 id="further-information">Further Information</h3>
 
-<p>Thanks!</p>
+<p>It may take up to 24h for your update notification to pop up, so don’t 
+be alarmed if it doesn’t show up immediately after reading this. You
+can force the update however via Settings &gt; Software Update &gt; 
+Advanced options &gt; Force check for update.</p>
 
-<p>Depending on the feedback regarding this version I’ll look into fixing 
-any observed regressions and bugs and pushing out a follow-up version 
-as soon as possible and necessary.</p>
+<p>If you get an error about “no suitable distribution” during update, please read 
+<a href="https://discourse.octoprint.org/t/i-got-some-error-about-no-suitable-distribution-during-update-and-now-my-server-wont-start/235">this</a>.</p>
+
+<p><strong>If you have any problems with your OctoPrint installation, please seek 
+support on the <a href="https://community.octoprint.org">community forum</a>.</strong></p>
 
 <h3 id="links">Links</h3>
 
 <ul>
-  <li><a href="https://github.com/foosel/OctoPrint/issues/3463">Ticket for general feedback</a></li>
-  <li><a href="https://github.com/foosel/OctoPrint/releases/tag/1.4.0rc6">Changelog and Release Notes</a></li>
-  <li><a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">How to use release channels to help test release candidates</a></li>
-  <li><a href="https://github.com/foosel/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a></li>
-  <li><a href="https://github.com/foosel/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines (also relevant for creating bug reports!)</a></li>
+  <li><a href="https://github.com/foosel/OctoPrint/releases/tag/1.4.0">Changelog and Release Notes</a></li>
+  <li><a href="https://community.octoprint.org">Community forum</a></li>
   <li><a href="https://faq.octoprint.org">FAQ</a></li>
   <li><a href="http://docs.octoprint.org/">Documentation</a></li>
-  <li><a href="https://community.octoprint.org/t/how-can-i-revert-to-an-older-version-of-the-octoprint-installation-on-my-octopi-image/205">How to roll back to an earlier release (OctoPi)</a></li>
-  <li><a href="https://community.octoprint.org/t/how-can-i-roll-back-to-an-earlier-version-after-an-update/234">How to roll back to an earlier release (manual install)</a></li>
+  <li><a href="https://github.com/foosel/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines (also relevant for creating bug reports!)</a></li>
+  <li><a href="https://github.com/foosel/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a></li>
+  <li><a href="https://discourse.octoprint.org/t/how-can-i-revert-to-an-older-version-of-the-octoprint-installation-on-my-octopi-image/205">How to roll back to an earlier release (OctoPi)</a></li>
+  <li><a href="https://discourse.octoprint.org/t/how-can-i-roll-back-to-an-earlier-version-after-an-update/234">How to roll back to an earlier release (manual install)</a></li>
 </ul>
 
 
             
+            
+            <div class="postimages">
+                <h2>Images</h2>
+                
+                <figure id="image-1">
+                    
+                        <a href="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-users.png" data-lightbox="/blog/2020/03/04/new-release-1.4.0" data-title="User management"><img alt="" src="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-users.png"></a>
+                        
+                        <figcaption>User management</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-2">
+                    
+                        <a href="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-edit-user.png" data-lightbox="/blog/2020/03/04/new-release-1.4.0" data-title="User editor"><img alt="" src="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-edit-user.png"></a>
+                        
+                        <figcaption>User editor</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-3">
+                    
+                        <a href="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-groups.png" data-lightbox="/blog/2020/03/04/new-release-1.4.0" data-title="Group management"><img alt="" src="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-groups.png"></a>
+                        
+                        <figcaption>Group management</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-4">
+                    
+                        <a href="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-edit-group.png" data-lightbox="/blog/2020/03/04/new-release-1.4.0" data-title="Group editor"><img alt="" src="/assets/img/blog/2019-11/2019-11-25-screenshot-access-control-edit-group.png"></a>
+                        
+                        <figcaption>Group editor</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-5">
+                    
+                        <a href="/assets/img/blog/2019-11/2019-11-25-screenshot-plugin-manager-filters-and-search.png" data-lightbox="/blog/2020/03/04/new-release-1.4.0" data-title="Filters & search in Plugin Manager"><img alt="" src="/assets/img/blog/2019-11/2019-11-25-screenshot-plugin-manager-filters-and-search.png"></a>
+                        
+                        <figcaption>Filters & search in Plugin Manager</figcaption>
+                        
+                    
+                </figure>
+                
+            </div>
             
             
             <div class="postcomments">
@@ -315,7 +403,7 @@ as soon as possible and necessary.</p>
                         "<a href='https://community.octoprint.org/c/blog/'>go to the comment forum instead.</a>";
                   } else {
                     DiscourseEmbed = { discourseUrl: 'https://community.octoprint.org/',
-                                       discourseEmbedUrl: 'https://octoprint.org/blog/2020/02/26/new-release-candidate-1.4.0rc6/',
+                                       discourseEmbedUrl: 'https://octoprint.org/blog/2020/03/04/new-release-1.4.0/',
                                        discourseReferrerPolicy: 'no-referrer-when-downgrade'};
 
                     (function() {
@@ -334,7 +422,7 @@ as soon as possible and necessary.</p>
             <div class="postinfo">
                 
                 <dl class="featuredimage">
-                    <img src="/assets/img/blog/2020-02/2020-02-26-octoprint-1.4.0rc6-card.png" class="img-rounded">
+                    <img src="/assets/img/blog/2020-03/2020-03-04-octoprint-1.4.0-card.png" class="img-rounded">
                 </dl>
                 
                 <dl class="author">
@@ -345,7 +433,7 @@ as soon as possible and necessary.</p>
                     </dl>
                     <dl class="published">
                         <dt>Published</dt>
-                    <dd>26 Feb 2020</dd>
+                    <dd>04 Mar 2020</dd>
                 </dl>
                 
                 
@@ -358,8 +446,8 @@ as soon as possible and necessary.</p>
                 <dl class="share">
                     <dt>Share this</dt>
                     <dd><ul class="sharebuttons">
-    <li><a title="Twitter" href="http://twitter.com/share?text=%22New release candidate: 1.4.0rc6%22&url=https://octoprint.org/blog/2020/02/26/new-release-candidate-1.4.0rc6/&via=OctoPrint3D&related=OctoPrint3D" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-    <li><a title="Facebook" href="http://www.facebook.com/sharer.php?u=https://octoprint.org/blog/2020/02/26/new-release-candidate-1.4.0rc6/&p[title]=New release candidate: 1.4.0rc6" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span></a></li>
+    <li><a title="Twitter" href="http://twitter.com/share?text=%22New release: 1.4.0%22&url=https://octoprint.org/blog/2020/03/04/new-release-1.4.0/&via=OctoPrint3D&related=OctoPrint3D" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+    <li><a title="Facebook" href="http://www.facebook.com/sharer.php?u=https://octoprint.org/blog/2020/03/04/new-release-1.4.0/&p[title]=New release: 1.4.0" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span></a></li>
 </ul>
 </dd>
                 </dl>

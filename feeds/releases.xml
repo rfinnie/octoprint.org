@@ -5,8 +5,8 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jun 2020 19:16:34 -0500</pubDate>
-    <lastBuildDate>Tue, 23 Jun 2020 19:16:34 -0500</lastBuildDate>
+    <pubDate>Wed, 24 Jun 2020 03:06:11 -0500</pubDate>
+    <lastBuildDate>Wed, 24 Jun 2020 03:06:11 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -17,8 +17,8 @@
           ]]>
         </description>
         <pubDate>Wed, 04 Mar 2020 05:45:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/03/04/new-release-candidate-1.4.0/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/03/04/new-release-candidate-1.4.0/</guid>
+        <link>https://octoprint.org/blog/2020/03/04/new-release-1.4.0/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/03/04/new-release-1.4.0/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

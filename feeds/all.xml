@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Jun 2020 07:08:13 -0500</pubDate>
-    <lastBuildDate>Thu, 25 Jun 2020 07:08:13 -0500</lastBuildDate>
+    <pubDate>Thu, 25 Jun 2020 11:33:08 -0500</pubDate>
+    <lastBuildDate>Thu, 25 Jun 2020 11:33:08 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #32</title>
+        <description>
+          <![CDATA[
+            The thirty second episode of a monthly live broadcast for Patrons which aired live on June 19th 2020.
+          ]]>
+        </description>
+        <pubDate>Thu, 25 Jun 2020 11:29:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #31</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/01/28/new-release-candidate-1.4.0rc4/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/01/28/new-release-candidate-1.4.0rc4/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #28</title>
-        <description>
-          <![CDATA[
-            The twenty eighth episode of a monthly live broadcast for Patrons which aired live on December 13th 2019.
-          ]]>
-        </description>
-        <pubDate>Mon, 16 Dec 2019 08:35:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2019/12/16/octoprint-on-air-28/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2019/12/16/octoprint-on-air-28/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

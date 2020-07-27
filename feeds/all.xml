@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jul 2020 07:11:14 -0500</pubDate>
-    <lastBuildDate>Mon, 27 Jul 2020 07:11:14 -0500</lastBuildDate>
+    <pubDate>Mon, 27 Jul 2020 10:36:48 -0500</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2020 10:36:48 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #33</title>
+        <description>
+          <![CDATA[
+            The thirty-third episode of a monthly live broadcast for Patrons which aired live on July 24th 2020.
+          ]]>
+        </description>
+        <pubDate>Mon, 27 Jul 2020 10:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.4.1rc3</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/03/04/new-release-candidate-1.4.0/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/03/04/new-release-candidate-1.4.0/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #29</title>
-        <description>
-          <![CDATA[
-            The twenty ninth episode of a monthly live broadcast for Patrons which aired live on February 21st 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 27 Feb 2020 04:40:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/02/27/octoprint-on-air-29/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/02/27/octoprint-on-air-29/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

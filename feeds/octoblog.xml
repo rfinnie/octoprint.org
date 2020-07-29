@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jul 2020 07:10:59 -0500</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2020 07:10:59 -0500</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2020 09:48:34 -0500</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2020 09:48:34 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    <item>
+      <title>Automating OctoPrint's release tests</title>
+      <description>
+        <![CDATA[
+          OctoPrint's release tests so far involved a lot of card juggling and other manual steps with a lot of wasted time. Read how I was finally able to automate this after a long journey.
+        ]]>
+      </description>
+      <pubDate>Wed, 29 Jul 2020 09:45:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</guid>
+      <category>OctoPrint Core and Plugin Development</category>
+    </item>
     <item>
       <title>OctoPrint On Air #33</title>
       <description>
@@ -115,18 +127,6 @@
       <link>https://octoprint.org/blog/2019/11/28/merchandise/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2019/11/28/merchandise/</guid>
       <category>OctoPrint News</category>
-    </item>
-    <item>
-      <title>OctoPrint On Air #27</title>
-      <description>
-        <![CDATA[
-          The twenty seventh episode of a monthly live broadcast for Patrons which aired live on November 8th 2019.
-        ]]>
-      </description>
-      <pubDate>Wed, 13 Nov 2019 04:55:00 -0600</pubDate>
-      <link>https://octoprint.org/blog/2019/11/13/octoprint-on-air-27/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2019/11/13/octoprint-on-air-27/</guid>
-      <category>OctoPrint On Air</category>
     </item>
   </channel>
 </rss>

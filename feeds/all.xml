@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2020 19:22:26 -0500</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2020 19:22:26 -0500</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2020 05:12:50 -0500</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2020 05:12:50 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.4.1rc4</title>
+        <description>
+          <![CDATA[
+            The fourth release candidate for the upcoming 1.4.1 release that fixes three regressions observed in the prior ones.
+          ]]>
+        </description>
+        <pubDate>Wed, 29 Jul 2020 05:10:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/07/29/new-release-candidate-1.4.1rc4/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/07/29/new-release-candidate-1.4.1rc4/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #33</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/03/19/octoprint-on-air-30-announcement/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/03/19/octoprint-on-air-30-announcement/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.4.0</title>
-        <description>
-          <![CDATA[
-            A new release that brings a new granular permission system, Python 3 compatibility and plenty more features, improvements and bug fixes!
-          ]]>
-        </description>
-        <pubDate>Wed, 04 Mar 2020 05:45:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/03/04/new-release-candidate-1.4.0/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/03/04/new-release-candidate-1.4.0/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

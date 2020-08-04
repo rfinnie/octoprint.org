@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1596543124"></script>
+    <script src="/assets/js/html5shim.js?_=1596565702"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1596543124">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1596543124">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1596543124">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1596543124">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1596543124">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1596543124">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1596565702">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1596565702">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1596565702">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1596565702">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1596565702">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1596565702">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1596543124"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1596543124"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1596565702"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1596565702"/>
 
 
     <!-- Le fav and touch icons -->
@@ -277,6 +277,14 @@ ImportError: No module named ext.babel
 </code></pre></div></div>
 
 <p>then this outdated import syntax is the reason. That is something that needs to be fixed by the plugin maintainers by pushing out a new release. Please do not open issues about this on the OctoPrint repository, I cannot do anything about this.</p>
+
+<h4 id="heads-up-for-users-of-the-touchui-plugin-v0314-or-lower">Heads-up for users of the TouchUI plugin v0.3.14 or lower</h4>
+
+<p>The TouchUI plugin up until the currently latest version 0.3.14 from March 11 2020 is incompatible to OctoPrint as it makes assumptions about the structure of the UI that are no longer true, leading to the plugin breaking the OctoPrint UI when active.</p>
+
+<p>A fix is ready but no release has been pushed out yet. Until a fixed version is released it is suggested to disable the plugin under 1.4.1.</p>
+
+<p>See also the ticket <a href="https://github.com/BillyBlaze/OctoPrint-TouchUI/issues/413">here</a>.</p>
 
 <h4 id="heads-up-for-plugin-authors-jinja2-update-has-one-backwards-incompatibility-please-read">Heads-up for plugin authors: Jinja2 update has one backwards incompatibility, please read</h4>
 
@@ -573,17 +581,17 @@ support on the <a href="https://community.octoprint.org">community forum</a>.</s
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery-1.9.1.min.js?_=1596543124"></script>
-<script src="/assets/js/underscore-1.4.4.min.js?_=1596543124"></script>
-<script src="/assets/js/prettify-r224.js?_=1596543124"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1596543124"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1596543124"></script>
-<script src="/assets/js/bootstrap.min.js?_=1596543124"></script>
-<script src="/assets/js/lightbox.min.js?_=1596543124"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1596543124"></script>
-<script src="/assets/js/site.js?_=1596543124"></script>
-<script src="/assets/js/yt-with-consent.js?_=1596543124"></script>
-<script src="/assets/js/autotrack.js?_=1596543124"></script>
+<script src="/assets/js/jquery-1.9.1.min.js?_=1596565702"></script>
+<script src="/assets/js/underscore-1.4.4.min.js?_=1596565702"></script>
+<script src="/assets/js/prettify-r224.js?_=1596565702"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1596565702"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1596565702"></script>
+<script src="/assets/js/bootstrap.min.js?_=1596565702"></script>
+<script src="/assets/js/lightbox.min.js?_=1596565702"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1596565702"></script>
+<script src="/assets/js/site.js?_=1596565702"></script>
+<script src="/assets/js/yt-with-consent.js?_=1596565702"></script>
+<script src="/assets/js/autotrack.js?_=1596565702"></script>
 
 <!-- Google Analytics -->
 <script>

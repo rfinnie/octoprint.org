@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2020 02:28:08 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2020 02:28:08 -0500</lastBuildDate>
+    <pubDate>Tue, 04 Aug 2020 04:53:21 -0500</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2020 04:53:21 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.4.1</title>
+        <description>
+          <![CDATA[
+            Fresh off the presses, just through a month long release candidate cycle and the first one to be developed during a raging pandemic, I present you the next stable release of OctoPrint: 1.4.1!
+          ]]>
+        </description>
+        <pubDate>Tue, 04 Aug 2020 04:45:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/08/04/new-release-1.4.1/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/08/04/new-release-1.4.1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.4.1rc4</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 12 Dec 2019 07:45:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2019/12/12/new-release-candidate-1.4.0rc3/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/12/12/new-release-candidate-1.4.0rc3/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.4.0rc2</title>
-        <description>
-          <![CDATA[
-            The second release candidate for the upcoming 1.4.0 release fixes some regressions observed with the first one.
-          ]]>
-        </description>
-        <pubDate>Mon, 02 Dec 2019 09:15:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2019/12/02/new-release-candidate-1.4.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2019/12/02/new-release-candidate-1.4.0rc2/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

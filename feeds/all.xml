@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2020 02:28:08 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2020 02:28:08 -0500</lastBuildDate>
+    <pubDate>Tue, 04 Aug 2020 04:53:21 -0500</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2020 04:53:21 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.4.1</title>
+        <description>
+          <![CDATA[
+            Fresh off the presses, just through a month long release candidate cycle and the first one to be developed during a raging pandemic, I present you the next stable release of OctoPrint: 1.4.1!
+          ]]>
+        </description>
+        <pubDate>Tue, 04 Aug 2020 04:45:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/08/04/new-release-1.4.1/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/08/04/new-release-1.4.1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>Automating OctoPrint's release tests</title>
@@ -122,19 +135,6 @@
         <pubDate>Thu, 07 May 2020 05:00:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2020/05/07/discord-server-launched/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/05/07/discord-server-launched/</guid>
-        <category>OctoPrint News</category>
-      </item>
-    
-      <item>
-        <title>Help to fight the Corona Crisis using your 3D printer</title>
-        <description>
-          <![CDATA[
-            A guest post by Oliver Dathe on how you can help in the fight against the ongoing SARS-CoV-2 pandemic. If you have any printing capacities free, please consider joining the community effort!
-          ]]>
-        </description>
-        <pubDate>Tue, 31 Mar 2020 08:00:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/03/31/3d-printing-against-corona/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/03/31/3d-printing-against-corona/</guid>
         <category>OctoPrint News</category>
       </item>
     

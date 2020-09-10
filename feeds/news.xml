@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/news.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Sep 2020 19:29:55 -0500</pubDate>
-    <lastBuildDate>Wed, 09 Sep 2020 19:29:55 -0500</lastBuildDate>
+    <pubDate>Thu, 10 Sep 2020 06:48:12 -0500</pubDate>
+    <lastBuildDate>Thu, 10 Sep 2020 06:48:12 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Upgrade your OctoPrint install to Python 3!</title>
+        <description>
+          <![CDATA[
+            Give OctoPrint a spin on Python 3! Run this simple install script.
+          ]]>
+        </description>
+        <pubDate>Thu, 10 Sep 2020 06:45:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/09/10/upgrade-to-py3/?utm_source=rss&amp;utm_medium=news</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</guid>
+        <category>OctoPrint News</category>
+      </item>
     
       <item>
         <title>Official Discord server launched!</title>

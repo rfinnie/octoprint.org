@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Sep 2020 19:29:55 -0500</pubDate>
-    <lastBuildDate>Wed, 09 Sep 2020 19:29:55 -0500</lastBuildDate>
+    <pubDate>Thu, 10 Sep 2020 06:48:12 -0500</pubDate>
+    <lastBuildDate>Thu, 10 Sep 2020 06:48:12 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Upgrade your OctoPrint install to Python 3!</title>
+        <description>
+          <![CDATA[
+            Give OctoPrint a spin on Python 3! Run this simple install script.
+          ]]>
+        </description>
+        <pubDate>Thu, 10 Sep 2020 06:45:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/09/10/upgrade-to-py3/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</guid>
+        <category>OctoPrint News</category>
+      </item>
     
       <item>
         <title>New release: 1.4.2</title>
@@ -122,19 +135,6 @@
         <pubDate>Thu, 25 Jun 2020 11:29:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #31</title>
-        <description>
-          <![CDATA[
-            The thirtyfirst episode of a monthly live broadcast for Patrons which aired live on May 8th 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 14 May 2020 07:55:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/05/14/octoprint-on-air-31/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/05/14/octoprint-on-air-31/</guid>
         <category>OctoPrint On Air</category>
       </item>
     

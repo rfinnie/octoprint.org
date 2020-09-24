@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Sep 2020 19:33:01 -0500</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2020 19:33:01 -0500</lastBuildDate>
+    <pubDate>Thu, 24 Sep 2020 07:06:57 -0500</pubDate>
+    <lastBuildDate>Thu, 24 Sep 2020 07:06:57 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #34</title>
+        <description>
+          <![CDATA[
+            The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on September 18th 2020.
+          ]]>
+        </description>
+        <pubDate>Thu, 24 Sep 2020 07:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>Upgrade your OctoPrint install to Python 3!</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/07/06/new-release-candidate-1.4.1rc1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/07/06/new-release-candidate-1.4.1rc1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #32</title>
-        <description>
-          <![CDATA[
-            The thirty second episode of a monthly live broadcast for Patrons which aired live on June 19th 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 25 Jun 2020 11:29:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

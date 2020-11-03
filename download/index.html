@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1604405561"></script>
+    <script src="/assets/js/html5shim.js?_=1604436478"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1604405561">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1604405561">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1604405561">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1604405561">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1604405561">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1604405561">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1604436478">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1604436478">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1604436478">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1604436478">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1604436478">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1604436478">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1604405561"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1604405561"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1604436478"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1604436478"/>
 
 
     <!-- Le fav and touch icons -->
@@ -337,9 +337,9 @@ pages 50-51. You can find an excerpt <a href="/assets/download/MagPi36_OctoPrint
 
 <ol>
   <li>Installing <a href="https://www.python.org/">Python</a> including <a href="https://pip.pypa.io/en/latest/installing.html">pip</a> and <a href="https://virtualenv.pypa.io/en/stable/installation.html">virtualenv</a>.
-<strong>Please note:</strong> While OctoPrint itself supports running under Python 3.7+ starting with version 1.4.0, many of the available plugins still are
-Python 2 only. If you want to make use of plugins from the plugin repository, you should for now still install OctoPrint under Python 2.7. Note that
-migrating to Python 3 at a later date is easily done.</li>
+<strong>Please note:</strong> While OctoPrint itself supports running under both Python 2.7 and Python 3.6+, it is recommended that you install 
+using Python 3.6+ since Python 2 is now end-of-life. A majority of the plugins are compatible to Python 3 now, full details can be 
+found on the <a href="https://plugins.octoprint.org">plugin repository</a></li>
   <li>Creating a virtual environment somewhere: <code class="language-plaintext highlighter-rouge">virtualenv OctoPrint</code></li>
   <li>Installing OctoPrint <em>into that virtual environment</em>: <code class="language-plaintext highlighter-rouge">OctoPrint/bin/pip install OctoPrint</code></li>
   <li>OctoPrint may then be started through <code class="language-plaintext highlighter-rouge">./OctoPrint/bin/octoprint serve</code> or with an absolute path <code class="language-plaintext highlighter-rouge">/path/to/OctoPrint/bin/octoprint serve</code></li>
@@ -349,7 +349,7 @@ migrating to Python 3 at a later date is easily done.</li>
 
 <h2 id="linux">Linux</h2>
 
-<p>For installing OctoPrint from source, please take a look at <a href="https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337/">the setup instructions for Raspbian on the forum</a>.
+<p>For installing OctoPrint on Linux, please take a look at <a href="https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337/">the setup instructions for Raspbian on the forum</a>.
 They should be pretty much identical on other Linux distributions.</p>
 
 <h2 id="windows">Windows</h2>
@@ -588,9 +588,9 @@ pages 50-51. You can find an excerpt <a href="/assets/download/MagPi36_OctoPrint
 
 <ol>
   <li>Installing <a href="https://www.python.org/">Python</a> including <a href="https://pip.pypa.io/en/latest/installing.html">pip</a> and <a href="https://virtualenv.pypa.io/en/stable/installation.html">virtualenv</a>.
-<strong>Please note:</strong> While OctoPrint itself supports running under Python 3.7+ starting with version 1.4.0, many of the available plugins still are
-Python 2 only. If you want to make use of plugins from the plugin repository, you should for now still install OctoPrint under Python 2.7. Note that
-migrating to Python 3 at a later date is easily done.</li>
+<strong>Please note:</strong> While OctoPrint itself supports running under both Python 2.7 and Python 3.6+, it is recommended that you install 
+using Python 3.6+ since Python 2 is now end-of-life. A majority of the plugins are compatible to Python 3 now, full details can be 
+found on the <a href="https://plugins.octoprint.org">plugin repository</a></li>
   <li>Creating a virtual environment somewhere: <code class="language-plaintext highlighter-rouge">virtualenv OctoPrint</code></li>
   <li>Installing OctoPrint <em>into that virtual environment</em>: <code class="language-plaintext highlighter-rouge">OctoPrint/bin/pip install OctoPrint</code></li>
   <li>OctoPrint may then be started through <code class="language-plaintext highlighter-rouge">./OctoPrint/bin/octoprint serve</code> or with an absolute path <code class="language-plaintext highlighter-rouge">/path/to/OctoPrint/bin/octoprint serve</code></li>
@@ -600,7 +600,7 @@ migrating to Python 3 at a later date is easily done.</li>
 
 <h2 id="linux">Linux</h2>
 
-<p>For installing OctoPrint from source, please take a look at <a href="https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337/">the setup instructions for Raspbian on the forum</a>.
+<p>For installing OctoPrint on Linux, please take a look at <a href="https://community.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337/">the setup instructions for Raspbian on the forum</a>.
 They should be pretty much identical on other Linux distributions.</p>
 
 <h2 id="windows">Windows</h2>
@@ -674,17 +674,17 @@ They should be pretty much identical on other Linux distributions.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery-1.9.1.min.js?_=1604405561"></script>
-<script src="/assets/js/underscore-1.4.4.min.js?_=1604405561"></script>
-<script src="/assets/js/prettify-r224.js?_=1604405561"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1604405561"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1604405561"></script>
-<script src="/assets/js/bootstrap.min.js?_=1604405561"></script>
-<script src="/assets/js/lightbox.min.js?_=1604405561"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1604405561"></script>
-<script src="/assets/js/site.js?_=1604405561"></script>
-<script src="/assets/js/yt-with-consent.js?_=1604405561"></script>
-<script src="/assets/js/autotrack.js?_=1604405561"></script>
+<script src="/assets/js/jquery-1.9.1.min.js?_=1604436478"></script>
+<script src="/assets/js/underscore-1.4.4.min.js?_=1604436478"></script>
+<script src="/assets/js/prettify-r224.js?_=1604436478"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1604436478"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1604436478"></script>
+<script src="/assets/js/bootstrap.min.js?_=1604436478"></script>
+<script src="/assets/js/lightbox.min.js?_=1604436478"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1604436478"></script>
+<script src="/assets/js/site.js?_=1604436478"></script>
+<script src="/assets/js/yt-with-consent.js?_=1604436478"></script>
+<script src="/assets/js/autotrack.js?_=1604436478"></script>
 
 <!-- Google Analytics -->
 <script>

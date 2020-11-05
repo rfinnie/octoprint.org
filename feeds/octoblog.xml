@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Nov 2020 06:13:48 -0600</pubDate>
-    <lastBuildDate>Thu, 05 Nov 2020 06:13:48 -0600</lastBuildDate>
+    <pubDate>Thu, 05 Nov 2020 07:41:39 -0600</pubDate>
+    <lastBuildDate>Thu, 05 Nov 2020 07:41:39 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    <item>
+      <title>OctoPrint On Air #35</title>
+      <description>
+        <![CDATA[
+          The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on October 30th 2020.
+        ]]>
+      </description>
+      <pubDate>Thu, 05 Nov 2020 07:30:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
     <item>
       <title>OctoPrint On Air #34</title>
       <description>
@@ -114,18 +126,6 @@
       <pubDate>Thu, 19 Mar 2020 09:30:00 -0500</pubDate>
       <link>https://octoprint.org/blog/2020/03/19/octoprint-on-air-30-announcement/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2020/03/19/octoprint-on-air-30-announcement/</guid>
-      <category>OctoPrint On Air</category>
-    </item>
-    <item>
-      <title>OctoPrint On Air #29</title>
-      <description>
-        <![CDATA[
-          The twenty ninth episode of a monthly live broadcast for Patrons which aired live on February 21st 2020.
-        ]]>
-      </description>
-      <pubDate>Thu, 27 Feb 2020 04:40:00 -0600</pubDate>
-      <link>https://octoprint.org/blog/2020/02/27/octoprint-on-air-29/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2020/02/27/octoprint-on-air-29/</guid>
       <category>OctoPrint On Air</category>
     </item>
   </channel>

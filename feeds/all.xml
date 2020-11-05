@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Nov 2020 06:13:48 -0600</pubDate>
-    <lastBuildDate>Thu, 05 Nov 2020 06:13:48 -0600</lastBuildDate>
+    <pubDate>Thu, 05 Nov 2020 07:41:39 -0600</pubDate>
+    <lastBuildDate>Thu, 05 Nov 2020 07:41:39 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #35</title>
+        <description>
+          <![CDATA[
+            The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on October 30th 2020.
+          ]]>
+        </description>
+        <pubDate>Thu, 05 Nov 2020 07:30:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPi Release Candidate 0.18.0rc1 needs testers!</title>
@@ -122,19 +135,6 @@
         <pubDate>Wed, 15 Jul 2020 07:00:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2020/07/15/new-release-candidate-1.4.1rc3/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/07/15/new-release-candidate-1.4.1rc3/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.4.1rc2</title>
-        <description>
-          <![CDATA[
-            The second release candidate for the upcoming 1.4.1 release that fixes a bunch of regressions observed in the first one
-          ]]>
-        </description>
-        <pubDate>Wed, 08 Jul 2020 06:15:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/07/08/new-release-candidate-1.4.1rc2/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/07/08/new-release-candidate-1.4.1rc2/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

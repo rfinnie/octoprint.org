@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoprintonair.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Nov 2020 06:13:48 -0600</pubDate>
-    <lastBuildDate>Thu, 05 Nov 2020 06:13:48 -0600</lastBuildDate>
+    <pubDate>Thu, 05 Nov 2020 07:41:39 -0600</pubDate>
+    <lastBuildDate>Thu, 05 Nov 2020 07:41:39 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #35</title>
+        <description>
+          <![CDATA[
+            The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on October 30th 2020.
+          ]]>
+        </description>
+        <pubDate>Thu, 05 Nov 2020 07:30:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/?utm_source=rss&amp;utm_medium=octoprintonair</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #34</title>
@@ -123,19 +136,6 @@
         <pubDate>Mon, 07 Oct 2019 07:25:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2019/10/07/octoprint-on-air-26/?utm_source=rss&amp;utm_medium=octoprintonair</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/10/07/octoprint-on-air-26/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #25</title>
-        <description>
-          <![CDATA[
-            The twenty fifth episode of a monthly live broadcast for Patrons which aired live on July 5th 2019.
-          ]]>
-        </description>
-        <pubDate>Wed, 24 Jul 2019 05:15:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2019/07/24/octoprint-on-air-25/?utm_source=rss&amp;utm_medium=octoprintonair</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2019/07/24/octoprint-on-air-25/</guid>
         <category>OctoPrint On Air</category>
       </item>
     

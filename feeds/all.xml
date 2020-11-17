@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Nov 2020 06:13:07 -0600</pubDate>
-    <lastBuildDate>Tue, 17 Nov 2020 06:13:07 -0600</lastBuildDate>
+    <pubDate>Tue, 17 Nov 2020 08:55:34 -0600</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2020 08:55:34 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.5.0rc2</title>
+        <description>
+          <![CDATA[
+            The second release candidate for the upcoming 1.5.0 release, with some fixes of regressions from the first one and some improvements in newly added functionality.
+          ]]>
+        </description>
+        <pubDate>Tue, 17 Nov 2020 08:45:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/11/17/new-release-candidate-1.5.0rc2/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/17/new-release-candidate-1.5.0rc2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.5.0rc1</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/07/29/new-release-candidate-1.4.1rc4/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/07/29/new-release-candidate-1.4.1rc4/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #33</title>
-        <description>
-          <![CDATA[
-            The thirty-third episode of a monthly live broadcast for Patrons which aired live on July 24th 2020.
-          ]]>
-        </description>
-        <pubDate>Mon, 27 Jul 2020 10:30:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

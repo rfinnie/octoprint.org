@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1606480502"></script>
+    <script src="/assets/js/html5shim.js?_=1606483350"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1606480502">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1606480502">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1606480502">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1606480502">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1606480502">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1606480502">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1606483350">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1606483350">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1606483350">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1606483350">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1606483350">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1606483350">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1606480502"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1606480502"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1606483350"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1606483350"/>
 
 
     <!-- Le fav and touch icons -->
@@ -309,55 +309,75 @@ plugins and plugin installation under Windows, several performance improvements 
 much much more.</li>
 </ul>
 
-<p>There’s also a <strong>heads-up</strong> concerning the now mandatory Access Control:</p>
+
+
+<p>
+    Please also take a look at the following <strong>heads-ups</strong>:
+</p>
+
+
 
 <blockquote>
-  <p><strong>Heads-up: Access Control is now mandatory and no longer can be disabled</strong></p>
+<strong>Heads-up: Access Control is now mandatory and no longer can be disabled</strong>
 
-  <p>If you so far had Access Control disabled, upon upgrading to 1.5.0, OctoPrint will prompt you to create a user name and password for the (first) admin user. This step was sadly necessary as too many people still will happily expose their completely unsecured OctoPrint instance on the public internet, causing additional support overhead from both attacked users and security researchers. See <a href="https://community.octoprint.org/t/how-to-set-up-octoprint-to-autologin-a-single-user-when-connecting-from-the-internal-network/26235">this guide</a> for a way to have OctoPrint log you in automatically when connecting from an internal IP.</p>
+<p>If you so far had Access Control disabled, upon upgrading to 1.5.0, OctoPrint will  prompt you to create a user name and password for the (first) admin user. This step  was sadly necessary as too many people still will happily expose their completely  unsecured OctoPrint instance on the public internet, causing additional support  overhead from both attacked users and security researchers. See  <a href="https://community.octoprint.org/t/how-to-set-up-octoprint-to-autologin-a-single-user-when-connecting-from-the-internal-network/26235">this guide</a>  for a way to have OctoPrint log you in automatically when connecting from an  internal IP.</p>
+
 </blockquote>
 
-<p>You can find the full changelog and release notes as usual <a href="https://github.com/OctoPrint/OctoPrint/releases/tag/1.5.0rc1">on Github</a>.</p>
 
-<p>Special thanks to everyone who contributed to this release candidate and provided full, analyzable bug reports, you help
-making the next release as stable as possible! And a big Thank You to <a href="https://github.com/chudsaviet">@chudsaviet</a>, <a href="https://github.com/coldtobi">@coldtobi</a>, <a href="https://github.com/cp2004">@cp2004</a>, <a href="https://github.com/frenck">@frenck</a>, <a href="https://github.com/j7126">@j7126</a>, <a href="https://github.com/jneilliii">@jneilliii</a>, <a href="https://github.com/ManuelMcLure">@ManuelMcLure</a>, <a href="https://github.com/mjrider">@mjrider</a>, <a href="https://github.com/OllisGit">@OllisGit</a>, <a href="https://github.com/shaver">@shaver</a>, <a href="https://github.com/Sophist-UK">@Sophist-UK</a> and <a href="https://github.com/urish">@urish</a> for their PRs!</p>
 
-<p>As the past RCs have shown me that a lot of people appear to be unaware of this: <strong>Please do <em>not</em> install this RC if you 
-expect a fully stable version</strong>. It is not a stable release, it is a release <em>candidate</em>: 
-severe bugs may occur, and they might be bad enough that they make a manual downgrade to an earlier version 
-necessary - maybe even from the command line.</p>
 
-<p>You should feel comfortable with and capable of possibly having to do this <em>before</em> installing an RC.</p>
-
-<p>If you want to and can help test this release candidate, you can find information on how to switch to the 
-<strong>“Maintenance RCs”</strong> release channel <a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">in this guide</a>
-if not already done (also linked below).</p>
-
-<p><strong>Please provide feedback</strong> on this RC. For general feedback you can use 
-<a href="https://github.com/OctoPrint/OctoPrint/issues/3802">this ticket on the tracker</a>.
-The information that everything works fine for you is also valuable feedback 😄. <strong>For bug reports</strong> please follow
-<a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">“How to file a bug report”</a> - 
-I need logs and reproduction steps to fix issues, not just the information that something doesn’t work so make sure to
-<strong>fill out all fields of the issue template</strong>.</p>
-
-<p>Thanks!</p>
-
-<p>Depending on the feedback regarding this version I’ll look into fixing 
-any observed regressions and bugs and pushing out a follow-up version 
-as soon as possible and necessary.</p>
+<p>
+    You can find the full changelog and release notes as usual <a href="https://github.com/OctoPrint/OctoPrint/releases/tag/">on Github</a>.
+</p>
+<p>
+    Special thanks to everyone who contributed to this release candidate and provided full, analyzable bug reports, you help
+    making the next release as stable as possible! And a big Thank You to <a href="https://github.com/chudsaviet">@chudsaviet</a>, <a href="https://github.com/coldtobi">@coldtobi</a>, <a href="https://github.com/cp2004">@cp2004</a>, <a href="https://github.com/frenck">@frenck</a>, <a href="https://github.com/j7126">@j7126</a>, <a href="https://github.com/jneilliii">@jneilliii</a>, <a href="https://github.com/ManuelMcLure">@ManuelMcLure</a>, <a href="https://github.com/mjrider">@mjrider</a>, <a href="https://github.com/OllisGit">@OllisGit</a>, <a href="https://github.com/shaver">@shaver</a>, <a href="https://github.com/Sophist-UK">@Sophist-UK</a> and <a href="https://github.com/urish">@urish</a> for their PRs!
+</p>
+<p>
+    As the past RCs have shown me that a lot of people appear to be unaware of this: <strong>Please do <em>not</em> install this RC if you
+    expect a fully stable version</strong>. It is not a stable release, it is a release <em>candidate</em>:
+    severe bugs may occur, and they might be bad enough that they make a manual downgrade to an earlier version
+    necessary - maybe even from the command line.
+</p>
+<p>
+    You should feel comfortable with and capable of possibly having to do this <em>before</em> installing an RC.
+</p>
+<p>
+    If you want to and can help test this release candidate, you can find information on how to switch to the
+    <strong>"Maintenance RCs"</strong> release channel <a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">in this guide</a>
+    if not already done (also linked below).
+</p>
+<p>
+    <strong>Please provide feedback</strong> on this RC. For general feedback you can use
+    <a href="https://github.com/OctoPrint/OctoPrint/issues/3802">this ticket on the tracker</a>.
+    The information that everything works fine for you is also valuable feedback 😄.
+    <strong>For bug reports</strong> please follow
+    <a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a> -
+    I need logs and reproduction steps to fix issues, not just the information that something doesn't work so make sure to
+    <strong>fill out all fields of the issue template</strong>.
+</p>
+<p>
+    Thanks!
+</p>
+<p>
+    Depending on the feedback regarding this version I'll look into fixing
+    any observed regressions and bugs and pushing out a follow-up version
+    as soon as possible and necessary.
+</p>
 
 <h3 id="links">Links</h3>
 
 <ul>
-  <li><a href="https://github.com/OctoPrint/OctoPrint/issues/3802">Ticket for general feedback</a></li>
-  <li><a href="https://github.com/OctoPrint/OctoPrint/releases/tag/1.5.0rc1">Changelog and Release Notes</a></li>
-  <li><a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">How to use release channels to help test release candidates</a></li>
-  <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a></li>
-  <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines (also relevant for creating bug reports!)</a></li>
-  <li><a href="https://faq.octoprint.org">FAQ</a></li>
-  <li><a href="http://docs.octoprint.org/">Documentation</a></li>
-  <li><a href="https://community.octoprint.org/t/how-can-i-revert-to-an-older-version-of-the-octoprint-installation-on-my-octopi-image/205">How to roll back to an earlier release (OctoPi)</a></li>
-  <li><a href="https://community.octoprint.org/t/how-can-i-roll-back-to-an-earlier-version-after-an-update/234">How to roll back to an earlier release (manual install)</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/issues/3802">Ticket for general feedback</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/releases/tag/1.5.0rc1">Changelog and Release Notes</a></li>
+    <li><a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">How to use release channels to help test release candidate</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines (also relevant for creating bug reports!)</a></li>
+    <li><a href="https://faq.octoprint.org">FAQ</a></li>
+    <li><a href="http://docs.octoprint.org/">Documentation</a></li>
+    <li><a href="https://community.octoprint.org/t/how-can-i-revert-to-an-older-version-of-the-octoprint-installation-on-my-octopi-image/205">How to roll back to an earlier release (OctoPi)</a></li>
+    <li><a href="https://community.octoprint.org/t/how-can-i-roll-back-to-an-earlier-version-after-an-update/234">How to roll back to an earlier release (manual install)</a></li>
 </ul>
 
 
@@ -549,17 +569,17 @@ as soon as possible and necessary.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery-1.9.1.min.js?_=1606480502"></script>
-<script src="/assets/js/underscore-1.4.4.min.js?_=1606480502"></script>
-<script src="/assets/js/prettify-r224.js?_=1606480502"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1606480502"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1606480502"></script>
-<script src="/assets/js/bootstrap.min.js?_=1606480502"></script>
-<script src="/assets/js/lightbox.min.js?_=1606480502"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1606480502"></script>
-<script src="/assets/js/site.js?_=1606480502"></script>
-<script src="/assets/js/yt-with-consent.js?_=1606480502"></script>
-<script src="/assets/js/autotrack.js?_=1606480502"></script>
+<script src="/assets/js/jquery-1.9.1.min.js?_=1606483350"></script>
+<script src="/assets/js/underscore-1.4.4.min.js?_=1606483350"></script>
+<script src="/assets/js/prettify-r224.js?_=1606483350"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1606483350"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1606483350"></script>
+<script src="/assets/js/bootstrap.min.js?_=1606483350"></script>
+<script src="/assets/js/lightbox.min.js?_=1606483350"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1606483350"></script>
+<script src="/assets/js/site.js?_=1606483350"></script>
+<script src="/assets/js/yt-with-consent.js?_=1606483350"></script>
+<script src="/assets/js/autotrack.js?_=1606483350"></script>
 
 <!-- Google Analytics -->
 <script>

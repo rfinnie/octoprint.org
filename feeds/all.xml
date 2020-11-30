@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2020 06:15:53 -0600</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2020 06:15:53 -0600</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2020 08:58:36 -0600</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2020 08:58:36 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.5.0</title>
+        <description>
+          <![CDATA[
+            After almost 4 months of development and a three week long RC phase, I'm proud to present you OctoPrint 1.5.0!
+          ]]>
+        </description>
+        <pubDate>Mon, 30 Nov 2020 08:55:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/11/30/new-release-1.5.0/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/30/new-release-1.5.0/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.5.0rc3</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/08/04/new-release-1.4.1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/08/04/new-release-1.4.1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>Automating OctoPrint's release tests</title>
-        <description>
-          <![CDATA[
-            OctoPrint's release tests so far involved a lot of card juggling and other manual steps with a lot of wasted time. Read how I was finally able to automate this after a long journey.
-          ]]>
-        </description>
-        <pubDate>Wed, 29 Jul 2020 09:45:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</guid>
-        <category>OctoPrint Core and Plugin Development</category>
       </item>
     
   </channel>

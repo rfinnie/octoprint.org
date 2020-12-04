@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1607084234"></script>
+    <script src="/assets/js/html5shim.js?_=1607093757"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1607084234">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1607084234">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1607084234">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1607084234">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1607084234">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1607084234">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1607093757">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1607093757">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1607093757">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1607093757">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1607093757">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1607093757">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1607084234"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1607084234"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1607093757"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1607093757"/>
 
 
     <!-- Le fav and touch icons -->
@@ -241,26 +241,48 @@ recommended hardware are not officially supported.</p>
 issues were observed, caused by the WiFi interface when bandwidth is utilized (e.g. the webcam is streamed), negatively 
 impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/318#issuecomment-284762963">See also here</a>.</p>
 
-<p>There have been some reports regarding current revisions of the <strong>Raspberry Pi 4 1/2/4 GB refusing to boot</strong> with the below
-OctoPi 0.17.0 image. If that affects you, please try <a href="https://github.com/guysoft/OctoPi/issues/692">OctoPi 0.18.0rc1</a>.</p>
+<h2 id="images">Images</h2>
+
+<div class="alert">
+    There have been some reports regarding current revisions of the <strong>Raspberry Pi 4 1/2/4 GB refusing to boot</strong> with the stable
+    OctoPi 0.17.0 image. If that affects you, please try the OctoPi 0.18.0 release candidate.
+</div>
+
+<h3 id="stable">Stable</h3>
 
 <p>You can download the latest OctoPi image via the following button.</p>
 
 <div class="text-center">
-    <a class="btn btn-large btn-block" href="https://octopi.octoprint.org/latest" data-event-category="download" data-event-action="latest"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;Download&nbsp;OctoPi&nbsp;0.17.0</a>
+    <a class="btn btn-large btn-primary btn-block" href="https://octopi.octoprint.org/latest" data-event-category="download" data-event-action="latest"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;Download&nbsp;OctoPi&nbsp;0.17.0</a>
     <small>MD5Sum of the .zip: <code>8a550602b8ccc5df8381924757f88ab9</code></small><br />
     <small><strong>Raspberry Pi 3B, 3B+ or 4B 1/2/4GB strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
     <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4GB, Zero and Zero W.</small><br />
-    <small>Unknown compatibility to Raspberry Pi 4B 8GB. Only 32bit builds available.</small>
+    <small>Incompatible to Raspberry Pi 4B 8GB. Only 32bit builds available.</small>
 </div>
-
-<p>or get the <a href="http://unofficialpi.org/Distros/OctoPi/nightly/">32bit 0.18 nightlies here</a> or the highly experimental <a href="http://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit 0.18 nightlies for the RPi4 8GB here</a>.</p>
 
 <p>Alternatively simply buy one of the available</p>
 
 <div class="text-center">
     <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
 </div>
+
+<h3 id="release-candidate">Release Candidate</h3>
+
+<p>The current <strong>release candidate for 0.18.0</strong> can be found here:</p>
+
+<div class="text-center">
+    <a class="btn btn-large btn-block" href="https://github.com/guysoft/OctoPi/issues/692" data-event-category="download" data-event-action="next"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;OctoPi&nbsp;0.18.0rc1 (32 &amp; 64 bit)</a>
+    <small><strong>Raspberry Pi 3B, 3B+ or 4B strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
+    <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, Zero and Zero W.</small><br />
+    <small>32 bit recommended</small>
+</div>
+
+<p>Use this if you cannot get 0.17.0 to boot on your Pi. <strong>It is strongly recommended to use
+the 32bit build for now</strong> as the 64bit build of Raspbian is altogether still rather experimental.</p>
+
+<h3 id="nightlies">Nightlies</h3>
+
+<p>You can also get the <a href="http://unofficialpi.org/Distros/OctoPi/nightly/">32bit 0.18 nightlies here</a> or the highly experimental <a href="http://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit 0.18 nightlies for the RPi4 8GB here</a>.</p>
 
 <h2 id="setting-up-octopi">Setting up OctoPi</h2>
 
@@ -492,26 +514,48 @@ recommended hardware are not officially supported.</p>
 issues were observed, caused by the WiFi interface when bandwidth is utilized (e.g. the webcam is streamed), negatively 
 impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/318#issuecomment-284762963">See also here</a>.</p>
 
-<p>There have been some reports regarding current revisions of the <strong>Raspberry Pi 4 1/2/4 GB refusing to boot</strong> with the below
-OctoPi 0.17.0 image. If that affects you, please try <a href="https://github.com/guysoft/OctoPi/issues/692">OctoPi 0.18.0rc1</a>.</p>
+<h2 id="images">Images</h2>
+
+<div class="alert">
+    There have been some reports regarding current revisions of the <strong>Raspberry Pi 4 1/2/4 GB refusing to boot</strong> with the stable
+    OctoPi 0.17.0 image. If that affects you, please try the OctoPi 0.18.0 release candidate.
+</div>
+
+<h3 id="stable">Stable</h3>
 
 <p>You can download the latest OctoPi image via the following button.</p>
 
 <div class="text-center">
-    <a class="btn btn-large btn-block" href="https://octopi.octoprint.org/latest" data-event-category="download" data-event-action="latest"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;Download&nbsp;OctoPi&nbsp;0.17.0</a>
+    <a class="btn btn-large btn-primary btn-block" href="https://octopi.octoprint.org/latest" data-event-category="download" data-event-action="latest"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;Download&nbsp;OctoPi&nbsp;0.17.0</a>
     <small>MD5Sum of the .zip: <code>8a550602b8ccc5df8381924757f88ab9</code></small><br />
     <small><strong>Raspberry Pi 3B, 3B+ or 4B 1/2/4GB strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
     <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4GB, Zero and Zero W.</small><br />
-    <small>Unknown compatibility to Raspberry Pi 4B 8GB. Only 32bit builds available.</small>
+    <small>Incompatible to Raspberry Pi 4B 8GB. Only 32bit builds available.</small>
 </div>
-
-<p>or get the <a href="http://unofficialpi.org/Distros/OctoPi/nightly/">32bit 0.18 nightlies here</a> or the highly experimental <a href="http://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit 0.18 nightlies for the RPi4 8GB here</a>.</p>
 
 <p>Alternatively simply buy one of the available</p>
 
 <div class="text-center">
     <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
 </div>
+
+<h3 id="release-candidate">Release Candidate</h3>
+
+<p>The current <strong>release candidate for 0.18.0</strong> can be found here:</p>
+
+<div class="text-center">
+    <a class="btn btn-large btn-block" href="https://github.com/guysoft/OctoPi/issues/692" data-event-category="download" data-event-action="next"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;OctoPi&nbsp;0.18.0rc1 (32 &amp; 64 bit)</a>
+    <small><strong>Raspberry Pi 3B, 3B+ or 4B strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
+    <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, Zero and Zero W.</small><br />
+    <small>32 bit recommended</small>
+</div>
+
+<p>Use this if you cannot get 0.17.0 to boot on your Pi. <strong>It is strongly recommended to use
+the 32bit build for now</strong> as the 64bit build of Raspbian is altogether still rather experimental.</p>
+
+<h3 id="nightlies">Nightlies</h3>
+
+<p>You can also get the <a href="http://unofficialpi.org/Distros/OctoPi/nightly/">32bit 0.18 nightlies here</a> or the highly experimental <a href="http://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit 0.18 nightlies for the RPi4 8GB here</a>.</p>
 
 <h2 id="setting-up-octopi">Setting up OctoPi</h2>
 
@@ -674,17 +718,17 @@ They should be pretty much identical on other Linux distributions.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery-1.9.1.min.js?_=1607084234"></script>
-<script src="/assets/js/underscore-1.4.4.min.js?_=1607084234"></script>
-<script src="/assets/js/prettify-r224.js?_=1607084234"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1607084234"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1607084234"></script>
-<script src="/assets/js/bootstrap.min.js?_=1607084234"></script>
-<script src="/assets/js/lightbox.min.js?_=1607084234"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1607084234"></script>
-<script src="/assets/js/site.js?_=1607084234"></script>
-<script src="/assets/js/yt-with-consent.js?_=1607084234"></script>
-<script src="/assets/js/autotrack.js?_=1607084234"></script>
+<script src="/assets/js/jquery-1.9.1.min.js?_=1607093757"></script>
+<script src="/assets/js/underscore-1.4.4.min.js?_=1607093757"></script>
+<script src="/assets/js/prettify-r224.js?_=1607093757"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1607093757"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1607093757"></script>
+<script src="/assets/js/bootstrap.min.js?_=1607093757"></script>
+<script src="/assets/js/lightbox.min.js?_=1607093757"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1607093757"></script>
+<script src="/assets/js/site.js?_=1607093757"></script>
+<script src="/assets/js/yt-with-consent.js?_=1607093757"></script>
+<script src="/assets/js/autotrack.js?_=1607093757"></script>
 
 <!-- Google Analytics -->
 <script>

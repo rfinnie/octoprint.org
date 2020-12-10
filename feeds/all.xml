@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Dec 2020 06:17:36 -0600</pubDate>
-    <lastBuildDate>Thu, 10 Dec 2020 06:17:36 -0600</lastBuildDate>
+    <pubDate>Thu, 10 Dec 2020 06:42:17 -0600</pubDate>
+    <lastBuildDate>Thu, 10 Dec 2020 06:42:17 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.5.2</title>
+        <description>
+          <![CDATA[
+            This is a hotfix release to fix one bug and add a workaround for a third party dependency issue.
+          ]]>
+        </description>
+        <pubDate>Thu, 10 Dec 2020 06:40:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/12/10/new-release-1.5.2/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/10/new-release-1.5.2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.5.1</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/09/10/upgrade-to-py3/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</guid>
         <category>OctoPrint News</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.4.2</title>
-        <description>
-          <![CDATA[
-            This is a hotfix release to fix three bugs in 1.4.1 that sadly only were reported after the release candidate phase for 1.4.1.
-          ]]>
-        </description>
-        <pubDate>Thu, 06 Aug 2020 06:50:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/08/06/new-release-1.4.2/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/08/06/new-release-1.4.2/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

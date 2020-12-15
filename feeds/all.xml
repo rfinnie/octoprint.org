@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Dec 2020 06:17:58 -0600</pubDate>
-    <lastBuildDate>Tue, 15 Dec 2020 06:17:58 -0600</lastBuildDate>
+    <pubDate>Tue, 15 Dec 2020 08:22:20 -0600</pubDate>
+    <lastBuildDate>Tue, 15 Dec 2020 08:22:20 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>Turning a static website more dynamic</title>
+        <description>
+          <![CDATA[
+            Since its creation in 2015 the OctoPrint plugin repository has been a static page powered by Jekyll. Read how over the course of 2020 it got more dynamic through the power of GitHub Actions.
+          ]]>
+        </description>
+        <pubDate>Tue, 15 Dec 2020 08:15:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
+        <category>OctoPrint Core and Plugin Development</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #36</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/11/05/octopi-release-candidate-0-18-0rc1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octopi-release-candidate-0-18-0rc1/</guid>
         <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #34</title>
-        <description>
-          <![CDATA[
-            The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on September 18th 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 24 Sep 2020 07:00:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Dec 2020 06:17:58 -0600</pubDate>
-    <lastBuildDate>Tue, 15 Dec 2020 06:17:58 -0600</lastBuildDate>
+    <pubDate>Tue, 15 Dec 2020 08:22:20 -0600</pubDate>
+    <lastBuildDate>Tue, 15 Dec 2020 08:22:20 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    <item>
+      <title>Turning a static website more dynamic</title>
+      <description>
+        <![CDATA[
+          Since its creation in 2015 the OctoPrint plugin repository has been a static page powered by Jekyll. Read how over the course of 2020 it got more dynamic through the power of GitHub Actions.
+        ]]>
+      </description>
+      <pubDate>Tue, 15 Dec 2020 08:15:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
+      <category>OctoPrint Core and Plugin Development</category>
+    </item>
     <item>
       <title>OctoPrint On Air #36</title>
       <description>
@@ -114,18 +126,6 @@
       <pubDate>Thu, 07 May 2020 05:00:00 -0500</pubDate>
       <link>https://octoprint.org/blog/2020/05/07/discord-server-launched/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2020/05/07/discord-server-launched/</guid>
-      <category>OctoPrint News</category>
-    </item>
-    <item>
-      <title>Help to fight the Corona Crisis using your 3D printer</title>
-      <description>
-        <![CDATA[
-          A guest post by Oliver Dathe on how you can help in the fight against the ongoing SARS-CoV-2 pandemic. If you have any printing capacities free, please consider joining the community effort!
-        ]]>
-      </description>
-      <pubDate>Tue, 31 Mar 2020 08:00:00 -0500</pubDate>
-      <link>https://octoprint.org/blog/2020/03/31/3d-printing-against-corona/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2020/03/31/3d-printing-against-corona/</guid>
       <category>OctoPrint News</category>
     </item>
   </channel>

@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jan 2021 06:29:56 -0600</pubDate>
-    <lastBuildDate>Mon, 11 Jan 2021 06:29:56 -0600</lastBuildDate>
+    <pubDate>Mon, 11 Jan 2021 07:10:28 -0600</pubDate>
+    <lastBuildDate>Mon, 11 Jan 2021 07:10:28 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPi Release Candidate 0.18.0rc2 needs testers!</title>
+        <description>
+          <![CDATA[
+            Guy Sheffer just published a second release candidate for the release of OctoPi 0.18.0 and is looking for feedback!
+          ]]>
+        </description>
+        <pubDate>Mon, 11 Jan 2021 07:00:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2021/01/11/octopi-release-candidate-0-18-0rc2/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/01/11/octopi-release-candidate-0-18-0rc2/</guid>
+        <category>OctoPi Announcements</category>
+      </item>
     
       <item>
         <title>Turning a static website more dynamic</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPi Release Candidate 0.18.0rc1 needs testers!</title>
-        <description>
-          <![CDATA[
-            Guy Sheffer published a release candidate for the release of OctoPi 0.18.0 and is looking for feedback!
-          ]]>
-        </description>
-        <pubDate>Thu, 05 Nov 2020 04:20:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/11/05/octopi-release-candidate-0-18-0rc1/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octopi-release-candidate-0-18-0rc1/</guid>
-        <category>OctoPi Announcements</category>
       </item>
     
   </channel>

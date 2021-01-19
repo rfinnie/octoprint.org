@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jan 2021 19:10:22 -0600</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2021 19:10:22 -0600</lastBuildDate>
+    <pubDate>Tue, 19 Jan 2021 04:36:19 -0600</pubDate>
+    <lastBuildDate>Tue, 19 Jan 2021 04:36:19 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.5.3</title>
+        <description>
+          <![CDATA[
+            This is a bugfix release to fix two bugs in OctoPrint 1.5.x.
+          ]]>
+        </description>
+        <pubDate>Tue, 19 Jan 2021 04:30:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2021/01/19/new-release-1.5.3/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/01/19/new-release-1.5.3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>OctoPi Release Candidate 0.18.0rc2 needs testers!</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/11/10/new-release-candidate-1.5.0rc1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/10/new-release-candidate-1.5.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #35</title>
-        <description>
-          <![CDATA[
-            The thirty-fifth episode of a monthly live broadcast for Patrons which aired live on October 30th 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 05 Nov 2020 07:30:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

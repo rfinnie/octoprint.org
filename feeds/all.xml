@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Jan 2021 19:10:06 -0600</pubDate>
-    <lastBuildDate>Sun, 24 Jan 2021 19:10:06 -0600</lastBuildDate>
+    <pubDate>Mon, 25 Jan 2021 04:42:30 -0600</pubDate>
+    <lastBuildDate>Mon, 25 Jan 2021 04:42:30 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New OctoPi Release: 0.18.0</title>
+        <description>
+          <![CDATA[
+            OctoPi 0.18.0 comes with OctoPrint 1.5.2 and Python 3, among other things.
+          ]]>
+        </description>
+        <pubDate>Mon, 25 Jan 2021 04:00:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2021/01/25/octopi-release-0-18-0/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/01/25/octopi-release-0-18-0/</guid>
+        <category>OctoPi Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.5.3</title>
@@ -122,19 +135,6 @@
         <pubDate>Tue, 17 Nov 2020 08:45:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2020/11/17/new-release-candidate-1.5.0rc2/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/17/new-release-candidate-1.5.0rc2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.5.0rc1</title>
-        <description>
-          <![CDATA[
-            The first release candidate for the upcoming 1.5.0 release, containing new features, improvements and bug fixes.
-          ]]>
-        </description>
-        <pubDate>Tue, 10 Nov 2020 08:30:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/11/10/new-release-candidate-1.5.0rc1/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/10/new-release-candidate-1.5.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

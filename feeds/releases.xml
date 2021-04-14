@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Apr 2021 07:24:13 -0500</pubDate>
-    <lastBuildDate>Wed, 14 Apr 2021 07:24:13 -0500</lastBuildDate>
+    <pubDate>Wed, 14 Apr 2021 08:28:19 -0500</pubDate>
+    <lastBuildDate>Wed, 14 Apr 2021 08:28:19 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.6.0rc2</title>
+        <description>
+          <![CDATA[
+            The second release candidate for the upcoming 1.6.0 release, with some fixes of regressions from the first one and some improvements in newly added functionality.
+          ]]>
+        </description>
+        <pubDate>Wed, 14 Apr 2021 08:25:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.6.0rc1</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 06 Aug 2020 06:50:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2020/08/06/new-release-1.4.2/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/08/06/new-release-1.4.2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.4.1</title>
-        <description>
-          <![CDATA[
-            Fresh off the presses, just through a month long release candidate cycle and the first one to be developed during a raging pandemic, I present you the next stable release of OctoPrint: 1.4.1!
-          ]]>
-        </description>
-        <pubDate>Tue, 04 Aug 2020 04:45:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/08/04/new-release-1.4.1/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/08/04/new-release-1.4.1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

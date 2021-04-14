@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Apr 2021 07:24:13 -0500</pubDate>
-    <lastBuildDate>Wed, 14 Apr 2021 07:24:13 -0500</lastBuildDate>
+    <pubDate>Wed, 14 Apr 2021 08:28:19 -0500</pubDate>
+    <lastBuildDate>Wed, 14 Apr 2021 08:28:19 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.6.0rc2</title>
+        <description>
+          <![CDATA[
+            The second release candidate for the upcoming 1.6.0 release, with some fixes of regressions from the first one and some improvements in newly added functionality.
+          ]]>
+        </description>
+        <pubDate>Wed, 14 Apr 2021 08:25:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.6.0rc1</title>
@@ -122,19 +135,6 @@
         <pubDate>Thu, 10 Dec 2020 06:40:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2020/12/10/new-release-1.5.2/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/12/10/new-release-1.5.2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.5.1</title>
-        <description>
-          <![CDATA[
-            This is a hotfix release to fix two bugs in 1.5 that sadly only were reported after the release candidate phase.
-          ]]>
-        </description>
-        <pubDate>Fri, 04 Dec 2020 04:50:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/12/04/new-release-1.5.1/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/04/new-release-1.5.1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1618966304"></script>
+    <script src="/assets/js/html5shim.js?_=1618998272"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1618966304">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1618966304">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1618966304">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1618966304">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1618966304">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1618966304">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1618998272">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1618998272">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1618998272">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1618998272">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1618998272">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1618998272">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1618966304"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1618966304"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1618998272"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1618998272"/>
 
 
     <!-- Le fav and touch icons -->
@@ -246,20 +246,16 @@ needs. ~Gina</em></p>
 
 <p>Remote access via a plugin is certainly the easiest way for you to access your instance and control/monitor your printer. Unless you really know what you’re doing, this is very likely the method that you’re going to want to be using. There are a few different options available that accomplish remote access, without opening up OctoPrint to the rest of the world.</p>
 
-<h3 id="octoeverywherecom">OctoEverywhere.com</h3>
-
-<p><a href="https://octoeverywhere.com/?source=octoprint_blog">OctoEverywhere.com</a> is a free, secure, and easy to use cloud service that allows you to access your entire OctoPrint web portal from anywhere! OctoEverywhere is a community funded effort that focuses empowering everyone to create better with full remote access to their OctoPrint setup. The service supports webcam streaming, remote printer control, full plugin support, and more! To start the 2-minute setup process go <a href="https://octoeverywhere.com/getStarted?source=octoprint_blog">here</a>, or checkout the official plugin listed <a href="https://plugins.octoprint.org/plugins/octoeverywhere/">here</a>.</p>
-
 <h4 id="polar-cloud">Polar Cloud</h4>
 
 <p>The Polar Cloud plugin lets you connect OctoPrint to your <a href="https://polar3d.com">Polar Cloud</a> account. Polar Cloud is a cloud based service that adds a whole lot of flexibility to your workflow. It’s certainly more than just an app to monitor/control your printer, it’s a whole community of printers, designers and makers. The process of selecting an object, slicing and sending to your printer are streamlined into a simple workflow. The plugin is available <a href="https://plugins.octoprint.org/plugins/polarcloud/">here</a> and is definitely worth checking out.</p>
 
-<h4 id="octoprint-anywhere-edit-or-its-successor-the-spaghetti-detective">OctoPrint Anywhere (<em>edit: or its successor The Spaghetti Detective</em>)</h4>
+<h4 id="the-spaghetti-detective-edit-updated-2021-04-21">The Spaghetti Detective (<em>edit: updated 2021-04-21</em>)</h4>
 
-<p>This plugin is a cloud service that allows you to access your OctoPrint instance through a web interface.
-Setup is relatively simple, install the plugin, either from the Plugin Manager, or you can grab it <a href="https://plugins.octoprint.org/plugins/anywhere/">here</a>. After installing, you will be greated by a setup wizard that will guide you through the rest of the steps. In just a few moments, you’ll be up and running, and able to access your OctoPrint instance, without forwaring any ports, or exposing your instance to the internet.</p>
+<p>This plugin is a cloud service that allows you to access your OctoPrint instance through a web interface, among other things.
+Setup is relatively simple, install the plugin, either from the Plugin Manager, or you can grab it <a href="https://plugins.octoprint.org/plugins/thespaghettidetective/">here</a>. After installing, you will be greated by a setup wizard that will guide you through the rest of the steps. In just a few moments, you’ll be up and running, and able to access your OctoPrint instance, without forwaring any ports, or exposing your instance to the internet.</p>
 
-<p><em>edit</em>: Check out Kenneth’s new project <a href="https://plugins.octoprint.org/plugins/thespaghettidetective/">The Spaghetti Detective</a></p>
+<p>The Spaghetti Detective has replaced the formerly mentioned OctoPrint Anywhere.</p>
 
 <h4 id="octoprint-discordremote">OctoPrint-DiscordRemote</h4>
 
@@ -273,6 +269,10 @@ respond to commands and send you snapshots from your webcam, if you have one ins
 <h4 id="ngrok-edit-added-2020-06-22">ngrok (<em>edit: added 2020-06-22</em>)</h4>
 
 <p>The plugin creates a secure tunnel to access OctoPrint remotely through <a href="https://ngrok.com/">ngrok</a>. The tunnel is encrypted with SSL and proper certificates (even if your OctoPrint instance is not accessible via HTTPS locally), and is further protected with Basic Authentication (username and password) out of the box. It pretty much wraps the “Reverse Proxy” scenario from below into an easily installable plugin.</p>
+
+<h3 id="octoeverywherecom-edit-added-2021-01-05">OctoEverywhere.com (<em>edit: added 2021-01-05</em>)</h3>
+
+<p><a href="https://octoeverywhere.com/?source=octoprint_blog">OctoEverywhere.com</a> is a free, secure, and easy to use cloud service that allows you to access your entire OctoPrint web portal from anywhere! OctoEverywhere is a community funded effort that focuses empowering everyone to create better with full remote access to their OctoPrint setup. The service supports webcam streaming, remote printer control, full plugin support, and more! To start the 2-minute setup process go <a href="https://octoeverywhere.com/getStarted?source=octoprint_blog">here</a>, or checkout the official plugin listed <a href="https://plugins.octoprint.org/plugins/octoeverywhere/">here</a>.</p>
 
 <h3 id="advanced-access">Advanced Access</h3>
 
@@ -293,6 +293,18 @@ respond to commands and send you snapshots from your webcam, if you have one ins
 <p>All in all, there are many ways one can <strong>safely</strong> access an OctoPrint instance remotely, that do not involve blindly forwarding ports on your router and putting yourself at risk. Plugins are a fantastic tool that I recommend beginners take advantage of. Putting OctoPrint on the internet is nothing short of dangerous. If you must do this, take advantage of the ACL system built into OctoPrint, and even better, put another form of authentication in front. Even if it seems like extra work to setup a plugin, or a VPN/reverse proxy, it’s worth it. Anything with the potential to burn down your house should be treated with the utmost care. It may seem more convenient to cut corners… but is it really worth it?</p>
 
 <p><em>If you need help with setting up any of the proposed solutions here, get in touch on the <a href="https://discourse.octoprint.org">OctoPrint Community Forums</a>, you might find some help there. Also be sure to check <a href="https://discourse.octoprint.org/t/access-your-octoprint-remotely/3628">this topic on the forum</a> for some more info.</em></p>
+
+<hr />
+
+<p><em>Update 2019-11-28:</em> “The Spaghetti Detective” is set to replace “OctoPrint Anywhere” by the
+same author. Mentioned accordingly.</p>
+
+<p><em>Update 2020-06-23:</em> Mentioned new option “ngrok”.</p>
+
+<p><em>Update 2021-01-04:</em> Mentioned new option “OctoEverywhere”.</p>
+
+<p><em>Update 2021-04-21:</em> As of today, “OctoPrint Anywhere” has been retired in favor of its 
+successor “The Spaghetti Detective”. Updated accordingly</p>
 
 
             
@@ -442,17 +454,17 @@ respond to commands and send you snapshots from your webcam, if you have one ins
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery-1.9.1.min.js?_=1618966304"></script>
-<script src="/assets/js/underscore-1.4.4.min.js?_=1618966304"></script>
-<script src="/assets/js/prettify-r224.js?_=1618966304"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1618966304"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1618966304"></script>
-<script src="/assets/js/bootstrap.min.js?_=1618966304"></script>
-<script src="/assets/js/lightbox.min.js?_=1618966304"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1618966304"></script>
-<script src="/assets/js/site.js?_=1618966304"></script>
-<script src="/assets/js/yt-with-consent.js?_=1618966304"></script>
-<script src="/assets/js/autotrack.js?_=1618966304"></script>
+<script src="/assets/js/jquery-1.9.1.min.js?_=1618998272"></script>
+<script src="/assets/js/underscore-1.4.4.min.js?_=1618998272"></script>
+<script src="/assets/js/prettify-r224.js?_=1618998272"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1618998272"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1618998272"></script>
+<script src="/assets/js/bootstrap.min.js?_=1618998272"></script>
+<script src="/assets/js/lightbox.min.js?_=1618998272"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1618998272"></script>
+<script src="/assets/js/site.js?_=1618998272"></script>
+<script src="/assets/js/yt-with-consent.js?_=1618998272"></script>
+<script src="/assets/js/autotrack.js?_=1618998272"></script>
 
 <!-- Google Analytics -->
 <script>

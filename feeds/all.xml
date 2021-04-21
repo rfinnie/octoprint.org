@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Apr 2021 07:25:12 -0500</pubDate>
-    <lastBuildDate>Wed, 21 Apr 2021 07:25:12 -0500</lastBuildDate>
+    <pubDate>Wed, 21 Apr 2021 09:17:32 -0500</pubDate>
+    <lastBuildDate>Wed, 21 Apr 2021 09:17:32 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.6.0rc3</title>
+        <description>
+          <![CDATA[
+            The third release candidate for the upcoming 1.6.0 release, with a one fix of a regression and one work around for a discovered firmware bug.
+          ]]>
+        </description>
+        <pubDate>Wed, 21 Apr 2021 09:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/21/new-release-candidate-1.6.0rc3/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/21/new-release-candidate-1.6.0rc3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.6.0rc2</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.5.2</title>
-        <description>
-          <![CDATA[
-            This is a hotfix release to fix one bug and add a workaround for a third party dependency issue.
-          ]]>
-        </description>
-        <pubDate>Thu, 10 Dec 2020 06:40:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/12/10/new-release-1.5.2/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/10/new-release-1.5.2/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Apr 2021 19:52:25 -0500</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 19:52:25 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Apr 2021 04:32:10 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Apr 2021 04:32:10 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.6.0</title>
+        <description>
+          <![CDATA[
+            After over 4 months of development and an almost month long RC phase, I'm proud to present you OctoPrint 1.6.0!
+          ]]>
+        </description>
+        <pubDate>Tue, 27 Apr 2021 04:15:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/27/new-release-1.6.0/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/27/new-release-1.6.0/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.6.0rc3</title>
@@ -123,19 +136,6 @@
         <pubDate>Tue, 17 Nov 2020 08:45:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2020/11/17/new-release-candidate-1.5.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/17/new-release-candidate-1.5.0rc2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.5.0rc1</title>
-        <description>
-          <![CDATA[
-            The first release candidate for the upcoming 1.5.0 release, containing new features, improvements and bug fixes.
-          ]]>
-        </description>
-        <pubDate>Tue, 10 Nov 2020 08:30:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/11/10/new-release-candidate-1.5.0rc1/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/11/10/new-release-candidate-1.5.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

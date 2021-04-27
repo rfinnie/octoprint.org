@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Apr 2021 19:52:25 -0500</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 19:52:25 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Apr 2021 04:32:10 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Apr 2021 04:32:10 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.6.0</title>
+        <description>
+          <![CDATA[
+            After over 4 months of development and an almost month long RC phase, I'm proud to present you OctoPrint 1.6.0!
+          ]]>
+        </description>
+        <pubDate>Tue, 27 Apr 2021 04:15:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/27/new-release-1.6.0/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/27/new-release-1.6.0/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.6.0rc3</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
         <category>OctoPrint Core and Plugin Development</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #36</title>
-        <description>
-          <![CDATA[
-            The thirty-sixth episode of a monthly live broadcast for Patrons which aired live on December 11th 2020.
-          ]]>
-        </description>
-        <pubDate>Mon, 14 Dec 2020 10:40:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

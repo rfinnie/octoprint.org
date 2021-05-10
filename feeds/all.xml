@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 May 2021 07:20:56 -0500</pubDate>
-    <lastBuildDate>Mon, 10 May 2021 07:20:56 -0500</lastBuildDate>
+    <pubDate>Mon, 10 May 2021 08:28:44 -0500</pubDate>
+    <lastBuildDate>Mon, 10 May 2021 08:28:44 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.6.1</title>
+        <description>
+          <![CDATA[
+            This is a bugfix release to fix two bugs in OctoPrint 1.6.0.
+          ]]>
+        </description>
+        <pubDate>Mon, 10 May 2021 08:20:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/05/10/new-release-1.6.1/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/05/10/new-release-1.6.1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.6.0</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2021/01/11/octopi-release-candidate-0-18-0rc2/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/01/11/octopi-release-candidate-0-18-0rc2/</guid>
         <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>Turning a static website more dynamic</title>
-        <description>
-          <![CDATA[
-            Since its creation in 2015 the OctoPrint plugin repository has been a static page powered by Jekyll. Read how over the course of 2020 it got more dynamic through the power of GitHub Actions.
-          ]]>
-        </description>
-        <pubDate>Tue, 15 Dec 2020 08:15:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
-        <category>OctoPrint Core and Plugin Development</category>
       </item>
     
   </channel>

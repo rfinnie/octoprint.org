@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoprintonair.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 May 2021 07:44:55 -0500</pubDate>
-    <lastBuildDate>Fri, 28 May 2021 07:44:55 -0500</lastBuildDate>
+    <pubDate>Fri, 28 May 2021 09:38:53 -0500</pubDate>
+    <lastBuildDate>Fri, 28 May 2021 09:38:53 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #39</title>
+        <description>
+          <![CDATA[
+            The thirty-ninth episode of a monthly live broadcast for Patrons which was recorded on May 21st 2021.
+          ]]>
+        </description>
+        <pubDate>Fri, 28 May 2021 09:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/05/28/octoprint-on-air-39/?utm_source=rss&amp;utm_medium=octoprintonair</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/05/28/octoprint-on-air-39/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #38</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 19 Mar 2020 09:30:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2020/03/19/octoprint-on-air-30-announcement/?utm_source=rss&amp;utm_medium=octoprintonair</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/03/19/octoprint-on-air-30-announcement/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #29</title>
-        <description>
-          <![CDATA[
-            The twenty ninth episode of a monthly live broadcast for Patrons which aired live on February 21st 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 27 Feb 2020 04:40:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2020/02/27/octoprint-on-air-29/?utm_source=rss&amp;utm_medium=octoprintonair</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/02/27/octoprint-on-air-29/</guid>
         <category>OctoPrint On Air</category>
       </item>
     

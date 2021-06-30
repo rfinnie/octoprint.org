@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1625055648"></script>
+    <script src="/assets/js/html5shim.js?_=1625064390"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1625055648">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1625055648">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1625055648">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1625055648">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1625055648">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1625055648">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1625064390">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1625064390">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1625064390">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1625064390">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1625064390">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1625064390">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1625055648"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1625055648"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1625064390"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1625064390"/>
 
 
     <!-- Le fav and touch icons -->
@@ -223,7 +223,7 @@
             <h1 id="octopi">OctoPi</h1>
 
 <p><a href="https://github.com/guysoft">Guy Sheffer</a> maintains <a href="https://github.com/guysoft/OctoPi">“OctoPi”</a>,
-a <a href="http://www.raspbian.org/">Raspbian (and thus Debian) based</a> SD card image for the Raspberry Pi
+a <a href="https://www.raspbian.org/">Raspbian (and thus Debian) based</a> SD card image for the Raspberry Pi
 that already includes OctoPrint plus everything you need to run it:</p>
 
 <ul>
@@ -241,7 +241,75 @@ recommended hardware are not officially supported.</p>
 issues were observed, caused by the WiFi interface when bandwidth is utilized (e.g. the webcam is streamed), negatively 
 impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/318#issuecomment-284762963">See also here</a>.</p>
 
-<h2 id="images">Images</h2>
+<h2 id="installing-octopi">Installing OctoPi</h2>
+
+<p>OctoPi is available through the <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a>, which you can use to download and setup OctoPi. You can install it yourself, or alternatively simply buy one of the available</p>
+
+<div class="text-center" style="margin-bottom: 1rem;">
+    <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
+</div>
+
+<p><strong>Here’s how to get started installing OctoPi</strong>:</p>
+
+<ol>
+  <li>
+    <p>If you haven’t already, <strong>download and install <a href="https://raspberrypi.org/software">Raspberry Pi Imager</a></strong> on your computer</p>
+  </li>
+  <li>
+    <p><strong>Find the OctoPi image</strong> under ‘Choose OS’, by selecting ‘Other Specific Purpose OS’ followed by ‘OctoPi’</p>
+  </li>
+  <li><strong>Open advanced options</strong> by using the keyboard shortcut <code>ctrl</code>+<code>shift</code>+<code>x</code> to configure your Wifi connection:
+    <ul>
+      <li>Set your SSID, password and WiFi country using the options:
+  <img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Install the image to your SD card</strong>, then plug everything in to your Raspberry Pi and boot it up. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
+  </li>
+  <li>
+    <p><strong>Log into your Pi via SSH</strong> (it is located at <code class="language-plaintext highlighter-rouge">octopi.local</code>
+<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>
+or the IP address assigned by your router), default username is <code class="language-plaintext highlighter-rouge">pi</code>,
+default password is <code class="language-plaintext highlighter-rouge">raspberry</code>. Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
+
+    <ol>
+      <li>Change the password via “Change User Password”</li>
+      <li>Optionally: Change the configured timezone via “Localization Options” &gt; “Timezone”.</li>
+      <li>Optionally: Change the hostname via “Network Options” &gt; “Hostname”. Your OctoPi instance will then no longer be reachable under <code class="language-plaintext highlighter-rouge">octopi.local</code> but rather the hostname you chose postfixed with <code class="language-plaintext highlighter-rouge">.local</code>, so keep that in mind.</li>
+    </ol>
+
+    <p>You can navigate in the menus using the arrow keys and <key>Enter</key>. To switch to selecting the buttons at the bottom use <key>Tab</key>.</p>
+
+    <p><strong>You do not need to expand the filesystem</strong>, current versions of OctoPi do this automatically.</p>
+
+    <p><strong>You also do not need to manually enable the RaspiCam</strong> if you have one, that is already taken care of on the image as well.</p>
+  </li>
+  <li><strong>Access OctoPrint</strong> through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too,
+with a self-signed certificate (which means your browser will warn you about it being invalid).</li>
+</ol>
+
+<p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
+
+<h3 id="alternative-wifi-setup">Alternative Wifi Setup</h3>
+
+<p>If you aren’t using Raspberry Pi Imager, then you can also setup the Wifi connection using the <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> file
+on the root of the installed card when using it like a thumb drive. 
+<strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>  for this, those editors are known to mangle
+the file, making configuration fail. Use something like Notepad++, Atom or VSCode instead or at the very 
+least heed the warnings in the file.</p>
+
+<p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes troubleshooting tips.</p>
+
+<h3 id="video">Video</h3>
+
+<p><a href="https://www.youtube.com/channel/UCb8Rde3uRL1ohROUVg46h1A">Thomas Sanladerer</a> created a great video guide on how to get OctoPi 0.18 up and running.</p>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="HBd0olxI-No"></div>
+</div>
+
+<h2 id="image-downloads">Image Downloads</h2>
 
 <!--
 <div class="alert">
@@ -250,9 +318,10 @@ impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/31
 </div>
 -->
 
-<h3 id="stable">Stable</h3>
+<p>Raspberry Pi Imager will download the latest version of OctoPi for you, but if you want to download the images 
+yourself you can do so here.</p>
 
-<p>You can download the latest OctoPi image via the following button.</p>
+<h3 id="stable">Stable</h3>
 
 <div class="text-center">
     <a class="btn btn-large btn-primary btn-block" href="https://octopi.octoprint.org/latest" data-event-category="download" data-event-action="latest"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;Download&nbsp;OctoPi&nbsp;0.18.0</a>
@@ -260,12 +329,6 @@ impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/31
     <small>SHA256: <code>582ff1e5d8726e0a74c54cc75545dbcb6e09066ca172660bc961dd7501941e5b</code></small><br />
     <small><strong>Raspberry Pi 3B, 3B+ or 4B 1/2/4/8GB strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
     <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, 400, Zero and Zero W.</small><br />
-</div>
-
-<p>Alternatively simply buy one of the available</p>
-
-<div class="text-center">
-    <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
 </div>
 
 <!--
@@ -282,64 +345,7 @@ The current <strong>release candidate for 0.18.0</strong> can be found here:
 
 <h3 id="nightlies">Nightlies</h3>
 
-<p>You can also get the <a href="http://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the highly experimental <a href="http://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
-
-<h2 id="setting-up-octopi">Setting up OctoPi</h2>
-
-<p>Please follow these steps after downloading:</p>
-
-<ol>
-  <li>
-    <p>Unzip the image and install the contained <code class="language-plaintext highlighter-rouge">.img</code> file to an SD card
-<a href="https://etcher.io/">using Etcher</a>. <strong>Do not at any point format the SD from your Operating System, even if prompted to do so</strong> - 
-that will break it and you’ll have to start over. Just use Etcher to flash the <code class="language-plaintext highlighter-rouge">.img</code> file, that is enough!</p>
-  </li>
-  <li>
-    <p>Configure your WiFi connection by editing <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> on the root of the
-flashed card when using it like a thumb drive. <strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>
-for this, those editors are known to mangle the file, making configuration fail. Use something like 
-Notepad++, Atom or VSCode instead or at the very least heed the warnings in the file.</p>
-
-    <p><strong>Note:</strong> This changed with OctoPi 0.15.0, earlier versions had you edit <code class="language-plaintext highlighter-rouge">octopi-network.txt</code> which has a different
-format. This old method is <em>no longer supported</em> and the contents of this file will be ignored. Just 
-use <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code>.</p>
-
-    <p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes Troubleshooting tips.</p>
-  </li>
-  <li>
-    <p>Boot the Pi from the card.</p>
-  </li>
-  <li>
-    <p>Log into your Pi via SSH (it is located at <code class="language-plaintext highlighter-rouge">octopi.local</code>
-<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>
-or the IP address assigned by your router), default username is “pi”,
-default password is “raspberry”. Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
-
-    <ol>
-      <li>Change the password via “Change User Password”</li>
-      <li>Optionally: Change the configured timezone via “Localization Options” &gt; “Timezone”.</li>
-      <li>Optionally: Change the hostname via “Network Options” &gt; “Hostname”. Your OctoPi instance will then no longer be reachable under <code class="language-plaintext highlighter-rouge">octopi.local</code> but rather the hostname you chose postfixed with <code class="language-plaintext highlighter-rouge">.local</code>, so keep that in mind.</li>
-    </ol>
-
-    <p>You can navigate in the menus using the arrow keys and <key>Enter</key>. To switch to selecting the buttons at the bottom use <key>Tab</key>.</p>
-
-    <p><strong>You do not need to expand the filesystem</strong>, current versions of OctoPi do this automatically.</p>
-
-    <p><strong>You also do not need to manually enable the RaspiCam</strong> if you have one, that is already taken care of on the image as well.</p>
-  </li>
-  <li>
-    <p>Access OctoPrint through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. https is available too,
-with a self-signed certificate (which means your browser will warn you about it being invalid).</p>
-  </li>
-</ol>
-
-<p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
-
-<p><a href="https://www.youtube.com/channel/UCb8Rde3uRL1ohROUVg46h1A">Thomas Sanladerer</a> created a great video guide on how to get OctoPi 0.18 up an running.</p>
-
-<div class="responsive_iframe">
-	<div class="yt-with-consent" data-vid="HBd0olxI-No"></div>
-</div>
+<p>You can also get the <a href="https://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the highly experimental <a href="https://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
 
 <h2 id="further-resources">Further resources</h2>
 
@@ -348,7 +354,6 @@ with a self-signed certificate (which means your browser will warn you about it 
 pages 50-51. You can find an excerpt <a href="/assets/download/MagPi36_OctoPrint.pdf">here</a> 
 (MagPi License: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>).</li>
   <li>Scripts to build (and customize) the image yourself can be found in <a href="https://github.com/guysoft/OctoPi">OctoPi’s Github repository</a>.</li>
-  <li>Nightly builds can be found <a href="http://gnethomelinux.com/OctoPi/nightly/">here</a>.</li>
 </ul>
 
 <hr />
@@ -358,11 +363,8 @@ pages 50-51. You can find an excerpt <a href="/assets/download/MagPi36_OctoPrint
 <p>The generic setup instructions boil down to</p>
 
 <ol>
-  <li>Installing <a href="https://www.python.org/">Python</a> including <a href="https://pip.pypa.io/en/latest/installing.html">pip</a> and <a href="https://virtualenv.pypa.io/en/stable/installation.html">virtualenv</a>.
-<strong>Please note:</strong> While OctoPrint itself supports running under both Python 2.7 and Python 3.6+, it is recommended that you install 
-using Python 3.6+ since Python 2 is now end-of-life. A majority of the plugins are compatible to Python 3 now, full details can be 
-found on the <a href="https://plugins.octoprint.org">plugin repository</a></li>
-  <li>Creating a virtual environment somewhere: <code class="language-plaintext highlighter-rouge">virtualenv OctoPrint</code></li>
+  <li>Installing <a href="https://www.python.org/">Python 3</a>, including <a href="https://pip.pypa.io/en/latest/installing.html">pip</a>.</li>
+  <li>Creating a virtual environment somewhere: <code class="language-plaintext highlighter-rouge">python -m venv OctoPrint</code></li>
   <li>Installing OctoPrint <em>into that virtual environment</em>: <code class="language-plaintext highlighter-rouge">OctoPrint/bin/pip install OctoPrint</code></li>
   <li>OctoPrint may then be started through <code class="language-plaintext highlighter-rouge">./OctoPrint/bin/octoprint serve</code> or with an absolute path <code class="language-plaintext highlighter-rouge">/path/to/OctoPrint/bin/octoprint serve</code></li>
 </ol>
@@ -568,7 +570,7 @@ They should be pretty much identical on other Linux distributions.</p>
             <h1 id="octopi">OctoPi</h1>
 
 <p><a href="https://github.com/guysoft">Guy Sheffer</a> maintains <a href="https://github.com/guysoft/OctoPi">“OctoPi”</a>,
-a <a href="http://www.raspbian.org/">Raspbian (and thus Debian) based</a> SD card image for the Raspberry Pi
+a <a href="https://www.raspbian.org/">Raspbian (and thus Debian) based</a> SD card image for the Raspberry Pi
 that already includes OctoPrint plus everything you need to run it:</p>
 
 <ul>
@@ -586,7 +588,75 @@ recommended hardware are not officially supported.</p>
 issues were observed, caused by the WiFi interface when bandwidth is utilized (e.g. the webcam is streamed), negatively 
 impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/318#issuecomment-284762963">See also here</a>.</p>
 
-<h2 id="images">Images</h2>
+<h2 id="installing-octopi">Installing OctoPi</h2>
+
+<p>OctoPi is available through the <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a>, which you can use to download and setup OctoPi. You can install it yourself, or alternatively simply buy one of the available</p>
+
+<div class="text-center" style="margin-bottom: 1rem;">
+    <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
+</div>
+
+<p><strong>Here’s how to get started installing OctoPi</strong>:</p>
+
+<ol>
+  <li>
+    <p>If you haven’t already, <strong>download and install <a href="https://raspberrypi.org/software">Raspberry Pi Imager</a></strong> on your computer</p>
+  </li>
+  <li>
+    <p><strong>Find the OctoPi image</strong> under ‘Choose OS’, by selecting ‘Other Specific Purpose OS’ followed by ‘OctoPi’</p>
+  </li>
+  <li><strong>Open advanced options</strong> by using the keyboard shortcut <code>ctrl</code>+<code>shift</code>+<code>x</code> to configure your Wifi connection:
+    <ul>
+      <li>Set your SSID, password and WiFi country using the options:
+  <img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Install the image to your SD card</strong>, then plug everything in to your Raspberry Pi and boot it up. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
+  </li>
+  <li>
+    <p><strong>Log into your Pi via SSH</strong> (it is located at <code class="language-plaintext highlighter-rouge">octopi.local</code>
+<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>
+or the IP address assigned by your router), default username is <code class="language-plaintext highlighter-rouge">pi</code>,
+default password is <code class="language-plaintext highlighter-rouge">raspberry</code>. Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
+
+    <ol>
+      <li>Change the password via “Change User Password”</li>
+      <li>Optionally: Change the configured timezone via “Localization Options” &gt; “Timezone”.</li>
+      <li>Optionally: Change the hostname via “Network Options” &gt; “Hostname”. Your OctoPi instance will then no longer be reachable under <code class="language-plaintext highlighter-rouge">octopi.local</code> but rather the hostname you chose postfixed with <code class="language-plaintext highlighter-rouge">.local</code>, so keep that in mind.</li>
+    </ol>
+
+    <p>You can navigate in the menus using the arrow keys and <key>Enter</key>. To switch to selecting the buttons at the bottom use <key>Tab</key>.</p>
+
+    <p><strong>You do not need to expand the filesystem</strong>, current versions of OctoPi do this automatically.</p>
+
+    <p><strong>You also do not need to manually enable the RaspiCam</strong> if you have one, that is already taken care of on the image as well.</p>
+  </li>
+  <li><strong>Access OctoPrint</strong> through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too,
+with a self-signed certificate (which means your browser will warn you about it being invalid).</li>
+</ol>
+
+<p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
+
+<h3 id="alternative-wifi-setup">Alternative Wifi Setup</h3>
+
+<p>If you aren’t using Raspberry Pi Imager, then you can also setup the Wifi connection using the <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> file
+on the root of the installed card when using it like a thumb drive. 
+<strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>  for this, those editors are known to mangle
+the file, making configuration fail. Use something like Notepad++, Atom or VSCode instead or at the very 
+least heed the warnings in the file.</p>
+
+<p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes troubleshooting tips.</p>
+
+<h3 id="video">Video</h3>
+
+<p><a href="https://www.youtube.com/channel/UCb8Rde3uRL1ohROUVg46h1A">Thomas Sanladerer</a> created a great video guide on how to get OctoPi 0.18 up and running.</p>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="HBd0olxI-No"></div>
+</div>
+
+<h2 id="image-downloads">Image Downloads</h2>
 
 <!--
 <div class="alert">
@@ -595,9 +665,10 @@ impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/31
 </div>
 -->
 
-<h3 id="stable">Stable</h3>
+<p>Raspberry Pi Imager will download the latest version of OctoPi for you, but if you want to download the images 
+yourself you can do so here.</p>
 
-<p>You can download the latest OctoPi image via the following button.</p>
+<h3 id="stable">Stable</h3>
 
 <div class="text-center">
     <a class="btn btn-large btn-primary btn-block" href="https://octopi.octoprint.org/latest" data-event-category="download" data-event-action="latest"><i class="fa fa-download-alt fa-lg"></i>&nbsp;&nbsp;Download&nbsp;OctoPi&nbsp;0.18.0</a>
@@ -605,12 +676,6 @@ impacting printing quality. <a href="https://github.com/guysoft/OctoPi/issues/31
     <small>SHA256: <code>582ff1e5d8726e0a74c54cc75545dbcb6e09066ca172660bc961dd7501941e5b</code></small><br />
     <small><strong>Raspberry Pi 3B, 3B+ or 4B 1/2/4/8GB strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
     <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, 400, Zero and Zero W.</small><br />
-</div>
-
-<p>Alternatively simply buy one of the available</p>
-
-<div class="text-center">
-    <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
 </div>
 
 <!--
@@ -627,64 +692,7 @@ The current <strong>release candidate for 0.18.0</strong> can be found here:
 
 <h3 id="nightlies">Nightlies</h3>
 
-<p>You can also get the <a href="http://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the highly experimental <a href="http://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
-
-<h2 id="setting-up-octopi">Setting up OctoPi</h2>
-
-<p>Please follow these steps after downloading:</p>
-
-<ol>
-  <li>
-    <p>Unzip the image and install the contained <code class="language-plaintext highlighter-rouge">.img</code> file to an SD card
-<a href="https://etcher.io/">using Etcher</a>. <strong>Do not at any point format the SD from your Operating System, even if prompted to do so</strong> - 
-that will break it and you’ll have to start over. Just use Etcher to flash the <code class="language-plaintext highlighter-rouge">.img</code> file, that is enough!</p>
-  </li>
-  <li>
-    <p>Configure your WiFi connection by editing <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> on the root of the
-flashed card when using it like a thumb drive. <strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>
-for this, those editors are known to mangle the file, making configuration fail. Use something like 
-Notepad++, Atom or VSCode instead or at the very least heed the warnings in the file.</p>
-
-    <p><strong>Note:</strong> This changed with OctoPi 0.15.0, earlier versions had you edit <code class="language-plaintext highlighter-rouge">octopi-network.txt</code> which has a different
-format. This old method is <em>no longer supported</em> and the contents of this file will be ignored. Just 
-use <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code>.</p>
-
-    <p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes Troubleshooting tips.</p>
-  </li>
-  <li>
-    <p>Boot the Pi from the card.</p>
-  </li>
-  <li>
-    <p>Log into your Pi via SSH (it is located at <code class="language-plaintext highlighter-rouge">octopi.local</code>
-<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>
-or the IP address assigned by your router), default username is “pi”,
-default password is “raspberry”. Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
-
-    <ol>
-      <li>Change the password via “Change User Password”</li>
-      <li>Optionally: Change the configured timezone via “Localization Options” &gt; “Timezone”.</li>
-      <li>Optionally: Change the hostname via “Network Options” &gt; “Hostname”. Your OctoPi instance will then no longer be reachable under <code class="language-plaintext highlighter-rouge">octopi.local</code> but rather the hostname you chose postfixed with <code class="language-plaintext highlighter-rouge">.local</code>, so keep that in mind.</li>
-    </ol>
-
-    <p>You can navigate in the menus using the arrow keys and <key>Enter</key>. To switch to selecting the buttons at the bottom use <key>Tab</key>.</p>
-
-    <p><strong>You do not need to expand the filesystem</strong>, current versions of OctoPi do this automatically.</p>
-
-    <p><strong>You also do not need to manually enable the RaspiCam</strong> if you have one, that is already taken care of on the image as well.</p>
-  </li>
-  <li>
-    <p>Access OctoPrint through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. https is available too,
-with a self-signed certificate (which means your browser will warn you about it being invalid).</p>
-  </li>
-</ol>
-
-<p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
-
-<p><a href="https://www.youtube.com/channel/UCb8Rde3uRL1ohROUVg46h1A">Thomas Sanladerer</a> created a great video guide on how to get OctoPi 0.18 up an running.</p>
-
-<div class="responsive_iframe">
-	<div class="yt-with-consent" data-vid="HBd0olxI-No"></div>
-</div>
+<p>You can also get the <a href="https://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the highly experimental <a href="https://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
 
 <h2 id="further-resources">Further resources</h2>
 
@@ -693,7 +701,6 @@ with a self-signed certificate (which means your browser will warn you about it 
 pages 50-51. You can find an excerpt <a href="/assets/download/MagPi36_OctoPrint.pdf">here</a> 
 (MagPi License: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>).</li>
   <li>Scripts to build (and customize) the image yourself can be found in <a href="https://github.com/guysoft/OctoPi">OctoPi’s Github repository</a>.</li>
-  <li>Nightly builds can be found <a href="http://gnethomelinux.com/OctoPi/nightly/">here</a>.</li>
 </ul>
 
 <hr />
@@ -703,11 +710,8 @@ pages 50-51. You can find an excerpt <a href="/assets/download/MagPi36_OctoPrint
 <p>The generic setup instructions boil down to</p>
 
 <ol>
-  <li>Installing <a href="https://www.python.org/">Python</a> including <a href="https://pip.pypa.io/en/latest/installing.html">pip</a> and <a href="https://virtualenv.pypa.io/en/stable/installation.html">virtualenv</a>.
-<strong>Please note:</strong> While OctoPrint itself supports running under both Python 2.7 and Python 3.6+, it is recommended that you install 
-using Python 3.6+ since Python 2 is now end-of-life. A majority of the plugins are compatible to Python 3 now, full details can be 
-found on the <a href="https://plugins.octoprint.org">plugin repository</a></li>
-  <li>Creating a virtual environment somewhere: <code class="language-plaintext highlighter-rouge">virtualenv OctoPrint</code></li>
+  <li>Installing <a href="https://www.python.org/">Python 3</a>, including <a href="https://pip.pypa.io/en/latest/installing.html">pip</a>.</li>
+  <li>Creating a virtual environment somewhere: <code class="language-plaintext highlighter-rouge">python -m venv OctoPrint</code></li>
   <li>Installing OctoPrint <em>into that virtual environment</em>: <code class="language-plaintext highlighter-rouge">OctoPrint/bin/pip install OctoPrint</code></li>
   <li>OctoPrint may then be started through <code class="language-plaintext highlighter-rouge">./OctoPrint/bin/octoprint serve</code> or with an absolute path <code class="language-plaintext highlighter-rouge">/path/to/OctoPrint/bin/octoprint serve</code></li>
 </ol>
@@ -791,17 +795,17 @@ They should be pretty much identical on other Linux distributions.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1625055648"></script>
-<script src="/assets/js/lodash.min.js?_=1625055648"></script>
-<script src="/assets/js/prettify.min.js?_=1625055648"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1625055648"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1625055648"></script>
-<script src="/assets/js/bootstrap.min.js?_=1625055648"></script>
-<script src="/assets/js/lightbox.min.js?_=1625055648"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1625055648"></script>
-<script src="/assets/js/site.js?_=1625055648"></script>
-<script src="/assets/js/yt-with-consent.js?_=1625055648"></script>
-<script src="/assets/js/autotrack.js?_=1625055648"></script>
+<script src="/assets/js/jquery.min.js?_=1625064390"></script>
+<script src="/assets/js/lodash.min.js?_=1625064390"></script>
+<script src="/assets/js/prettify.min.js?_=1625064390"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1625064390"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1625064390"></script>
+<script src="/assets/js/bootstrap.min.js?_=1625064390"></script>
+<script src="/assets/js/lightbox.min.js?_=1625064390"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1625064390"></script>
+<script src="/assets/js/site.js?_=1625064390"></script>
+<script src="/assets/js/yt-with-consent.js?_=1625064390"></script>
+<script src="/assets/js/autotrack.js?_=1625064390"></script>
 
 <!-- Google Analytics -->
 <script>

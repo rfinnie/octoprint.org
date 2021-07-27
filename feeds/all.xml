@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Jul 2021 07:20:54 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Jul 2021 07:20:54 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Jul 2021 08:38:59 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Jul 2021 08:38:59 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #40</title>
+        <description>
+          <![CDATA[
+            The fourtieth episode of a monthly live broadcast for Patrons which was recorded on July 21st 2021.
+          ]]>
+        </description>
+        <pubDate>Tue, 27 Jul 2021 08:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #39</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2021/01/25/octopi-release-0-18-0/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/01/25/octopi-release-0-18-0/</guid>
         <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.5.3</title>
-        <description>
-          <![CDATA[
-            This is a bugfix release to fix two bugs in OctoPrint 1.5.x.
-          ]]>
-        </description>
-        <pubDate>Tue, 19 Jan 2021 04:30:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2021/01/19/new-release-1.5.3/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/01/19/new-release-1.5.3/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

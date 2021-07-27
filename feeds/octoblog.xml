@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Jul 2021 07:20:54 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Jul 2021 07:20:54 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Jul 2021 08:38:59 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Jul 2021 08:38:59 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    <item>
+      <title>OctoPrint On Air #40</title>
+      <description>
+        <![CDATA[
+          The fourtieth episode of a monthly live broadcast for Patrons which was recorded on July 21st 2021.
+        ]]>
+      </description>
+      <pubDate>Tue, 27 Jul 2021 08:30:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
     <item>
       <title>OctoPrint On Air #39</title>
       <description>
@@ -115,18 +127,6 @@
       <link>https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</guid>
       <category>OctoPrint Core and Plugin Development</category>
-    </item>
-    <item>
-      <title>OctoPrint On Air #33</title>
-      <description>
-        <![CDATA[
-          The thirty-third episode of a monthly live broadcast for Patrons which aired live on July 24th 2020.
-        ]]>
-      </description>
-      <pubDate>Mon, 27 Jul 2020 10:30:00 -0500</pubDate>
-      <link>https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</guid>
-      <category>OctoPrint On Air</category>
     </item>
   </channel>
 </rss>

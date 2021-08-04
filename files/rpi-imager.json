@@ -1,8 +1,8 @@
 {
   "os_list": [
     {
-      "name": "OctoPi 0.18.0 with OctoPrint 1.6.1 (stable)",
-      "description": "A Raspberry Pi distribution for 3d printers. Ships OctoPrint 1.6.1rc1 out-of-the-box.",
+      "name": "OctoPi (stable)",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.6.1",
       "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.6.1/octopi-0.18.0-1.6.1.img.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
       "release_date": "2021-06-30",
@@ -12,8 +12,8 @@
       "image_download_sha256": "27ECCF9C0B27CD2DAF86094CBBEBDF1A9F23E62587D45C701219BF140F2A72E4"
     },
     {
-      "name": "OctoPi 0.18.0 with OctoPrint 1.7.0rc1 (prerelease)",
-      "description": "A Raspberry Pi distribution for 3d printers. Ships OctoPrint 1.7.0rc1 out-of-the-box.",
+      "name": "OctoPi (prerelease)",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.7.0rc1",
       "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.0rc1/octopi-0.18.0-1.7.0rc1.img.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
       "release_date": "2021-08-04",

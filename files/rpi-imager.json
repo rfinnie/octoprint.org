@@ -13,14 +13,14 @@
     },
     {
       "name": "OctoPi (prerelease)",
-      "description": "OctoPi 0.18.0 with OctoPrint 1.7.0rc1",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.0rc1/octopi-0.18.0-1.7.0rc1.img.zip",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.7.0rc2",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.0rc2/octopi-0.18.0-1.7.0rc2.img.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2021-08-04",
+      "release_date": "2021-08-11",
       "extract_size": 2489319424,
-      "extract_sha256": "3c4220327f591b599b552e014996967c6672bb543ba482c93f6a5ec961f62807",
-      "image_download_size": 761659497,
-      "image_download_sha256": "832bbdef9f89adc86c7058a0e9d1c083ff251d33ea4785bf3b832b1a77e741b5"
+      "extract_sha256": "236024d15a1db21881aabed8db1f26730174e012696bf029d5e32db2cc31671a",
+      "image_download_size": 765028867,
+      "image_download_sha256": "60dff69dce174788fd72d17aac023f6b1c67e64d64b0014b7ca1370e65163cf0"
     }
   ]
 }

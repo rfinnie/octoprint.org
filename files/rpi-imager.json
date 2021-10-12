@@ -2,25 +2,14 @@
   "os_list": [
     {
       "name": "OctoPi (stable)",
-      "description": "OctoPi 0.18.0 with OctoPrint 1.6.1",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.6.1/octopi-0.18.0-1.6.1.img.zip",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.7.0",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.0/octopi-0.18.0-1.7.0.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2021-06-30",
+      "release_date": "2021-10-11",
       "extract_size": 2489319424,
-      "extract_sha256": "36B8536557901200F16ADE3A59655EE389B93465944E1C9589642277B518A90F",
-      "image_download_size": 757551423,
-      "image_download_sha256": "27ECCF9C0B27CD2DAF86094CBBEBDF1A9F23E62587D45C701219BF140F2A72E4"
-    },
-    {
-      "name": "OctoPi (prerelease)",
-      "description": "OctoPi 0.18.0 with OctoPrint 1.7.0rc3",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.0rc3/octopi-0.18.0-1.7.0rc3.zip",
-      "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2021-09-13",
-      "extract_size": 2489319424,
-      "extract_sha256": "da7339f42bc32b8461a2e089eb2184969da84d73bb58e65cba11a94233d84d86",
-      "image_download_size": 776848120,
-      "image_download_sha256": "3c9c42d42476817548a923ace5bfc104bbb35f15cc66cb0c6206cb56080c7c3e"
+      "extract_sha256": "466e2effedf7373a50064d3caa35b284c8859202ec6def2fb544dbe740eec812",
+      "image_download_size": 777541585,
+      "image_download_sha256": "0ddc95c7c47c3dc968999914fe9ce75447538a490ca5ccc71bddeb19888eb15e"
     }
   ]
 }

@@ -2,14 +2,14 @@
   "os_list": [
     {
       "name": "OctoPi (stable)",
-      "description": "OctoPi 0.18.0 with OctoPrint 1.7.0",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.0/octopi-0.18.0-1.7.0.zip",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.7.1",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.1/octopi-0.18.0-1.7.1.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2021-10-11",
+      "release_date": "2021-11-01",
       "extract_size": 2489319424,
-      "extract_sha256": "466e2effedf7373a50064d3caa35b284c8859202ec6def2fb544dbe740eec812",
-      "image_download_size": 777541585,
-      "image_download_sha256": "0ddc95c7c47c3dc968999914fe9ce75447538a490ca5ccc71bddeb19888eb15e"
+      "extract_sha256": "004e9ccd74eec867d1fc9cc66f4edec791a1f0d6f089f28fe704727ad30e63ef",
+      "image_download_size": 778756668,
+      "image_download_sha256": "0b747cc8993b0c43356b7637a428f81fa3e115bc38c4304f35826ad905a5b2f9"
     }
   ]
 }

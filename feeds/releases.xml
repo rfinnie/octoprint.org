@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Nov 2021 07:22:27 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Nov 2021 07:22:27 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Nov 2021 12:35:30 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Nov 2021 12:35:30 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.7.2</title>
+        <description>
+          <![CDATA[
+            This bugfix release fixes an issue just discovered in OctoPrint 1.7.1.
+          ]]>
+        </description>
+        <pubDate>Tue, 02 Nov 2021 12:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/11/02/new-release-1.7.2/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/11/02/new-release-1.7.2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.7.1</title>
@@ -123,19 +136,6 @@
         <pubDate>Wed, 14 Apr 2021 08:25:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.6.0rc1</title>
-        <description>
-          <![CDATA[
-            The first release candidate for the upcoming 1.6.0 release, containing new features, improvements and bug fixes.
-          ]]>
-        </description>
-        <pubDate>Tue, 30 Mar 2021 07:10:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/03/30/new-release-candidate-1.6.0rc1/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/03/30/new-release-candidate-1.6.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

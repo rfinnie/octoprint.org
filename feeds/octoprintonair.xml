@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoprintonair.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Dec 2021 18:50:02 -0600</pubDate>
-    <lastBuildDate>Tue, 07 Dec 2021 18:50:02 -0600</lastBuildDate>
+    <pubDate>Wed, 08 Dec 2021 05:18:20 -0600</pubDate>
+    <lastBuildDate>Wed, 08 Dec 2021 05:18:20 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #42</title>
+        <description>
+          <![CDATA[
+            The 42st episode of a monthly live broadcast for Patrons which was recorded on December 7th 2021.
+          ]]>
+        </description>
+        <pubDate>Wed, 08 Dec 2021 05:15:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2021/12/08/octoprint-on-air-42/?utm_source=rss&amp;utm_medium=octoprintonair</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/12/08/octoprint-on-air-42/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #41</title>
@@ -123,19 +136,6 @@
         <pubDate>Mon, 27 Jul 2020 10:30:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/?utm_source=rss&amp;utm_medium=octoprintonair</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #32</title>
-        <description>
-          <![CDATA[
-            The thirty second episode of a monthly live broadcast for Patrons which aired live on June 19th 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 25 Jun 2020 11:29:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/?utm_source=rss&amp;utm_medium=octoprintonair</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/</guid>
         <category>OctoPrint On Air</category>
       </item>
     

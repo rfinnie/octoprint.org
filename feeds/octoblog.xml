@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Dec 2021 18:50:02 -0600</pubDate>
-    <lastBuildDate>Tue, 07 Dec 2021 18:50:02 -0600</lastBuildDate>
+    <pubDate>Wed, 08 Dec 2021 05:18:20 -0600</pubDate>
+    <lastBuildDate>Wed, 08 Dec 2021 05:18:20 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    <item>
+      <title>OctoPrint On Air #42</title>
+      <description>
+        <![CDATA[
+          The 42st episode of a monthly live broadcast for Patrons which was recorded on December 7th 2021.
+        ]]>
+      </description>
+      <pubDate>Wed, 08 Dec 2021 05:15:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2021/12/08/octoprint-on-air-42/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2021/12/08/octoprint-on-air-42/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
     <item>
       <title>OctoPrint On Air #41</title>
       <description>
@@ -115,18 +127,6 @@
       <link>https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</guid>
       <category>OctoPrint On Air</category>
-    </item>
-    <item>
-      <title>Upgrade your OctoPrint install to Python 3!</title>
-      <description>
-        <![CDATA[
-          Give OctoPrint a spin on Python 3! Run this simple install script.
-        ]]>
-      </description>
-      <pubDate>Thu, 10 Sep 2020 06:45:00 -0500</pubDate>
-      <link>https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</guid>
-      <category>OctoPrint News</category>
     </item>
   </channel>
 </rss>

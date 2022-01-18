@@ -10,6 +10,12 @@
       "extract_sha256": "02dde76cfdf77b64c9a0f4492aa85283197c4bdd47baceb1b26a5718f68f222b",
       "image_download_size": 776073579,
       "image_download_sha256": "5a95ec92a93dce42c1cdf899e639771833e4229aca0ff4b244356360a4c3464d"
+    },
+    {
+      "name": "OctoPi Nightlies",
+      "description": "Nightly OctoPi builds, untested, bleeding edge",
+      "website": "https://unofficialpi.org/Distros/OctoPi/nightly/",
+      "subitems_url": "https://octoprint.org/files/rpi-imager-nightlies.json"
     }
   ]
 }

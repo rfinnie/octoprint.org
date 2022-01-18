@@ -2,30 +2,12 @@
     "os_list": [
         
         {
-            "name": "OctoPi nightly 2022-01-11",
-            "description": "OctoPi nightly from 2022-01-11",
-            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-11_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
+            "name": "OctoPi nightly 2022-01-18",
+            "description": "OctoPi nightly from 2022-01-18",
+            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-18_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octopi.octoprint.org/rpi-imager.png",
-            "release_date": "2022-01-11",
-            "image_download_size": 738156091
-        }
-        ,
-        {
-            "name": "OctoPi nightly 2022-01-12",
-            "description": "OctoPi nightly from 2022-01-12",
-            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-12_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
-            "icon": "https://octopi.octoprint.org/rpi-imager.png",
-            "release_date": "2022-01-12",
-            "image_download_size": 737453740
-        }
-        ,
-        {
-            "name": "OctoPi nightly 2022-01-15",
-            "description": "OctoPi nightly from 2022-01-15",
-            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-15_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
-            "icon": "https://octopi.octoprint.org/rpi-imager.png",
-            "release_date": "2022-01-15",
-            "image_download_size": 742973035
+            "release_date": "2022-01-18",
+            "image_download_size": 738722742
         }
         ,
         {
@@ -38,12 +20,30 @@
         }
         ,
         {
-            "name": "OctoPi nightly 2022-01-18",
-            "description": "OctoPi nightly from 2022-01-18",
-            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-18_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
+            "name": "OctoPi nightly 2022-01-15",
+            "description": "OctoPi nightly from 2022-01-15",
+            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-15_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octopi.octoprint.org/rpi-imager.png",
-            "release_date": "2022-01-18",
-            "image_download_size": 738722742
+            "release_date": "2022-01-15",
+            "image_download_size": 742973035
+        }
+        ,
+        {
+            "name": "OctoPi nightly 2022-01-12",
+            "description": "OctoPi nightly from 2022-01-12",
+            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-12_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
+            "icon": "https://octopi.octoprint.org/rpi-imager.png",
+            "release_date": "2022-01-12",
+            "image_download_size": 737453740
+        }
+        ,
+        {
+            "name": "OctoPi nightly 2022-01-11",
+            "description": "OctoPi nightly from 2022-01-11",
+            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-11_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
+            "icon": "https://octopi.octoprint.org/rpi-imager.png",
+            "release_date": "2022-01-11",
+            "image_download_size": 738156091
         }
     ]
 }

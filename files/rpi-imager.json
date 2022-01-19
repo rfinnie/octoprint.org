@@ -3,13 +3,13 @@
     {
       "name": "OctoPi (stable)",
       "description": "OctoPi 0.18.0 with OctoPrint 1.7.2",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0.op1.7.2/octopi-0.18.0-1.7.2.zip",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.7.2-20220119103506/octopi-0.18.0-1.7.2-20220119103506.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2021-11-02",
+      "release_date": "2022-01-19",
       "extract_size": 2489319424,
-      "extract_sha256": "02dde76cfdf77b64c9a0f4492aa85283197c4bdd47baceb1b26a5718f68f222b",
-      "image_download_size": 776073579,
-      "image_download_sha256": "5a95ec92a93dce42c1cdf899e639771833e4229aca0ff4b244356360a4c3464d"
+      "extract_sha256": "fc8053e0cfe4b29ffa58281b1de9b8cb2cde716356f7e316c9c3a64b5ed68940",
+      "image_download_size": 928652118,
+      "image_download_sha256": "777a9c3dc32ff3e6996e5c00f70b8d432c1f457101fdf5f0ee32eeedd2de2227"
     },
     {
       "name": "OctoPi Nightlies",

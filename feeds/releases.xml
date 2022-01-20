@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Jan 2022 03:10:42 -0600</pubDate>
-    <lastBuildDate>Thu, 20 Jan 2022 03:10:42 -0600</lastBuildDate>
+    <pubDate>Thu, 20 Jan 2022 05:30:07 -0600</pubDate>
+    <lastBuildDate>Thu, 20 Jan 2022 05:30:07 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release: 1.7.3</title>
+        <description>
+          <![CDATA[
+            This bugfix release fixes an issue in 1.7.x and works around a new dependency incompatibility.
+          ]]>
+        </description>
+        <pubDate>Thu, 20 Jan 2022 05:15:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2022/01/20/new-release-1.7.3/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/01/20/new-release-1.7.3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.7.2</title>
@@ -123,19 +136,6 @@
         <pubDate>Wed, 21 Apr 2021 09:00:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2021/04/21/new-release-candidate-1.6.0rc3/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/04/21/new-release-candidate-1.6.0rc3/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.6.0rc2</title>
-        <description>
-          <![CDATA[
-            The second release candidate for the upcoming 1.6.0 release, with some fixes of regressions from the first one and some improvements in newly added functionality.
-          ]]>
-        </description>
-        <pubDate>Wed, 14 Apr 2021 08:25:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

@@ -2,14 +2,14 @@
   "os_list": [
     {
       "name": "OctoPi (stable)",
-      "description": "OctoPi 0.18.0 with OctoPrint 1.7.2",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.7.2-20220119103506/octopi-0.18.0-1.7.2-20220119103506.zip",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.7.3",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.7.3-20220120112925/octopi-0.18.0-1.7.3-20220120112925.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2022-01-19",
+      "release_date": "2022-01-20",
       "extract_size": 2489319424,
-      "extract_sha256": "fc8053e0cfe4b29ffa58281b1de9b8cb2cde716356f7e316c9c3a64b5ed68940",
-      "image_download_size": 928652118,
-      "image_download_sha256": "777a9c3dc32ff3e6996e5c00f70b8d432c1f457101fdf5f0ee32eeedd2de2227"
+      "extract_sha256": "70267d43435d7507ed6e1e520eb628a8c8cdc7bd4f565df060e193be603033e7",
+      "image_download_size": 917113783,
+      "image_download_sha256": "f3da4237a777f8380cc5b3bca4dff4543cdce6ce56429fa9856596227add5c3b"
     },
     {
       "name": "OctoPi-Klipper",

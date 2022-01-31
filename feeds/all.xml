@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 31 Jan 2022 06:21:35 -0600</pubDate>
-    <lastBuildDate>Mon, 31 Jan 2022 06:21:35 -0600</lastBuildDate>
+    <pubDate>Mon, 31 Jan 2022 09:03:48 -0600</pubDate>
+    <lastBuildDate>Mon, 31 Jan 2022 09:03:48 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint 1.8.0 will require Python 3</title>
+        <description>
+          <![CDATA[
+            If you still haven't switched your OctoPrint instance to Python 3, now is the time. OctoPrint 1.8.0 and later versions will require Python 3.
+          ]]>
+        </description>
+        <pubDate>Mon, 31 Jan 2022 09:00:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/</guid>
+        <category>OctoPrint News</category>
+      </item>
     
       <item>
         <title>New release: 1.7.3</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2021/08/04/new-release-candidate-1.7.0rc1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/08/04/new-release-candidate-1.7.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #40</title>
-        <description>
-          <![CDATA[
-            The fortieth episode of a monthly live broadcast for Patrons which was recorded on July 21st 2021.
-          ]]>
-        </description>
-        <pubDate>Tue, 27 Jul 2021 08:30:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

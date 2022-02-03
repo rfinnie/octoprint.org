@@ -7,7 +7,8 @@
             "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-02-02_2022-01-28-octopi-default-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
             "release_date": "2022-02-02",
-            "image_download_size": 772806170
+            "image_download_size": 772806170,
+            "init_format": "systemd"
         }
         ,
         {
@@ -16,7 +17,8 @@
             "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-02-01_2022-01-28-octopi-default-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
             "release_date": "2022-02-01",
-            "image_download_size": 780573827
+            "image_download_size": 780573827,
+            "init_format": "systemd"
         }
         ,
         {
@@ -25,7 +27,8 @@
             "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-18_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
             "release_date": "2022-01-18",
-            "image_download_size": 738722742
+            "image_download_size": 738722742,
+            "init_format": "systemd"
         }
         ,
         {
@@ -34,7 +37,8 @@
             "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-16_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
             "release_date": "2022-01-16",
-            "image_download_size": 737512919
+            "image_download_size": 737512919,
+            "init_format": "systemd"
         }
         ,
         {
@@ -43,7 +47,8 @@
             "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-01-15_2021-10-30-octopi-bullseye-armhf-lite-1.0.0.zip",
             "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
             "release_date": "2022-01-15",
-            "image_download_size": 742973035
+            "image_download_size": 742973035,
+            "init_format": "systemd"
         }
     ]
 }

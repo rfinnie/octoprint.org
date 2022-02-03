@@ -9,7 +9,8 @@
       "extract_size": 2489319424,
       "extract_sha256": "70267d43435d7507ed6e1e520eb628a8c8cdc7bd4f565df060e193be603033e7",
       "image_download_size": 917113783,
-      "image_download_sha256": "f3da4237a777f8380cc5b3bca4dff4543cdce6ce56429fa9856596227add5c3b"
+      "image_download_sha256": "f3da4237a777f8380cc5b3bca4dff4543cdce6ce56429fa9856596227add5c3b",
+      "init_format": "systemd"
     },
     {
       "name": "OctoPi Nightlies",

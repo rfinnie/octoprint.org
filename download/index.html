@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1643909473"></script>
+    <script src="/assets/js/html5shim.js?_=1643910676"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1643909473">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1643909473">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1643909473">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1643909473">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1643909473">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1643909473">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1643910676">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1643910676">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1643910676">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1643910676">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1643910676">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1643910676">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1643909473"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1643909473"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1643910676"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1643910676"/>
 
 
     <!-- Le fav and touch icons -->
@@ -254,16 +254,6 @@ however <em>is</em> recommended.</p>
     <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
 </div>
 
-<!--
-<div class="alert">
-  Please note that there have been some reports regarding current revisions of the 
-  <strong>Raspberry Pi 4 refusing to boot</strong> with the latest stable OctoPi image. If that affects 
-  you, please try to flash the latest nightly build instead of the stable version.
-  You can find the nightlies in the Raspberry Pi Imager as well, in a subfolder located 
-  right next to the stable image.
-</div>
--->
-
 <p><strong>Here’s how to get started installing OctoPi</strong>:</p>
 
 <ol>
@@ -271,22 +261,68 @@ however <em>is</em> recommended.</p>
     <p>If you haven’t already, <strong>download and install <a href="https://raspberrypi.org/software">Raspberry Pi Imager</a></strong> on your computer</p>
   </li>
   <li>
-    <p><strong>Find the OctoPi image</strong> under ‘Choose OS’, by selecting ‘Other Specific Purpose OS’ followed by ‘OctoPi’ and then the ‘stable’ version.</p>
+    <p><strong>Find the OctoPi image</strong> under “Choose OS”, by selecting “Other Specific Purpose OS” &gt; “3D printing” &gt; “OctoPi” and then the “stable” version.</p>
   </li>
-  <li><strong>Open advanced options</strong> by using the keyboard shortcut <code>ctrl</code>+<code>shift</code>+<code>x</code> to configure your Wifi connection:
+  <li>
+    <p><strong>Open advanced options</strong> by clicking on the button with the cog, or by using the keyboard shortcut <code>ctrl</code>+<code>shift</code>+<code>x</code> and then:</p>
+
     <ul>
-      <li>Set your SSID, password and WiFi country using the options:
-  <img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></li>
+      <li>
+        <p><strong>Configure your wifi options</strong>: Set your SSID, password and WiFi country:
+<img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></p>
+      </li>
+      <li>
+        <p><strong>Change the <em>system</em> password</strong> in “Set username and password” by entering a new password to use for the system user “pi”. This is <em>not</em> the password you’ll use for logging into
+OctoPrint but one that you’ll have to use to log into your Pi via SSH should you ever need to. <strong>Leave the username as “pi”, do not change it to anything else!</strong>
+<img src="/assets/img/download/advanced-password.png" alt="Advanced Options - Wifi Setup" /></p>
+      </li>
+      <li>
+        <p>Optionally: Change the configured timezone in “Set locale settings”</p>
+      </li>
+      <li>
+        <p>Optionally: Change the hostname in “Set hostname”</p>
+      </li>
     </ul>
   </li>
   <li>
     <p><strong>Install the image to your SD card</strong>, then plug everything in to your Raspberry Pi and boot it up. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
   </li>
   <li>
+    <p><strong>Access OctoPrint from your browser</strong> via <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or the hostname you 
+chose (<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>) 
+or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too, with a self-signed certificate 
+(which means your browser will warn you about it being invalid - it isn’t, it’s just not recognized by your browser).</p>
+  </li>
+</ol>
+
+<p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
+
+<h3 id="alternative-initial-setup">Alternative Initial Setup</h3>
+
+<p>If you decide against using the Raspberry Pi Imager, here are some alternative steps to get started:</p>
+
+<ol>
+  <li>
+    <p><strong>Flash the image to your SD card</strong> through whatever alternative means you’ve chosen.</p>
+  </li>
+  <li>
+    <p>With the SD card still attached to your computer, set up the Wifi connection using the <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> file
+on the root of the installed card when using it like a thumb drive. 
+<strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>  for this, those editors are known to mangle
+the file, making configuration fail. Use something like Notepad++, Atom or VSCode instead or at the very 
+least heed the warnings in the file. If your computer doesn’t see the card right away after flashing, try
+ejecting and inserting it again. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
+
+    <p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes troubleshooting tips.</p>
+  </li>
+  <li>
+    <p><strong>Plug everything into your Raspberry Pi and boot it up</strong></p>
+  </li>
+  <li>
     <p><strong>Log into your Pi via SSH</strong> (it is located at <code class="language-plaintext highlighter-rouge">octopi.local</code>
 <a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>
-or the IP address assigned by your router), default username is <code class="language-plaintext highlighter-rouge">pi</code>,
-default password is <code class="language-plaintext highlighter-rouge">raspberry</code>. Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
+or the IP address assigned by your router), default username is <code class="language-plaintext highlighter-rouge">pi</code>, default password is <code class="language-plaintext highlighter-rouge">raspberry</code>.
+Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
 
     <ol>
       <li>Change the password via “Change User Password”</li>
@@ -300,21 +336,14 @@ default password is <code class="language-plaintext highlighter-rouge">raspberry
 
     <p><strong>You also do not need to manually enable the RaspiCam</strong> if you have one, that is already taken care of on the image as well.</p>
   </li>
-  <li><strong>Access OctoPrint</strong> through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too,
-with a self-signed certificate (which means your browser will warn you about it being invalid).</li>
+  <li>
+    <p><strong>Access OctoPrint</strong> through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> (<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>) 
+or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too, with a self-signed certificate 
+(which means your browser will warn you about it being invalid - it isn’t, it’s just not recognized by your browser).</p>
+  </li>
 </ol>
 
 <p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
-
-<h3 id="alternative-wifi-setup">Alternative Wifi Setup</h3>
-
-<p>If you aren’t using Raspberry Pi Imager, then you can also setup the Wifi connection using the <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> file
-on the root of the installed card when using it like a thumb drive. 
-<strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>  for this, those editors are known to mangle
-the file, making configuration fail. Use something like Notepad++, Atom or VSCode instead or at the very 
-least heed the warnings in the file.</p>
-
-<p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes troubleshooting tips.</p>
 
 <h3 id="video">Video</h3>
 
@@ -629,16 +658,6 @@ however <em>is</em> recommended.</p>
     <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
 </div>
 
-<!--
-<div class="alert">
-  Please note that there have been some reports regarding current revisions of the 
-  <strong>Raspberry Pi 4 refusing to boot</strong> with the latest stable OctoPi image. If that affects 
-  you, please try to flash the latest nightly build instead of the stable version.
-  You can find the nightlies in the Raspberry Pi Imager as well, in a subfolder located 
-  right next to the stable image.
-</div>
--->
-
 <p><strong>Here’s how to get started installing OctoPi</strong>:</p>
 
 <ol>
@@ -646,22 +665,68 @@ however <em>is</em> recommended.</p>
     <p>If you haven’t already, <strong>download and install <a href="https://raspberrypi.org/software">Raspberry Pi Imager</a></strong> on your computer</p>
   </li>
   <li>
-    <p><strong>Find the OctoPi image</strong> under ‘Choose OS’, by selecting ‘Other Specific Purpose OS’ followed by ‘OctoPi’ and then the ‘stable’ version.</p>
+    <p><strong>Find the OctoPi image</strong> under “Choose OS”, by selecting “Other Specific Purpose OS” &gt; “3D printing” &gt; “OctoPi” and then the “stable” version.</p>
   </li>
-  <li><strong>Open advanced options</strong> by using the keyboard shortcut <code>ctrl</code>+<code>shift</code>+<code>x</code> to configure your Wifi connection:
+  <li>
+    <p><strong>Open advanced options</strong> by clicking on the button with the cog, or by using the keyboard shortcut <code>ctrl</code>+<code>shift</code>+<code>x</code> and then:</p>
+
     <ul>
-      <li>Set your SSID, password and WiFi country using the options:
-  <img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></li>
+      <li>
+        <p><strong>Configure your wifi options</strong>: Set your SSID, password and WiFi country:
+<img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></p>
+      </li>
+      <li>
+        <p><strong>Change the <em>system</em> password</strong> in “Set username and password” by entering a new password to use for the system user “pi”. This is <em>not</em> the password you’ll use for logging into
+OctoPrint but one that you’ll have to use to log into your Pi via SSH should you ever need to. <strong>Leave the username as “pi”, do not change it to anything else!</strong>
+<img src="/assets/img/download/advanced-password.png" alt="Advanced Options - Wifi Setup" /></p>
+      </li>
+      <li>
+        <p>Optionally: Change the configured timezone in “Set locale settings”</p>
+      </li>
+      <li>
+        <p>Optionally: Change the hostname in “Set hostname”</p>
+      </li>
     </ul>
   </li>
   <li>
     <p><strong>Install the image to your SD card</strong>, then plug everything in to your Raspberry Pi and boot it up. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
   </li>
   <li>
+    <p><strong>Access OctoPrint from your browser</strong> via <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or the hostname you 
+chose (<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>) 
+or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too, with a self-signed certificate 
+(which means your browser will warn you about it being invalid - it isn’t, it’s just not recognized by your browser).</p>
+  </li>
+</ol>
+
+<p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
+
+<h3 id="alternative-initial-setup">Alternative Initial Setup</h3>
+
+<p>If you decide against using the Raspberry Pi Imager, here are some alternative steps to get started:</p>
+
+<ol>
+  <li>
+    <p><strong>Flash the image to your SD card</strong> through whatever alternative means you’ve chosen.</p>
+  </li>
+  <li>
+    <p>With the SD card still attached to your computer, set up the Wifi connection using the <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> file
+on the root of the installed card when using it like a thumb drive. 
+<strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>  for this, those editors are known to mangle
+the file, making configuration fail. Use something like Notepad++, Atom or VSCode instead or at the very 
+least heed the warnings in the file. If your computer doesn’t see the card right away after flashing, try
+ejecting and inserting it again. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
+
+    <p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes troubleshooting tips.</p>
+  </li>
+  <li>
+    <p><strong>Plug everything into your Raspberry Pi and boot it up</strong></p>
+  </li>
+  <li>
     <p><strong>Log into your Pi via SSH</strong> (it is located at <code class="language-plaintext highlighter-rouge">octopi.local</code>
 <a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>
-or the IP address assigned by your router), default username is <code class="language-plaintext highlighter-rouge">pi</code>,
-default password is <code class="language-plaintext highlighter-rouge">raspberry</code>. Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
+or the IP address assigned by your router), default username is <code class="language-plaintext highlighter-rouge">pi</code>, default password is <code class="language-plaintext highlighter-rouge">raspberry</code>.
+Run <code class="language-plaintext highlighter-rouge">sudo raspi-config</code>. Once that is open:</p>
 
     <ol>
       <li>Change the password via “Change User Password”</li>
@@ -675,21 +740,14 @@ default password is <code class="language-plaintext highlighter-rouge">raspberry
 
     <p><strong>You also do not need to manually enable the RaspiCam</strong> if you have one, that is already taken care of on the image as well.</p>
   </li>
-  <li><strong>Access OctoPrint</strong> through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too,
-with a self-signed certificate (which means your browser will warn you about it being invalid).</li>
+  <li>
+    <p><strong>Access OctoPrint</strong> through <code class="language-plaintext highlighter-rouge">http://octopi.local</code> (<a href="https://learn.adafruit.com/bonjour-zeroconf-networking-for-windows-and-linux/overview">if your computer supports bonjour</a>) 
+or <code class="language-plaintext highlighter-rouge">http://&lt;your pi's ip address&gt;</code>. <code class="language-plaintext highlighter-rouge">https</code> is available too, with a self-signed certificate 
+(which means your browser will warn you about it being invalid - it isn’t, it’s just not recognized by your browser).</p>
+  </li>
 </ol>
 
 <p>Please also refer to <a href="https://github.com/guysoft/OctoPi">OctoPi’s README</a>, especially the <a href="https://github.com/guysoft/OctoPi#how-to-use-it">“How to use it” section</a>.</p>
-
-<h3 id="alternative-wifi-setup">Alternative Wifi Setup</h3>
-
-<p>If you aren’t using Raspberry Pi Imager, then you can also setup the Wifi connection using the <code class="language-plaintext highlighter-rouge">octopi-wpa-supplicant.txt</code> file
-on the root of the installed card when using it like a thumb drive. 
-<strong>Important: Do not use WordPad (Windows) or TextEdit (MacOS X)</strong>  for this, those editors are known to mangle
-the file, making configuration fail. Use something like Notepad++, Atom or VSCode instead or at the very 
-least heed the warnings in the file.</p>
-
-<p>Please also refer take a look at the <a href="https://faq.octoprint.org/wifi-setup">full WiFi setup guide in the FAQ</a> that also includes troubleshooting tips.</p>
 
 <h3 id="video">Video</h3>
 
@@ -851,17 +909,17 @@ They should be pretty much identical on other Linux distributions.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1643909473"></script>
-<script src="/assets/js/lodash.min.js?_=1643909473"></script>
-<script src="/assets/js/prettify.min.js?_=1643909473"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1643909473"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1643909473"></script>
-<script src="/assets/js/bootstrap.min.js?_=1643909473"></script>
-<script src="/assets/js/lightbox.min.js?_=1643909473"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1643909473"></script>
-<script src="/assets/js/site.js?_=1643909473"></script>
-<script src="/assets/js/yt-with-consent.js?_=1643909473"></script>
-<script src="/assets/js/autotrack.js?_=1643909473"></script>
+<script src="/assets/js/jquery.min.js?_=1643910676"></script>
+<script src="/assets/js/lodash.min.js?_=1643910676"></script>
+<script src="/assets/js/prettify.min.js?_=1643910676"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1643910676"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1643910676"></script>
+<script src="/assets/js/bootstrap.min.js?_=1643910676"></script>
+<script src="/assets/js/lightbox.min.js?_=1643910676"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1643910676"></script>
+<script src="/assets/js/site.js?_=1643910676"></script>
+<script src="/assets/js/yt-with-consent.js?_=1643910676"></script>
+<script src="/assets/js/autotrack.js?_=1643910676"></script>
 
 <!-- Google Analytics -->
 <script>

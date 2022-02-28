@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octopi.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Feb 2022 06:23:52 -0600</pubDate>
-    <lastBuildDate>Mon, 28 Feb 2022 06:23:52 -0600</lastBuildDate>
+    <pubDate>Mon, 28 Feb 2022 07:45:16 -0600</pubDate>
+    <lastBuildDate>Mon, 28 Feb 2022 07:45:16 -0600</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPi Release Candidate 1.0.0rc1 needs testers!</title>
+        <description>
+          <![CDATA[
+            Guy Sheffer has published a first release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
+          ]]>
+        </description>
+        <pubDate>Mon, 28 Feb 2022 07:40:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/</guid>
+        <category>OctoPi Announcements</category>
+      </item>
     
       <item>
         <title>New OctoPi Release: 0.18.0</title>
@@ -123,19 +136,6 @@
         <pubDate>Tue, 29 May 2018 05:15:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2018/05/29/octopi-release-0-15-1/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2018/05/29/octopi-release-0-15-1/</guid>
-        <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPi Release Candidate 0.15.1rc1 needs testers!</title>
-        <description>
-          <![CDATA[
-            Guy Sheffer just published a release candidate for a hotfix release of OctoPi 0.15 and is looking for feedback!
-          ]]>
-        </description>
-        <pubDate>Thu, 10 May 2018 03:30:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2018/05/10/octopi-release-candidate-0-15-1rc1/?utm_source=rss&amp;utm_medium=octopi</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2018/05/10/octopi-release-candidate-0-15-1rc1/</guid>
         <category>OctoPi Announcements</category>
       </item>
     

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+
+    <title>OctoPrint.org - New release candidate: 1.8.0rc1</title>
+    <meta name="description" content="OctoPrint is the snappy web interface for your 3D printer that allows you to control and monitor all aspects of your printer and print jobs, right from your browser.">
+    <meta name="author" content="Gina Häußge">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="google-site-verification" content="i7e8SG0JfDqFkxQgr1_ZuirRzwJomS8xzPvb0mLHujM" />
+    <meta name="referrer" content="same-origin">
+
+    
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js?_=1647257084"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1647257084">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1647257084">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1647257084">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1647257084">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1647257084">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1647257084">
+
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1647257084"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1647257084"/>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint.org: OctoBlog" href="/feeds/all.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+
+    
+
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="New release candidate: 1.8.0rc1" />
+    <meta name="twitter:description" content="The first release candidate for the upcoming 1.8.0 release, containing new features, improvements, bug fixes and dropping Python 2 support!" />
+    <meta name="twitter:image" content="https://octoprint.org/assets/img/blog/2022-03/2022-03-14-octoprint-1.8.0rc1-card.png" />
+
+    <meta property="og:title" content="New release candidate: 1.8.0rc1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://octoprint.org/assets/img/blog/2022-03/2022-03-14-octoprint-1.8.0rc1-poster.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="The first release candidate for the upcoming 1.8.0 release, containing new features, improvements, bug fixes and dropping Python 2 support!" />
+    <meta property="og:site_name" content="OctoPrint.org" />
+    <meta property="og:url" content="https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="New release candidate: 1.8.0rc1" />
+    <meta itemprop="description" content="The first release candidate for the upcoming 1.8.0 release, containing new features, improvements, bug fixes and dropping Python 2 support!" />
+    <meta itemprop="image" content="https://octoprint.org/assets/img/blog/2022-03/2022-03-14-octoprint-1.8.0rc1-poster.png" />
+
+    <script>
+        var shiftWindow = function() { scrollBy(0, -40) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+
+    <!-- Carbon -->
+    <script>
+        var disableStr = "carbon-disable";
+        function carbonOptout() {
+            //document.cookie = disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org";
+            document.cookie = disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org";
+            window[disableStr] = true;
+            alert("Carbon Ads sind jetzt deaktiviert! / Carbon Ads are now deactivated!");
+        }
+        if (document.cookie.indexOf(disableStr + "=true") > -1) {
+            window[disableStr] = true;
+        }
+    </script>
+
+    <!-- Cookie consent -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        
+        window.addEventListener("load", function(){
+            window.cookieconsent.hasTransition = false;
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                },
+                "elements": {
+                    "messagelink": '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a> or <a aria-label="privacy policy" tabindex="1" class="cc-link" href="/privacy/" target="_blank">read our Privacy Policy</a></span>'
+                }
+            })
+        });
+        
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body onload="load()">
+
+<div id="top"></div>
+
+<div id="banner" style="display: none">
+    <a class="close-banner" href="javascript:void(0)">&times;</a>
+    <div class="container content">
+        <p class="text">
+            I work full time on OctoPrint and can only continue thanks to funding by people like you. Give the
+            button a click and learn how you can help!
+        </p>
+        <p class="signature">
+            Thank you,<br>
+            Gina
+        </p>
+        <div class="span4 button">
+            <a class="btn btn-primary btn-large btn-block" href="/support-octoprint/" data-event-category="supportlink" data-event-action="banner"><i class="fa fa-heart"></i> Support my work! <i class="fa fa-heart"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="navigation" class="navbar navbar-inverse navbar-fixed-top unfixed" data-scroll-header>
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand hidden-phone" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> OctoPrint.org</a>
+      <a class="brand visible-phone" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"></a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="/merch/" title="Get some merchandise!"><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation"><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="https://community.octoprint.org">Forum</a></li>
+          <li><a href="/download/">Download</a></li>
+          <li><a href="/support-octoprint/" title="Support the project!" data-event-category="supportlink" data-event-action="donate">Donate</a></li>
+          <li><a href="/merch/" title="Get some merchandise!" data-event-category="merchlink" data-event-action="navbar">Merchandise</a></li>
+          <li><a href="http://plugins.octoprint.org">Plugins</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://github.com/foosel/OctoPrint/wiki">Wiki</a></li>
+              <li><a href="http://docs.octoprint.org">Documentation</a></li>
+              <li><a href="https://community.octoprint.org/c/support/faq">FAQ</a></li>
+              <li><a href="/media/">Media</a></li>
+              <li class="divider"></li>
+              <li><a href="/conduct/">Code of Conduct</a></li>
+              <li class="divider"></li>
+              <li><a href="https://github.com/foosel/OctoPrint">Source</a></li>
+              <li><a href="https://github.com/foosel/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines</a></li>
+              <li><a href="https://github.com/foosel/OctoPrint/issues">Issuetracker</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    <div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="hero-content pageheader">
+                    <h1>New release candidate: 1.8.0rc1</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container blogpost">
+    <div class="row-fluid pagination">
+        <div class="span12">
+            
+            &nbsp;
+            
+                <small><a class="older-posts" href="/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/" title="Previous Page">OctoPi Release Candidate 1.0.0rc1 needs testers! &raquo;</a></small>
+            
+        </div>
+    </div>
+    <div class="row-fluid content">
+        <div class="span8 text" id="blogpost-content">
+            <p>Given how long this has been brewing, the <a href="https://github.com/OctoPrint/OctoPrint/releases/tag/1.8.0rc1">changelog</a> 
+has grown quite large. Let’s take a look at the highlights, shall we?</p>
+
+<ul>
+  <li>The biggest announcement is probably that with the 1.8.0 release <strong>OctoPrint is dropping Python 2 support</strong>.
+I already wrote about this in a <a href="/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/">past post here</a>, and this is now the first release candidate that 
+is Python 3 exclusive. As of the publication of this first release candidate, any OctoPrint instances
+still on Python 2 have been redirected to the legacy repository for update checks and thus will also
+no longer be able to partake in this RC phase - which they wouldn’t anyway as the code base
+has already been migrated to be Python 3 exclusive, removing all the workarounds so painstakingly
+put in over the past three years.</li>
+  <li>The temperature tab now has (optional) <strong>event markers</strong> for when a print gets started, paused, resumed, cancelled or finishes. Big thanks to @surdu!</li>
+  <li>You may now <strong>enqueue software updates</strong> while a print is ongoing. They will then be started (after a short countdown) after successful completion of the print, or manually if you cancelled the print. You can manage the queue during the print to remove items you don’t want enqueued after all, or add additional items to it as well. This was contributed by @jneilliii!</li>
+  <li>It’s now possible to <strong>bulk enable/disable plugins</strong>. This makes it easier for the user to locate plugins that are causing problems in the system.</li>
+  <li>This realease adds a first version for <strong>embedding WebRTC based webcams</strong>. Please note that this should be considered beta and is still subject to change while further work and research is being done on the backend side of things. @johnboiles did most of the legwork on this!</li>
+  <li>OctoPrint will now show a <strong>heads-up notice if no serial ports are detected</strong>, with a link to the relevant <a href="https://community.octoprint.org/t/octoprint-cant-connect-to-my-printer/223">FAQ entry</a>. That will hopefully make it easier to spot if the printer is not physically connected or unsupported.</li>
+  <li><strong>Thumbnails for the timelapse recordings</strong> will now be generated automatically and displayed in the UI. There’s also a command line tool for generating thumbnails for the existing recordings. A fance new feature contributed by @crysxd!</li>
+  <li>The <strong>GCode Viewer’s memory usage has been improved</strong> by @JoveToo and @kantlivelong by switching out the underlying data structure and hunting down some bottlenecks. This means you should now be able to display larger GCode files before running into issues.</li>
+  <li><strong>Performance of settings access has been greatly improved</strong> as well, by refactoring the code to use a more efficient data structure. This was some heavy collaboration with @flaviut!</li>
+  <li>Third party clients can now <strong>authenticate with OctoPrint through the Application Key plugin’s fancy new auth dialog</strong> instead of having to direct the user to the more heavy weight full UI.</li>
+  <li>An <strong>encoding issue was solved</strong> that was observed against the latest versions of <code class="language-plaintext highlighter-rouge">pip</code>.</li>
+  <li>… and even more.</li>
+</ul>
+
+
+
+<p>
+    Please also take a look at the following <strong>heads-ups</strong>:
+</p>
+
+
+
+<blockquote>
+<strong>Heads-up: OctoPrint 1.8.0 drops Python 2 support!</strong>
+
+<p>As previously announced <a href="https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/">on the OctoBlog</a> and in <a href="https://www.youtube.com/watch?v=a3lnYw8_87U&amp;t=507s">OctoPrint On Air #43</a>, OctoPrint 1.8.0     drops Python 2 support. In order to be able to install/update to it, you <em>need</em> to be running OctoPrint under Python 3 already, e.g. as shipped on OctoPi 0.18.0. Installing on Python 2 will fail. The Software Updater     will also be redirected to a new <a href="https://github.com/OctoPrint/OctoPrint-Legacy">OctoPrint Legacy repository</a> for checking for OctoPrint updates if it detects that you are still running Python 2. As outlined in the blog     post and the vlog, there are no more updates for OctoPrint 1.7/Python 2 planned. Update now or you will be left behind.</p>
+
+<p>If you are unsure what version of Python your OctoPrint instance is running under, open the web interface and look into the lower left corner where it will tell you:</p>
+
+<p><img src="https://user-images.githubusercontent.com/83657/156207787-5e101031-6c3c-446c-85fe-5834d6d290bb.png" alt="image" /></p>
+
+<p><a href="https://community.octoprint.org/t/41764">This is also covered in the FAQ</a>.</p>
+
+</blockquote>
+
+<blockquote>
+<strong>Heads-up for plugin authors: Importing Jinja2 templates from another plugin without an explicit prefix is now deprecated!</strong>
+
+<p>OctoPrint so far allowed (erroneously) to replace plugin templates of the same name in another plugin, depending on loading order. Fixing this required to create prefixes for templates of plugins. Relative imports (think <code class="language-plaintext highlighter-rouge">{% include "snippets/my_snippet.jinja2" %}</code>) will now attempt to resolve against the current plugin. If that isn’t possible, <em>for now</em> it will also be attempted to resolve globally against all registered templates and if a match is found, a deprecation will be logged. The latter behaviour will be removed in a future version of OctoPrint and <em>if</em> your plugin includes templates from other plugins you should now change it to using plugin prefixes if running on OctoPrint 1.8.0 or higher. Plugin prefixes are <code class="language-plaintext highlighter-rouge">plugin_&lt;plugin identifier&gt;/</code>, so for example, to include the settings pane of the bundled software update plugin, you’d now need to use <code class="language-plaintext highlighter-rouge">plugin_softwareupdate/plugin_softwareupdate_settings.jinja2</code>.</p>
+
+</blockquote>
+
+<blockquote>
+<strong>Heads-up for plugin authors: `octoprint.util.bom_aware_open` is now deprecated and will be removed in 2.0.0</strong>
+
+<p>If your code uses <code class="language-plaintext highlighter-rouge">bom_aware_open</code>, you should replace its use with the regular <code class="language-plaintext highlighter-rouge">open</code> with <code class="language-plaintext highlighter-rouge">utf-8-sig</code> encoding instead (or <code class="language-plaintext highlighter-rouge">io.open</code> in py2/3 compatibility mode).</p>
+
+</blockquote>
+
+<blockquote>
+<strong>Heads-up for plugin authors: `octoprint.util.commandline.clean_ansi` will no longer accept `bytes` in 2.0.0</strong>
+
+<p>If your code uses <code class="language-plaintext highlighter-rouge">clean_ansi</code> somewhere, make sure you supply it with <code class="language-plaintext highlighter-rouge">str</code> (formerly known as <code class="language-plaintext highlighter-rouge">unicode</code>) instead of <code class="language-plaintext highlighter-rouge">bytes</code> objects.</p>
+
+</blockquote>
+
+
+
+
+<p>
+    You can find the full changelog and release notes as usual <a href="https://github.com/OctoPrint/OctoPrint/releases/tag/1.8.0rc1">on GitHub</a>.
+</p>
+<p>
+    Special thanks to everyone who contributed to this release candidate and provided full, analyzable bug reports, you help
+    making the next release as stable as possible! And a big Thank You to <a href="https://github.com/adamwolf">@adamwolf</a>, <a href="https://github.com/ademuri">@ademuri</a>, <a href="https://github.com/cp2004">@cp2004</a>, <a href="https://github.com/crysxd">@crysxd</a>, <a href="https://github.com/DShenkle">@DShenkle</a>, <a href="https://github.com/flaviut">@flaviut</a>, <a href="https://github.com/gdombiak">@gdombiak</a>, <a href="https://github.com/GonzoDMX">@GonzoDMX</a>, <a href="https://github.com/jneilliii">@jneilliii</a>, <a href="https://github.com/johnboiles">@johnboiles</a>, <a href="https://github.com/JoveToo">@JoveToo</a>, <a href="https://github.com/kantlivelong">@kantlivelong</a>, <a href="https://github.com/kohend">@kohend</a>, <a href="https://github.com/LazeMSS">@LazeMSS</a>, <a href="https://github.com/MartijnBraam">@MartijnBraam</a>, <a href="https://github.com/NilsRo">@NilsRo</a>, <a href="https://github.com/OllisGit">@OllisGit</a>, <a href="https://github.com/pR0Ps">@pR0Ps</a>, <a href="https://github.com/QuinnDamerell">@QuinnDamerell</a>, <a href="https://github.com/rooterkyberian">@rooterkyberian</a>, <a href="https://github.com/Rotzbua">@Rotzbua</a>, <a href="https://github.com/surdu">@surdu</a>, <a href="https://github.com/synman">@synman</a>, <a href="https://github.com/The-EG">@The-EG</a>, <a href="https://github.com/thelastWallE">@thelastWallE</a>, <a href="https://github.com/TylonHH">@TylonHH</a> and <a href="https://github.com/vector76">@vector76</a> for their PRs!
+</p>
+<p>
+    As the past RCs have shown me that a lot of people appear to be unaware of this: <strong>Please do <em>not</em> install this RC if you
+    expect a fully stable version</strong>. It is not a stable release, it is a release <em>candidate</em>:
+    severe bugs may occur, and they might be bad enough that they make a manual downgrade to an earlier version
+    necessary - maybe even from the command line.
+</p>
+<p>
+    You should feel comfortable with and capable of possibly having to do this <em>before</em> installing an RC.
+</p>
+<p>
+    If you want to and can help test this release candidate, you can find information on how to switch to the
+    <strong>"Maintenance RCs"</strong> release channel <a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">in this guide</a>
+    if not already done (also linked below).
+</p>
+<p>
+    <strong>Please provide feedback</strong> on this RC. For general feedback you can use
+    <a href="https://github.com/OctoPrint/OctoPrint/issues/4452">this ticket on the tracker</a>.
+    The information that everything works fine for you is also valuable feedback 😄.
+    <strong>For bug reports</strong> please follow
+    <a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a> -
+    I need logs and reproduction steps to fix issues, not just the information that something doesn't work so make sure to
+    <strong>fill out all fields of the issue template</strong>.
+</p>
+<p>
+    Thanks!
+</p>
+<p>
+    Depending on the feedback regarding this version I'll look into fixing
+    any observed regressions and bugs and pushing out a follow-up version
+    as soon as possible and necessary.
+</p>
+
+<h3 id="links">Links</h3>
+
+<ul>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/issues/4452">Ticket for general feedback</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/releases/tag/1.8.0rc1">Changelog and Release Notes</a></li>
+    <li><a href="https://community.octoprint.org/t/my-octoprint-update-fails/37880">FAQ entry "My OctoPrint update fails"</a> <strong>(Read in case of any update problems!)</strong></li>
+    <li><a href="https://community.octoprint.org/t/how-to-use-the-release-channels-to-help-test-release-candidates/402">How to use release channels to help test release candidate</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md#how-to-file-a-bug-report">How to file a bug report</a></li>
+    <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines (also relevant for creating bug reports!)</a></li>
+    <li><a href="https://faq.octoprint.org">FAQ</a></li>
+    <li><a href="http://docs.octoprint.org/">Documentation</a></li>
+    <li><a href="https://community.octoprint.org/t/how-can-i-revert-to-an-older-version-of-the-octoprint-installation-on-my-octopi-image/205">How to roll back to an earlier release (OctoPi)</a></li>
+    <li><a href="https://community.octoprint.org/t/how-can-i-roll-back-to-an-earlier-version-after-an-update/234">How to roll back to an earlier release (manual install)</a></li>
+</ul>
+
+
+            
+            
+            <div class="postimages">
+                <h2>Images</h2>
+                
+                <figure id="image-1">
+                    
+                        <a href="/assets/img/blog/2022-03/2022-03-14-screenie-temperature-markers.png" data-lightbox="/blog/2022/03/14/new-release-candidate-1.8.0rc1" data-title="The temperature graph can now show markers for print events. This was contributed by @surdu."><img alt="" src="/assets/img/blog/2022-03/2022-03-14-screenie-temperature-markers.png"></a>
+                        
+                        <figcaption>The temperature graph can now show markers for print events. This was contributed by @surdu.</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-2">
+                    
+                        <a href="/assets/img/blog/2022-03/2022-03-14-screenie-update-queue.png" data-lightbox="/blog/2022/03/14/new-release-candidate-1.8.0rc1" data-title="While printing you will be able to enqueue updates to be done after the print job finishes. Thanks to @jneilliii!"><img alt="" src="/assets/img/blog/2022-03/2022-03-14-screenie-update-queue.png"></a>
+                        
+                        <figcaption>While printing you will be able to enqueue updates to be done after the print job finishes. Thanks to @jneilliii!</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-3">
+                    
+                        <a href="/assets/img/blog/2022-03/2022-03-14-screenie-bulk-plugin.png" data-lightbox="/blog/2022/03/14/new-release-candidate-1.8.0rc1" data-title="The Plugin Manager now allows to enable and disable several plugins in bulk."><img alt="" src="/assets/img/blog/2022-03/2022-03-14-screenie-bulk-plugin.png"></a>
+                        
+                        <figcaption>The Plugin Manager now allows to enable and disable several plugins in bulk.</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-4">
+                    
+                        <a href="/assets/img/blog/2022-03/2022-03-14-screenie-no-serial.png" data-lightbox="/blog/2022/03/14/new-release-candidate-1.8.0rc1" data-title="If no serial port is detected in the system, OctoPrint will now state that and link to the FAQ entry on the matter."><img alt="" src="/assets/img/blog/2022-03/2022-03-14-screenie-no-serial.png"></a>
+                        
+                        <figcaption>If no serial port is detected in the system, OctoPrint will now state that and link to the FAQ entry on the matter.</figcaption>
+                        
+                    
+                </figure>
+                
+                <figure id="image-5">
+                    
+                        <a href="/assets/img/blog/2022-03/2022-03-14-screenie-timelapse-thumbnails.png" data-lightbox="/blog/2022/03/14/new-release-candidate-1.8.0rc1" data-title="Timelapse recordings now also have thumbnails, thanks to the work of @crysxd!"><img alt="" src="/assets/img/blog/2022-03/2022-03-14-screenie-timelapse-thumbnails.png"></a>
+                        
+                        <figcaption>Timelapse recordings now also have thumbnails, thanks to the work of @crysxd!</figcaption>
+                        
+                    
+                </figure>
+                
+            </div>
+            
+            
+            <div class="postcomments">
+                <h2>Discuss!</h2>
+
+                <div id='discourse-comments'></div>
+
+                <script type="text/javascript">
+                  if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+                    // Apparently Safari is a special snow flake and doesn't understand the referer policies. So
+                    // no comments for Safari. Complain to Apple.
+                    document.getElementById("discourse-comments").innerHTML = "It looks like you are using Safari. " +
+                        "Comment embedding is sadly not supported in Safari. You'll need to " +
+                        "<a href='https://community.octoprint.org/c/blog/'>go to the comment forum instead.</a>";
+                  } else {
+                    DiscourseEmbed = { discourseUrl: 'https://community.octoprint.org/',
+                                       discourseEmbedUrl: 'https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/',
+                                       discourseReferrerPolicy: 'no-referrer-when-downgrade'};
+
+                    (function() {
+                      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                      d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                      //d.src = "/assets/js/comments.js";
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                    })();
+                  }
+
+                </script>
+            </div>
+            
+        </div>
+        <div class="span4">
+            <div class="postinfo">
+                
+                <dl class="featuredimage">
+                    <img src="/assets/img/blog/2022-03/2022-03-14-octoprint-1.8.0rc1-card.png" class="img-rounded">
+                </dl>
+                
+                
+                <dl class="author">
+                    <dt>Author</dt>
+                    <dd>
+                        <a class="authorlink" href="https://github.com/foosel" target="_blank"><span class="authoravatar"><img src="https://github.com/foosel.png?size=100" /></span> Gina Häußge</a>
+                    </dd>
+                </dl>
+                
+                <dl class="published">
+                    <dt>Published</dt>
+                    <dd>14 Mar 2022</dd>
+                </dl>
+                
+                
+                <dl class="category">
+                    <dt>Category</dt>
+                    <dd>Release</dd>
+                </dl>
+                
+                
+                <dl class="share">
+                    <dt>Share this</dt>
+                    <dd><ul class="sharebuttons">
+    <li><a title="Twitter" href="http://twitter.com/share?text=%22New release candidate: 1.8.0rc1%22&url=https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/&via=OctoPrint3D&related=OctoPrint3D" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+    <li><a title="Facebook" href="http://www.facebook.com/sharer.php?u=https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/&p[title]=New release candidate: 1.8.0rc1" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span></a></li>
+</ul>
+</dd>
+                </dl>
+            </div>
+            <div class="ad visible-desktop visible-tablet invisible-mobile">
+                <script>
+    if (!window["carbon-disable"] && !window.matchMedia("(max-width: 767px)").matches) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CKYIL53W&placement=octoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="span4 footer-left-column">
+                      <h2>On the web</h2>
+                      <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org" target="_blank">Community Forum</a></li>
+                          <li><span class="fa-li"><i class="fab fa-discord fa-fw"></i></span><a href="https://discord.octoprint.org" target="_blank">Discord</a></li>
+                          <li><span class="fa-li"><i class="fas fa-hashtag fa-fw"></i></span><a href="ircs://irc.libera.chat:6697/#octoprint" target="_blank">IRC</a> (#octoprint on <a href="https://libera.chat" target="_blank">libera.chat</a>)</li>
+                          <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank">Twitter</a></li>
+                          <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank">Facebook</a></li>
+                          <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">YouTube</a></li>
+                          <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="/imprint/" rel="nofollow">Legal Notice</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="/privacy/" rel="nofollow">Privacy Policy</a></li>
+                          <li><span class="fa-li"><i class="fas fa-gavel fa-fw"></i></span><a href="/conduct/" rel="nofollow">Code of Conduct</a></li>
+                      </ul>
+                  </div>
+                  <div class="span4">
+                      <h2>Recent Posts</h2>
+                      <div class="recent-posts">
+                          
+                          <div><a class="post-link" href="/blog/2022/03/14/new-release-candidate-1.8.0rc1/">New release candidate: 1.8.0rc1</a><br><small>14 Mar 2022</small></div>
+                          
+                          <div><a class="post-link" href="/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/">OctoPi Release Candidate 1.0.0rc1 needs testers!</a><br><small>28 Feb 2022</small></div>
+                          
+                          <div><a class="post-link" href="/blog/2022/02/24/octoprint-on-air-43/">OctoPrint On Air #43</a><br><small>24 Feb 2022</small></div>
+                          
+                          <div><a class="post-link" href="/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/">OctoPrint 1.8.0 will require Python 3</a><br><small>31 Jan 2022</small></div>
+                          
+                          <div><a class="post-link" href="/blog/2022/01/20/new-release-1.7.3/">New release: 1.7.3</a><br><small>20 Jan 2022</small></div>
+                          
+                      </div>
+                  </div>
+                  <div class="span4 footer-right-column">
+                      <h2>Big Thanks</h2>
+                      <p>
+                          Cross-browser testing services are kindly provided by <a href="https://www.browserstack.com">BrowserStack</a>.
+                          Profiling is done with the help of <a href="https://www.pyvmmonitor.com">PyVmMonitor</a>.
+                          Error tracking is powered and sponsored by <a href="https://sentry.io">Sentry</a>.
+                      </p>
+                      <p>
+                          Development would be impossible without the <a href="/support-octoprint/" data-event-category="supportlink" data-event-action="footer">financial support of the community</a>.
+                      </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="/trademark-rules/">registered trademark</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
+
+<script src="/assets/js/jquery.min.js?_=1647257084"></script>
+<script src="/assets/js/lodash.min.js?_=1647257084"></script>
+<script src="/assets/js/prettify.min.js?_=1647257084"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1647257084"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1647257084"></script>
+<script src="/assets/js/bootstrap.min.js?_=1647257084"></script>
+<script src="/assets/js/lightbox.min.js?_=1647257084"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1647257084"></script>
+<script src="/assets/js/site.js?_=1647257084"></script>
+<script src="/assets/js/yt-with-consent.js?_=1647257084"></script>
+<script src="/assets/js/autotrack.js?_=1647257084"></script>
+<script src="/assets/js/standwithukraine.js?_=1647257084" url="https://supportukrainenow.org/" title="We stand with Ukraine! 🇺🇦" async></script>
+
+<!-- Google Analytics -->
+<script>
+    var gaBaseProperty = 'UA-62479257';
+    var gaProperty = gaBaseProperty + '-1';
+
+    // opt out
+    var disableStr = 'ga-disable-' + gaProperty;
+    var disableCookie = 'ga-disable-' + gaBaseProperty;
+    function gaOptout() {
+        document.cookie = disableCookie + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org';
+        window[disableStr] = true;
+        alert("Google Analytics ist jetzt deaktiviert! / Google Analytics is now deactivated!")
+    }
+
+    // tracking code
+    if (document.cookie.indexOf(disableCookie + '=true') > -1) {
+        window[disableStr] = true;
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', gaProperty, 'auto');
+        ga('require', 'autotrack');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    }
+</script>
+
+</body>
+</html>

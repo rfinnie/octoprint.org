@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2022 19:59:48 -0500</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2022 19:59:48 -0500</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2022 06:24:44 -0500</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2022 06:24:44 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.8.0rc1</title>
+        <description>
+          <![CDATA[
+            The first release candidate for the upcoming 1.8.0 release, containing new features, improvements, bug fixes and dropping Python 2 support!
+          ]]>
+        </description>
+        <pubDate>Mon, 14 Mar 2022 06:15:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>OctoPi Release Candidate 1.0.0rc1 needs testers!</title>
@@ -122,19 +135,6 @@
         <pubDate>Mon, 11 Oct 2021 09:00:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2021/10/11/new-release-1.7.0/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/10/11/new-release-1.7.0/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.7.0rc3</title>
-        <description>
-          <![CDATA[
-            The third release candidate for the upcoming 1.7.0 release, fixing three observed regressions and two bugs in new functionality.
-          ]]>
-        </description>
-        <pubDate>Mon, 13 Sep 2021 06:35:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/09/13/new-release-candidate-1.7.0rc3/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/09/13/new-release-candidate-1.7.0rc3/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Mar 2022 20:05:46 -0500</pubDate>
-    <lastBuildDate>Mon, 28 Mar 2022 20:05:46 -0500</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2022 06:56:58 -0500</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2022 06:56:58 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.8.0rc3</title>
+        <description>
+          <![CDATA[
+            The third release candidate for the upcoming 1.8.0 release, fixing observed regressions and adding a workaround for recent third party dependency issues.
+          ]]>
+        </description>
+        <pubDate>Tue, 29 Mar 2022 06:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/03/29/new-release-candidate-1.8.0rc3/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/03/29/new-release-candidate-1.8.0rc3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.8.0rc2</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2021/11/01/new-release-1.7.1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/11/01/new-release-1.7.1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #41</title>
-        <description>
-          <![CDATA[
-            The 41st episode of a monthly live broadcast for Patrons which was recorded on October 21st 2021.
-          ]]>
-        </description>
-        <pubDate>Tue, 26 Oct 2021 03:45:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/10/26/octoprint-on-air-41/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/10/26/octoprint-on-air-41/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Apr 2022 07:24:23 -0500</pubDate>
-    <lastBuildDate>Tue, 05 Apr 2022 07:24:23 -0500</lastBuildDate>
+    <pubDate>Tue, 05 Apr 2022 07:44:30 -0500</pubDate>
+    <lastBuildDate>Tue, 05 Apr 2022 07:44:30 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.8.0rc4</title>
+        <description>
+          <![CDATA[
+            The fourth release candidate for the upcoming 1.8.0 release, fixing another observed regression with the first ones.
+          ]]>
+        </description>
+        <pubDate>Tue, 05 Apr 2022 07:40:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/04/05/new-release-candidate-1.8.0rc4/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/04/05/new-release-candidate-1.8.0rc4/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.8.0rc3</title>
@@ -123,19 +136,6 @@
         <pubDate>Wed, 11 Aug 2021 07:40:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2021/08/11/new-release-candidate-1.7.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/08/11/new-release-candidate-1.7.0rc2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.7.0rc1</title>
-        <description>
-          <![CDATA[
-            The first release candidate for the upcoming 1.7.0 release, containing new features, improvements and bug fixes.
-          ]]>
-        </description>
-        <pubDate>Wed, 04 Aug 2021 08:15:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/08/04/new-release-candidate-1.7.0rc1/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/08/04/new-release-candidate-1.7.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

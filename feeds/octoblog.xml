@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2022 20:07:29 -0500</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2022 20:07:29 -0500</lastBuildDate>
+    <pubDate>Thu, 07 Apr 2022 06:50:33 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2022 06:50:33 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
+    <item>
+      <title>OctoPrint On Air #44</title>
+      <description>
+        <![CDATA[
+          The 44th episode of a regular live broadcast for Patrons which was recorded on March 31st 2022.
+        ]]>
+      </description>
+      <pubDate>Thu, 07 Apr 2022 06:45:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
     <item>
       <title>OctoPrint On Air #43</title>
       <description>
@@ -115,18 +127,6 @@
       <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
       <category>OctoPrint Core and Plugin Development</category>
-    </item>
-    <item>
-      <title>OctoPrint On Air #36</title>
-      <description>
-        <![CDATA[
-          The thirty-sixth episode of a monthly live broadcast for Patrons which aired live on December 11th 2020.
-        ]]>
-      </description>
-      <pubDate>Mon, 14 Dec 2020 10:40:00 -0600</pubDate>
-      <link>https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/</guid>
-      <category>OctoPrint On Air</category>
     </item>
   </channel>
 </rss>

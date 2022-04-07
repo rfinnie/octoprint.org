@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoprintonair.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2022 20:07:29 -0500</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2022 20:07:29 -0500</lastBuildDate>
+    <pubDate>Thu, 07 Apr 2022 06:50:33 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2022 06:50:33 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #44</title>
+        <description>
+          <![CDATA[
+            The 44th episode of a regular live broadcast for Patrons which was recorded on March 31st 2022.
+          ]]>
+        </description>
+        <pubDate>Thu, 07 Apr 2022 06:45:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/?utm_source=rss&amp;utm_medium=octoprintonair</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #43</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 05 Nov 2020 07:30:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/?utm_source=rss&amp;utm_medium=octoprintonair</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #34</title>
-        <description>
-          <![CDATA[
-            The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on September 18th 2020.
-          ]]>
-        </description>
-        <pubDate>Thu, 24 Sep 2020 07:00:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/?utm_source=rss&amp;utm_medium=octoprintonair</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</guid>
         <category>OctoPrint On Air</category>
       </item>
     

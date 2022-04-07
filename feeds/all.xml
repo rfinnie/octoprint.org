@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2022 20:07:29 -0500</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2022 20:07:29 -0500</lastBuildDate>
+    <pubDate>Thu, 07 Apr 2022 06:50:33 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2022 06:50:33 -0500</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>OctoPrint On Air #44</title>
+        <description>
+          <![CDATA[
+            The 44th episode of a regular live broadcast for Patrons which was recorded on March 31st 2022.
+          ]]>
+        </description>
+        <pubDate>Thu, 07 Apr 2022 06:45:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.8.0rc4</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2021/12/08/octoprint-on-air-42/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/12/08/octoprint-on-air-42/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.7.2</title>
-        <description>
-          <![CDATA[
-            This bugfix release fixes an issue just discovered in OctoPrint 1.7.1.
-          ]]>
-        </description>
-        <pubDate>Tue, 02 Nov 2021 12:30:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/11/02/new-release-1.7.2/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/11/02/new-release-1.7.2/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

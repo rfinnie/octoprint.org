@@ -4,9 +4,9 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 May 2022 20:15:29 -0500</pubDate>
-    <lastBuildDate>Mon, 16 May 2022 20:15:29 -0500</lastBuildDate>
-    <generator>Jekyll v3.8.7</generator>
+    <pubDate>Tue, 17 May 2022 03:28:44 -0500</pubDate>
+    <lastBuildDate>Tue, 17 May 2022 03:28:44 -0500</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>New release candidate: 1.8.0rc5</title>

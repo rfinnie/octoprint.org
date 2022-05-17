@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1652750129"></script>
+    <script src="/assets/js/html5shim.js?_=1652776124"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1652750129">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1652750129">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1652750129">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1652750129">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1652750129">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1652750129">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1652776124">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1652776124">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1652776124">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1652776124">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1652776124">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1652776124">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1652750129"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1652750129"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1652776124"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1652776124"/>
 
 
     <!-- Le fav and touch icons -->
@@ -263,7 +263,7 @@ your new folders even easier.</li>
 leads through first time setup and/or consecutive setup steps and
 is also extendable by plugin authors to query information from users
 about freshly installed or updated plugins they need in order to
-run<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. See the screenshots below for an <a href="#image-2">example</a></li>
+run<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. See the screenshots below for an <a href="#image-2">example</a></li>
   <li>Plugins may now temporarily or completely <strong>replace the web interface</strong>. 
 It would for example be possible to have OctoPrint
 show you a different UI when connecting from a mobile device vs.
@@ -274,7 +274,7 @@ a <strong><a href="http://docs.octoprint.org/en/devel/jsclientlib/index.html">Cl
 I’ve also prepared a small proof-of-concept example of a plugin utilizing
 the new possibilities by checking the login status of a user and
 delivering a login-only UI to anonymous users instead of the stock
-UI<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>: <a href="https://github.com/OctoPrint/OctoPrint-ForceLogin">the ForceLogin plugin</a>.
+UI<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>: <a href="https://github.com/OctoPrint/OctoPrint-ForceLogin">the ForceLogin plugin</a>.
 UiPlugins and the JS Client Lib together open up a lot of possibilities 
 in creating full blown dashboard systems, alternative UIs and 
 customizations and I’m excited to see what plugin authors will do 
@@ -291,7 +291,7 @@ for logged in admins.</li>
 less resource consumption.</li>
   <li>Centrally managed <strong>server commands</strong> for restarting OctoPrint and
 rebooting and shutting down the system its running on. For those
-OctoPrint will now generate entries in the System menu automatically<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>
+OctoPrint will now generate entries in the System menu automatically<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>
 and they will also be used for restarting after updates or after
 installing plugins that necessitate that.</li>
 </ul>
@@ -345,29 +345,29 @@ within the next two or three weeks.</p>
 
 <h3 id="footnotes">Footnotes</h3>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
+    <li id="fn:1" role="doc-endnote">
       <p>Note that this will also trigger for the CuraEngine plugin 
     after you update if you haven’t yet setup a slicing profile). 
-    Just skip the wizard once and it will not ask you again :) <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    Just skip the wizard once and it will not ask you again :) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
+    <li id="fn:2" role="doc-endnote">
       <p>Please note that this will only protect OctoPrint’s UI. It will
     <em>not</em> be able to protect your webcam since that’s not served by
     OctoPrint, OctoPrint is only embedding it (as a side-note though, 
     I’m working on a solution for that too). So do not use that in a
     setting were a) the URL of the webcam stream might be guessable and
     b) someone anonymously accessing the webcam would be a serious
-    privacy issue. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    privacy issue. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:3">
+    <li id="fn:3" role="doc-endnote">
       <p>If you already had the system commands configured manually or 
     had gotten them preconfigured through OctoPi, they’ll now show 
     up twice - this can be rectified by simply removing
     the manually configured system commands, but you might want to wait
     with that until the stable release of 1.3.0 :) I might also still
-    add some migration step for that. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    add some migration step for that. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -544,17 +544,17 @@ within the next two or three weeks.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1652750129"></script>
-<script src="/assets/js/lodash.min.js?_=1652750129"></script>
-<script src="/assets/js/prettify.min.js?_=1652750129"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1652750129"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1652750129"></script>
-<script src="/assets/js/bootstrap.min.js?_=1652750129"></script>
-<script src="/assets/js/lightbox.min.js?_=1652750129"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1652750129"></script>
-<script src="/assets/js/site.js?_=1652750129"></script>
-<script src="/assets/js/yt-with-consent.js?_=1652750129"></script>
-<script src="/assets/js/autotrack.js?_=1652750129"></script>
+<script src="/assets/js/jquery.min.js?_=1652776124"></script>
+<script src="/assets/js/lodash.min.js?_=1652776124"></script>
+<script src="/assets/js/prettify.min.js?_=1652776124"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1652776124"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1652776124"></script>
+<script src="/assets/js/bootstrap.min.js?_=1652776124"></script>
+<script src="/assets/js/lightbox.min.js?_=1652776124"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1652776124"></script>
+<script src="/assets/js/site.js?_=1652776124"></script>
+<script src="/assets/js/yt-with-consent.js?_=1652776124"></script>
+<script src="/assets/js/autotrack.js?_=1652776124"></script>
 
 <!-- Google Analytics -->
 <script>

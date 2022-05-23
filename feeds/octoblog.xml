@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 May 2022 20:12:22 -0500</pubDate>
-    <lastBuildDate>Sun, 22 May 2022 20:12:22 -0500</lastBuildDate>
+    <pubDate>Mon, 23 May 2022 06:55:58 -0500</pubDate>
+    <lastBuildDate>Mon, 23 May 2022 06:55:58 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    <item>
+      <title>OctoPrint On Air #45</title>
+      <description>
+        <![CDATA[
+          The 45th episode of a regular live broadcast for Patrons which was recorded on May 19th 2022.
+        ]]>
+      </description>
+      <pubDate>Mon, 23 May 2022 06:50:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
     <item>
       <title>OctoPrint On Air #44</title>
       <description>
@@ -115,18 +127,6 @@
       <link>https://octoprint.org/blog/2021/02/01/octoprint-on-air-37/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2021/02/01/octoprint-on-air-37/</guid>
       <category>OctoPrint On Air</category>
-    </item>
-    <item>
-      <title>Turning a static website more dynamic</title>
-      <description>
-        <![CDATA[
-          Since its creation in 2015 the OctoPrint plugin repository has been a static page powered by Jekyll. Read how over the course of 2020 it got more dynamic through the power of GitHub Actions.
-        ]]>
-      </description>
-      <pubDate>Tue, 15 Dec 2020 08:15:00 -0600</pubDate>
-      <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
-      <category>OctoPrint Core and Plugin Development</category>
     </item>
   </channel>
 </rss>

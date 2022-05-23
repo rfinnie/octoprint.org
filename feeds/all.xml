@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 May 2022 20:12:22 -0500</pubDate>
-    <lastBuildDate>Sun, 22 May 2022 20:12:22 -0500</lastBuildDate>
+    <pubDate>Mon, 23 May 2022 06:55:58 -0500</pubDate>
+    <lastBuildDate>Mon, 23 May 2022 06:55:58 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>OctoPrint On Air #45</title>
+        <description>
+          <![CDATA[
+            The 45th episode of a regular live broadcast for Patrons which was recorded on May 19th 2022.
+          ]]>
+        </description>
+        <pubDate>Mon, 23 May 2022 06:50:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>New release: 1.8.0</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/02/24/octoprint-on-air-43/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/02/24/octoprint-on-air-43/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint 1.8.0 will require Python 3</title>
-        <description>
-          <![CDATA[
-            If you still haven't switched your OctoPrint instance to Python 3, now is the time. OctoPrint 1.8.0 and later versions will require Python 3.
-          ]]>
-        </description>
-        <pubDate>Mon, 31 Jan 2022 09:00:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/</guid>
-        <category>OctoPrint News</category>
       </item>
     
   </channel>

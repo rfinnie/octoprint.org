@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 May 2022 20:22:24 -0500</pubDate>
-    <lastBuildDate>Mon, 23 May 2022 20:22:24 -0500</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 05:11:53 -0500</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 05:11:53 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.1</title>
+        <description>
+          <![CDATA[
+            This first bugfix & security release for 1.8.0 fixes a few new issues reported, including one security vulnerability.
+          ]]>
+        </description>
+        <pubDate>Tue, 24 May 2022 05:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/05/24/new-release-1.8.1/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/05/24/new-release-1.8.1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.8.0</title>
@@ -123,19 +136,6 @@
         <pubDate>Mon, 01 Nov 2021 10:00:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2021/11/01/new-release-1.7.1/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/11/01/new-release-1.7.1/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.7.0</title>
-        <description>
-          <![CDATA[
-            After over 5 months of development and a two month long RC phase, I'm proud to present you OctoPrint 1.7.0!
-          ]]>
-        </description>
-        <pubDate>Mon, 11 Oct 2021 09:00:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/10/11/new-release-1.7.0/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/10/11/new-release-1.7.0/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

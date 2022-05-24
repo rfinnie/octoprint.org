@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 May 2022 20:22:24 -0500</pubDate>
-    <lastBuildDate>Mon, 23 May 2022 20:22:24 -0500</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 05:11:53 -0500</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 05:11:53 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.1</title>
+        <description>
+          <![CDATA[
+            This first bugfix & security release for 1.8.0 fixes a few new issues reported, including one security vulnerability.
+          ]]>
+        </description>
+        <pubDate>Tue, 24 May 2022 05:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/05/24/new-release-1.8.1/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/05/24/new-release-1.8.1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #45</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/</guid>
         <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #43</title>
-        <description>
-          <![CDATA[
-            The 43rd episode of a regular live broadcast for Patrons which was recorded on February 17th 2022.
-          ]]>
-        </description>
-        <pubDate>Thu, 24 Feb 2022 05:00:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2022/02/24/octoprint-on-air-43/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/02/24/octoprint-on-air-43/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

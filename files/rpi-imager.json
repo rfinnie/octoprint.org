@@ -2,14 +2,14 @@
   "os_list": [
     {
       "name": "OctoPi (stable)",
-      "description": "OctoPi 0.18.0 with OctoPrint 1.8.0 (build 20220517112637)",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.8.0-20220517112637/octopi-0.18.0-1.8.0-20220517112637.zip",
+      "description": "OctoPi 0.18.0 with OctoPrint 1.8.1 (build 20220524101555)",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.8.1-20220524101555/octopi-0.18.0-1.8.1-20220524101555.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2022-05-17",
+      "release_date": "2022-05-24",
       "extract_size": 2489319424,
-      "extract_sha256": "c2ff23bb4f59dcc2090ba85938a0c6027c0591301ff6b0f129210ced4c6731a0",
-      "image_download_size": 909594581,
-      "image_download_sha256": "3bc0e09ceea9f7b19fd8bead56ad09605e93c34d3aa87910674b0dc18df70e7f",
+      "extract_sha256": "e66172e63534b8abd8aa594aea633b44f8d7eaa69f99b0500255fc1aeefeee09",
+      "image_download_size": 920711629,
+      "image_download_sha256": "25a6872cd1ccea93b715d524eff7a759c40cff0a60bb399cd077dbb77e64563a",
       "init_format": "systemd"
     },
     {

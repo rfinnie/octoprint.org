@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jun 2022 02:32:24 -0500</pubDate>
-    <lastBuildDate>Tue, 28 Jun 2022 02:32:24 -0500</lastBuildDate>
+    <pubDate>Tue, 28 Jun 2022 03:37:14 -0500</pubDate>
+    <lastBuildDate>Tue, 28 Jun 2022 03:37:14 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>OctoPrint On Air #46</title>
+        <description>
+          <![CDATA[
+            The 46th episode of a regular live broadcast for Patrons which was recorded on June 23rd 2022.
+          ]]>
+        </description>
+        <pubDate>Tue, 28 Jun 2022 03:25:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/06/28/octoprint-on-air-46/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/06/28/octoprint-on-air-46/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>New release: 1.8.1</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPi Release Candidate 1.0.0rc1 needs testers!</title>
-        <description>
-          <![CDATA[
-            Guy Sheffer has published a first release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
-          ]]>
-        </description>
-        <pubDate>Mon, 28 Feb 2022 07:40:00 -0600</pubDate>
-        <link>https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/</guid>
-        <category>OctoPi Announcements</category>
       </item>
     
   </channel>

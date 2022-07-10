@@ -2,6 +2,16 @@
     "os_list": [
         
         {
+            "name": "OctoPi nightly 2022-07-11",
+            "description": "OctoPi nightly from 2022-07-11",
+            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-07-11_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip",
+            "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
+            "release_date": "2022-07-11",
+            "image_download_size": 796706559,
+            "init_format": "systemd"
+        }
+        ,
+        {
             "name": "OctoPi nightly 2022-07-10",
             "description": "OctoPi nightly from 2022-07-10",
             "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-07-10_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip",
@@ -38,16 +48,6 @@
             "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
             "release_date": "2022-07-06",
             "image_download_size": 797659318,
-            "init_format": "systemd"
-        }
-        ,
-        {
-            "name": "OctoPi nightly 2022-07-05",
-            "description": "OctoPi nightly from 2022-07-05",
-            "url": "https://unofficialpi.org/Distros/OctoPi/nightly/2022-07-05_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip",
-            "icon": "https://octoprint.org/files/rpi-imager-nightlies.png",
-            "release_date": "2022-07-05",
-            "image_download_size": 796560429,
             "init_format": "systemd"
         }
     ]

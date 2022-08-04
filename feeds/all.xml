@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Aug 2022 06:31:35 -0500</pubDate>
-    <lastBuildDate>Thu, 04 Aug 2022 06:31:35 -0500</lastBuildDate>
+    <pubDate>Thu, 04 Aug 2022 08:01:28 -0500</pubDate>
+    <lastBuildDate>Thu, 04 Aug 2022 08:01:28 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>OctoPi Release Candidate 1.0.0rc2 needs testers!</title>
+        <description>
+          <![CDATA[
+            Guy Sheffer has published a second release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
+          ]]>
+        </description>
+        <pubDate>Thu, 04 Aug 2022 07:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/</guid>
+        <category>OctoPi Announcements</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #46</title>
@@ -122,19 +135,6 @@
         <pubDate>Wed, 16 Mar 2022 05:30:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2022/03/16/new-release-candidate-1.8.0rc2/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/03/16/new-release-candidate-1.8.0rc2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.8.0rc1</title>
-        <description>
-          <![CDATA[
-            The first release candidate for the upcoming 1.8.0 release, containing new features, improvements, bug fixes and dropping Python 2 support!
-          ]]>
-        </description>
-        <pubDate>Mon, 14 Mar 2022 06:15:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/03/14/new-release-candidate-1.8.0rc1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

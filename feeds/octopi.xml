@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octopi.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Aug 2022 06:31:35 -0500</pubDate>
-    <lastBuildDate>Thu, 04 Aug 2022 06:31:35 -0500</lastBuildDate>
+    <pubDate>Thu, 04 Aug 2022 08:01:28 -0500</pubDate>
+    <lastBuildDate>Thu, 04 Aug 2022 08:01:28 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>OctoPi Release Candidate 1.0.0rc2 needs testers!</title>
+        <description>
+          <![CDATA[
+            Guy Sheffer has published a second release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
+          ]]>
+        </description>
+        <pubDate>Thu, 04 Aug 2022 07:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/?utm_source=rss&amp;utm_medium=octopi</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/</guid>
+        <category>OctoPi Announcements</category>
+      </item>
     
       <item>
         <title>OctoPi Release Candidate 1.0.0rc1 needs testers!</title>
@@ -123,19 +136,6 @@
         <pubDate>Fri, 25 Jan 2019 05:15:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2019/01/25/octopi-release-candidate-0-16-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/01/25/octopi-release-candidate-0-16-0rc1/</guid>
-        <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>New OctoPi Release: 0.15.1</title>
-        <description>
-          <![CDATA[
-            OctoPi 0.15.1 is a minor release fixing a small issue discovered in the 0.15.0 image.
-          ]]>
-        </description>
-        <pubDate>Tue, 29 May 2018 05:15:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2018/05/29/octopi-release-0-15-1/?utm_source=rss&amp;utm_medium=octopi</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2018/05/29/octopi-release-0-15-1/</guid>
         <category>OctoPi Announcements</category>
       </item>
     

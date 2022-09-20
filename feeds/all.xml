@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Sep 2022 06:35:10 -0500</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2022 06:35:10 -0500</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2022 06:37:10 -0500</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2022 06:37:10 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.3</title>
+        <description>
+          <![CDATA[
+            This third bugfix & security release for 1.8.0 fixes a few new issues reported, including various security vulnerabilities.
+          ]]>
+        </description>
+        <pubDate>Tue, 20 Sep 2022 06:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/09/20/new-release-1.8.3/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/09/20/new-release-1.8.3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #47</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.8.0rc4</title>
-        <description>
-          <![CDATA[
-            The fourth release candidate for the upcoming 1.8.0 release, fixing another observed regression with the first ones.
-          ]]>
-        </description>
-        <pubDate>Tue, 05 Apr 2022 07:40:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2022/04/05/new-release-candidate-1.8.0rc4/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/04/05/new-release-candidate-1.8.0rc4/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

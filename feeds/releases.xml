@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Sep 2022 06:35:10 -0500</pubDate>
-    <lastBuildDate>Tue, 20 Sep 2022 06:35:10 -0500</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2022 06:37:10 -0500</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2022 06:37:10 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.3</title>
+        <description>
+          <![CDATA[
+            This third bugfix & security release for 1.8.0 fixes a few new issues reported, including various security vulnerabilities.
+          ]]>
+        </description>
+        <pubDate>Tue, 20 Sep 2022 06:30:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/09/20/new-release-1.8.3/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/09/20/new-release-1.8.3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.8.2</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 20 Jan 2022 05:15:00 -0600</pubDate>
         <link>https://octoprint.org/blog/2022/01/20/new-release-1.7.3/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/01/20/new-release-1.7.3/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.7.2</title>
-        <description>
-          <![CDATA[
-            This bugfix release fixes an issue just discovered in OctoPrint 1.7.1.
-          ]]>
-        </description>
-        <pubDate>Tue, 02 Nov 2021 12:30:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2021/11/02/new-release-1.7.2/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2021/11/02/new-release-1.7.2/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

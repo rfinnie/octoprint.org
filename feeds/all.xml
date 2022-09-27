@@ -4,8 +4,8 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Sep 2022 10:09:39 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Sep 2022 10:09:39 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Sep 2022 10:25:31 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Sep 2022 10:25:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -15,7 +15,7 @@
             This fourth bugfix release for 1.8.0 fixes a few newly reported issues and introduces a reverse proxy test page.
           ]]>
         </description>
-        <pubDate>Tue, 27 Sep 2022 10:00:00 -0500</pubDate>
+        <pubDate>Tue, 27 Sep 2022 10:20:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2022/09/27/new-release-1.8.4/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/09/27/new-release-1.8.4/</guid>
         <category>OctoPrint Release Announcements</category>

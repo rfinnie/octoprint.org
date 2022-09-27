@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Sep 2022 09:50:01 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Sep 2022 09:50:01 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Sep 2022 10:09:39 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Sep 2022 10:09:39 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.4</title>
+        <description>
+          <![CDATA[
+            This fourth bugfix release for 1.8.0 fixes a few newly reported issues and introduces a reverse proxy test page.
+          ]]>
+        </description>
+        <pubDate>Tue, 27 Sep 2022 10:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/09/27/new-release-1.8.4/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/09/27/new-release-1.8.4/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.8.3</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/04/12/new-release-candidate-1.8.0rc5/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/04/12/new-release-candidate-1.8.0rc5/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #44</title>
-        <description>
-          <![CDATA[
-            The 44th episode of a regular live broadcast for Patrons which was recorded on March 31st 2022.
-          ]]>
-        </description>
-        <pubDate>Thu, 07 Apr 2022 06:45:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

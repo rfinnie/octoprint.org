@@ -4,10 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Oct 2022 08:33:02 -0500</pubDate>
-    <lastBuildDate>Wed, 05 Oct 2022 08:33:02 -0500</lastBuildDate>
+    <pubDate>Wed, 05 Oct 2022 08:54:06 -0500</pubDate>
+    <lastBuildDate>Wed, 05 Oct 2022 08:54:06 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
+    <item>
+      <title>OctoPrint On Air #48</title>
+      <description>
+        <![CDATA[
+          The 48th episode of a regular live broadcast for Patrons which was recorded on September 29th 2022.
+        ]]>
+      </description>
+      <pubDate>Wed, 05 Oct 2022 08:45:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2022/10/05/octoprint-on-air-48/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2022/10/05/octoprint-on-air-48/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
     <item>
       <title>OctoPrint On Air #47</title>
       <description>
@@ -114,18 +126,6 @@
       <pubDate>Tue, 27 Jul 2021 08:30:00 -0500</pubDate>
       <link>https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/</link>
       <guid isPermaLink="true">https://octoprint.org/blog/2021/07/27/octoprint-on-air-40/</guid>
-      <category>OctoPrint On Air</category>
-    </item>
-    <item>
-      <title>OctoPrint On Air #39</title>
-      <description>
-        <![CDATA[
-          The thirty-ninth episode of a monthly live broadcast for Patrons which was recorded on May 21st 2021.
-        ]]>
-      </description>
-      <pubDate>Fri, 28 May 2021 09:30:00 -0500</pubDate>
-      <link>https://octoprint.org/blog/2021/05/28/octoprint-on-air-39/</link>
-      <guid isPermaLink="true">https://octoprint.org/blog/2021/05/28/octoprint-on-air-39/</guid>
       <category>OctoPrint On Air</category>
     </item>
   </channel>

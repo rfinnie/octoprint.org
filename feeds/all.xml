@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Oct 2022 09:52:03 -0500</pubDate>
-    <lastBuildDate>Mon, 17 Oct 2022 09:52:03 -0500</lastBuildDate>
+    <pubDate>Mon, 17 Oct 2022 10:05:46 -0500</pubDate>
+    <lastBuildDate>Mon, 17 Oct 2022 10:05:46 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.5</title>
+        <description>
+          <![CDATA[
+            This fifth bugfix release for 1.8.0 fixes two newly reported bugs and gets rid of a runtime warning.
+          ]]>
+        </description>
+        <pubDate>Mon, 17 Oct 2022 10:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/10/17/new-release-1.8.5/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/10/17/new-release-1.8.5/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #48</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/</guid>
         <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.8.0</title>
-        <description>
-          <![CDATA[
-            After over 5 months of development and a two month long RC phase, I'm proud to present you OctoPrint 1.8.0!
-          ]]>
-        </description>
-        <pubDate>Tue, 17 May 2022 06:15:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2022/05/17/new-release-1.8.0/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/05/17/new-release-1.8.0/</guid>
-        <category>OctoPrint Release Announcements</category>
       </item>
     
   </channel>

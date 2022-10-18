@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Oct 2022 03:58:21 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Oct 2022 03:58:21 -0500</lastBuildDate>
+    <pubDate>Tue, 18 Oct 2022 04:30:31 -0500</pubDate>
+    <lastBuildDate>Tue, 18 Oct 2022 04:30:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.6</title>
+        <description>
+          <![CDATA[
+            This sixth bugfix release for 1.8.0 fixes a bug that was supposed to be fixed in 1.8.5.
+          ]]>
+        </description>
+        <pubDate>Tue, 18 Oct 2022 04:25:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/10/18/new-release-1.8.6/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/10/18/new-release-1.8.6/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.8.5</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2022/05/24/new-release-1.8.1/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/05/24/new-release-1.8.1/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #45</title>
-        <description>
-          <![CDATA[
-            The 45th episode of a regular live broadcast for Patrons which was recorded on May 19th 2022.
-          ]]>
-        </description>
-        <pubDate>Mon, 23 May 2022 06:50:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

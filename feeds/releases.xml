@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Oct 2022 03:58:21 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Oct 2022 03:58:21 -0500</lastBuildDate>
+    <pubDate>Tue, 18 Oct 2022 04:30:31 -0500</pubDate>
+    <lastBuildDate>Tue, 18 Oct 2022 04:30:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>New release: 1.8.6</title>
+        <description>
+          <![CDATA[
+            This sixth bugfix release for 1.8.0 fixes a bug that was supposed to be fixed in 1.8.5.
+          ]]>
+        </description>
+        <pubDate>Tue, 18 Oct 2022 04:25:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2022/10/18/new-release-1.8.6/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/10/18/new-release-1.8.6/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release: 1.8.5</title>
@@ -123,19 +136,6 @@
         <pubDate>Tue, 29 Mar 2022 06:30:00 -0500</pubDate>
         <link>https://octoprint.org/blog/2022/03/29/new-release-candidate-1.8.0rc3/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/03/29/new-release-candidate-1.8.0rc3/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release candidate: 1.8.0rc2</title>
-        <description>
-          <![CDATA[
-            The second release candidate for the upcoming 1.8.0 release, fixing observed regressions and adding some improvements of added functionality.
-          ]]>
-        </description>
-        <pubDate>Wed, 16 Mar 2022 05:30:00 -0500</pubDate>
-        <link>https://octoprint.org/blog/2022/03/16/new-release-candidate-1.8.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/03/16/new-release-candidate-1.8.0rc2/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

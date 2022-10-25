@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1666709566"></script>
+    <script src="/assets/js/html5shim.js?_=1666711438"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1666709566">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1666711438">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1666709566"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1666709566"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1666711438"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1666711438"/>
 
 
     <!-- Le fav and touch icons -->
@@ -79,7 +79,39 @@
     </script>
 
     <!-- Plausible -->
-    <script defer data-domain="octoprint.org" src="https://plausible.octoprint.org/js/plausible.js"></script>
+    <script defer data-domain="octoprint.org" src="https://plausible.octoprint.org/js/plausible.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script>
+        function handleLinkEvent(event) {
+            var link = event.target;
+            var middle = event.type == "auxclick" && event.which == 2;
+            var click = event.type == "click";
+            while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+                link = link.parentNode;
+            }
+            if (middle || click) {
+                let attributes = link.getAttribute('data-analytics').split(/,(.+)/);
+                let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
+                plausible(...events);
+            }
+            if (!link.target) {
+                if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+                    setTimeout(function () {
+                        location.href = link.href;
+                    }, 150);
+                    event.preventDefault();
+                }
+            }
+        }
+
+        window.addEventListener("load", () => {
+            let links = document.querySelectorAll('a[data-analytics]');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', handleLinkEvent);
+                links[i].addEventListener('auxclick', handleLinkEvent);
+            }
+        })
+    </script>
 
     <!-- Carbon -->
     <script>
@@ -158,8 +190,8 @@
       <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
       <div class="pull-right">
         <ul class="nav social-navbar">
-          <li><a href="/merch/" title="Get some merchandise!"><i class="fa fa-shopping-basket"></i></a></li>
-          <li><a href="/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation"><i class="fas fa-donate"></i></a></li>
+          <li><a href="/merch/" title="Get some merchandise!" data-analytics='"Merch Click", { "props": { "origin": "navbar"} }'><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="/support-octoprint/" title="Support OctoPrint!" data-analytics='"Support Click", { "props": { "origin": "navbar"} }'><i class="fas fa-donate"></i></a></li>
         </ul>
       </div>
       <div class="nav-collapse collapse">
@@ -167,8 +199,8 @@
           <li><a href="/blog/">Blog</a></li>
           <li><a href="https://community.octoprint.org">Forum</a></li>
           <li><a href="/download/">Download</a></li>
-          <li><a href="/support-octoprint/" title="Support the project!" data-event-category="supportlink" data-event-action="donate">Donate</a></li>
-          <li><a href="/merch/" title="Get some merchandise!" data-event-category="merchlink" data-event-action="navbar">Merchandise</a></li>
+          <li><a href="/support-octoprint/" title="Support the project!" data-analytics='"Support Click", { "props": { "origin": "menu"} }'>Donate</a></li>
+          <li><a href="/merch/" title="Get some merchandise!" data-analytics='"Merch Click", { "props": { "origin": "menu"} }'>Merchandise</a></li>
           <li><a href="http://plugins.octoprint.org">Plugins</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a>
@@ -227,10 +259,10 @@
     You can <strong>support OctoPrint's development directly</strong> either
     <a href="#regularly">regularly</a>
     or <a href="#onetime">through one time contributions</a>.
-    You can also support my work by buying one of the <strong><a href="/merch/#kits">All-in-one Kits</a> or the <a href="/merch/#merch">Merchandise articles</a> listed <a href="/merch/" data-event-category="merchlink" data-event-action="support">here</a></strong> from whose proceedings I'll receive a share.
+    You can also support my work by buying one of the <strong><a href="/merch/#kits">All-in-one Kits</a> or the <a href="/merch/#merch">Merchandise articles</a> listed <a href="/merch/" data-analytics='"Merch Link", { "props": { "source": "support" } }'>here</a></strong> from whose proceedings I'll receive a share.
 </p>
 <p>
-    <strong>With a company and open to a sponsorship?</strong> <a href="mailto:sponsoring@octoprint.org" data-event-category="support" data-event-action="sponsoring">Get in touch with me!</a>
+    <strong>With a company and open to a sponsorship?</strong> <a href="mailto:sponsoring@octoprint.org" data-analytics='"Support Link", { "props": { "type": "sponsorship" } }'>Get in touch with me!</a>
 </p>
 
 <div class="container support">
@@ -238,22 +270,22 @@
         <div class="span6 support-regularly" id="regularly">
             <h3><i class="fa fa-heart octo-heart"></i>&nbsp;Regularly&nbsp;<i class="fa fa-heart octo-heart"></i></h3>
             <div class="support-option support-github" id="github">
-                <span style="display: block; height: 60px"><a href="https://github.com/users/foosel/sponsorship" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="github"><img src="/assets/img/github.png"></a></span>
+                <span style="display: block; height: 60px"><a href="https://github.com/users/foosel/sponsorship" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "github_regularly" } }'><img src="/assets/img/github.png"></a></span>
                 <strong>Become a GitHub Sponsor!</strong><br>
                 <small>Includes some extras & I get every cent due to zero fees!</small>
             </div>
             <div class="support-option support-patreon" id="patreon">
-                <span style="display: block; height: 60px"><a href="https://patreon.com/foosel" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="patreon"><img src="/assets/img/patreon-with-text-new.png"></a></span>
+                <span style="display: block; height: 60px"><a href="https://patreon.com/foosel" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "patreon" } }'><img src="/assets/img/patreon-with-text-new.png"></a></span>
                 <strong>Become a patron on Patreon!</strong><br>
                 <small>Also includes some cool extras!</small>
             </div>
             <div class="support-option support-donorbox-regularly" id="donorbox-regularly">
-                <span style="display: block; height: 60px"><a href="https://donorbox.org/support-octoprint?recurring=true" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="donorbox-regularly"><img src="/assets/img/donorbox-with-text.png"></a></a></span>
+                <span style="display: block; height: 60px"><a href="https://donorbox.org/support-octoprint?recurring=true" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "donorbox_regularly" } }'><img src="/assets/img/donorbox-with-text.png"></a></a></span>
                 <strong>Support me on Donorbox!</strong><br>
                 <small>Regularly or one-time - you decide!</small>
             </div>
             <div class="support-option support-liberapay" id="liberapay">
-                <span style="display: block; height: 60px"><a href="https://liberapay.com/foosel/donate" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="liberapay"><img src="/assets/img/liberapay-with-text.png"></a></span>
+                <span style="display: block; height: 60px"><a href="https://liberapay.com/foosel/donate" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "liberapay" } }'><img src="/assets/img/liberapay-with-text.png"></a></span>
                 <strong>Support me on Liberapay!</strong><br>
                 <small>Great even for very small regular contributions.</small>
             </div>
@@ -261,17 +293,17 @@
         <div class="span6 support-onetime" id="onetime">
             <h3>One time</h3>
             <div class="support-option support-github-once" id="github-once">
-                <span style="display: block; height: 60px"><a href="https://github.com/users/foosel/sponsorship" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="github"><img src="/assets/img/github.png"></a></span>
+                <span style="display: block; height: 60px"><a href="https://github.com/users/foosel/sponsorship" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "github_once" } }'><img src="/assets/img/github.png"></a></span>
                 <strong>Send a one-time contribution via GitHub Sponsors!</strong><br>
                 <small>Whether regularly or only once, either way I get every cent due to zero fees!</small>
             </div>
             <div class="support-option support-paypal" id="paypal">
-                <span style="display: block; height: 60px"><a href="https://paypal.me/octoprint3d" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="paypal"><img src="/assets/img/paypal-with-text.png"></a></span>
+                <span style="display: block; height: 60px"><a href="https://paypal.me/octoprint3d" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "paypal" } }'><img src="/assets/img/paypal-with-text.png"></a></span>
                 <strong>Make a one-time contribution through PayPal!</strong><br>
                 <small>No paypal.me? Send funds via PayPal to funding&#64;octoprint&#46;org</small>
             </div>
             <div class="support-option support-donorbox-once" id="donorbox-once">
-                <span style="display: block; height: 60px"><a href="https://donorbox.org/support-octoprint" target="_blank" rel="noopener noreferrer" data-event-category="support" data-event-action="donorbox-once"><img src="/assets/img/donorbox-with-text.png"></a></a></span>
+                <span style="display: block; height: 60px"><a href="https://donorbox.org/support-octoprint" target="_blank" rel="noopener noreferrer" data-analytics='"Support Link", { "props": { "type": "donorbox_once" } }'><img src="/assets/img/donorbox-with-text.png"></a></a></span>
                 <strong>Support me on Donorbox!</strong><br>
                 <small>Regularly or one-time - you decide!</small>
             </div>
@@ -331,7 +363,7 @@
                         Error tracking is powered and sponsored by <a href="https://sentry.io">Sentry</a>.
                     </p>
                     <p>
-                        Development would be impossible without the <a href="/support-octoprint/" data-event-category="supportlink" data-event-action="footer">financial support of the community</a>.
+                        Development would be impossible without the <a href="/support-octoprint/" data-analytics='"Support Click", { "props": { "origin": "footer"} }'>financial support of the community</a>.
                     </p>
                   </div>
               </div>
@@ -346,17 +378,16 @@
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1666709566"></script>
-<script src="/assets/js/lodash.min.js?_=1666709566"></script>
-<script src="/assets/js/prettify.min.js?_=1666709566"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1666709566"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1666709566"></script>
-<script src="/assets/js/bootstrap.min.js?_=1666709566"></script>
-<script src="/assets/js/lightbox.min.js?_=1666709566"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1666709566"></script>
-<script src="/assets/js/site.js?_=1666709566"></script>
-<script src="/assets/js/yt-with-consent.js?_=1666709566"></script>
-<script src="/assets/js/autotrack.js?_=1666709566"></script>
+<script src="/assets/js/jquery.min.js?_=1666711438"></script>
+<script src="/assets/js/lodash.min.js?_=1666711438"></script>
+<script src="/assets/js/prettify.min.js?_=1666711438"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1666711438"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1666711438"></script>
+<script src="/assets/js/bootstrap.min.js?_=1666711438"></script>
+<script src="/assets/js/lightbox.min.js?_=1666711438"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1666711438"></script>
+<script src="/assets/js/site.js?_=1666711438"></script>
+<script src="/assets/js/yt-with-consent.js?_=1666711438"></script>
 
 </body>
 </html>

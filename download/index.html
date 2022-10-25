@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1666709566"></script>
+    <script src="/assets/js/html5shim.js?_=1666711438"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1666709566">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1666709566">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1666711438">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1666711438">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1666709566"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1666709566"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1666711438"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1666711438"/>
 
 
     <!-- Le fav and touch icons -->
@@ -79,7 +79,39 @@
     </script>
 
     <!-- Plausible -->
-    <script defer data-domain="octoprint.org" src="https://plausible.octoprint.org/js/plausible.js"></script>
+    <script defer data-domain="octoprint.org" src="https://plausible.octoprint.org/js/plausible.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script>
+        function handleLinkEvent(event) {
+            var link = event.target;
+            var middle = event.type == "auxclick" && event.which == 2;
+            var click = event.type == "click";
+            while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+                link = link.parentNode;
+            }
+            if (middle || click) {
+                let attributes = link.getAttribute('data-analytics').split(/,(.+)/);
+                let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
+                plausible(...events);
+            }
+            if (!link.target) {
+                if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+                    setTimeout(function () {
+                        location.href = link.href;
+                    }, 150);
+                    event.preventDefault();
+                }
+            }
+        }
+
+        window.addEventListener("load", () => {
+            let links = document.querySelectorAll('a[data-analytics]');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', handleLinkEvent);
+                links[i].addEventListener('auxclick', handleLinkEvent);
+            }
+        })
+    </script>
 
     <!-- Carbon -->
     <script>
@@ -156,7 +188,7 @@
             Gina
         </p>
         <div class="span4 button">
-            <a class="btn btn-primary btn-large btn-block" href="/support-octoprint/" data-event-category="supportlink" data-event-action="banner"><i class="fa fa-heart"></i> Support my work! <i class="fa fa-heart"></i></a>
+            <a class="btn btn-primary btn-large btn-block" href="/support-octoprint/" data-analytics='"Support Click", { "props": { "origin": "banner"} }'><i class="fa fa-heart"></i> Support my work! <i class="fa fa-heart"></i></a>
         </div>
     </div>
 </div>
@@ -173,8 +205,8 @@
       <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
       <div class="pull-right">
         <ul class="nav social-navbar">
-          <li><a href="/merch/" title="Get some merchandise!"><i class="fa fa-shopping-basket"></i></a></li>
-          <li><a href="/support-octoprint/" title="Support OctoPrint!" data-event-category="supportlink" data-event-action="navigation"><i class="fas fa-donate"></i></a></li>
+          <li><a href="/merch/" title="Get some merchandise!" data-analytics='"Merch Click", { "props": { "origin": "navbar"} }'><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="/support-octoprint/" title="Support OctoPrint!" data-analytics='"Support Click", { "props": { "origin": "navbar"} }'><i class="fas fa-donate"></i></a></li>
         </ul>
       </div>
       <div class="nav-collapse collapse">
@@ -182,8 +214,8 @@
           <li><a href="/blog/">Blog</a></li>
           <li><a href="https://community.octoprint.org">Forum</a></li>
           <li><a href="/download/">Download</a></li>
-          <li><a href="/support-octoprint/" title="Support the project!" data-event-category="supportlink" data-event-action="donate">Donate</a></li>
-          <li><a href="/merch/" title="Get some merchandise!" data-event-category="merchlink" data-event-action="navbar">Merchandise</a></li>
+          <li><a href="/support-octoprint/" title="Support the project!" data-analytics='"Support Click", { "props": { "origin": "menu"} }'>Donate</a></li>
+          <li><a href="/merch/" title="Get some merchandise!" data-analytics='"Merch Click", { "props": { "origin": "menu"} }'>Merchandise</a></li>
           <li><a href="http://plugins.octoprint.org">Plugins</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a>
@@ -259,7 +291,7 @@ however <em>is</em> recommended.</p>
 <p>OctoPi is available through the <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a>, which you can use to download and setup OctoPi. You can install it yourself, or alternatively simply buy one of the available</p>
 
 <div class="text-center" style="margin-bottom: 1rem;">
-    <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
+    <a class="btn btn-large btn-block" href="/merch/#kits" data-analytics="&quot;Merch Click&quot;, { &quot;props&quot;: { &quot;origin&quot;: &quot;download&quot;} }">All-in-one OctoPrint Kits</a>
 </div>
 
 <h3 id="installing-octopi-using-the-raspberry-pi-imager">Installing OctoPi using the Raspberry Pi Imager</h3>
@@ -367,7 +399,7 @@ yourself you can do so here.</p>
 <h3 id="stable-octopi">Stable OctoPi</h3>
 
 <div class="text-center">
-    <a class="btn btn-large btn-primary btn-block" href="https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.8.6-20221018093204/octopi-0.18.0-1.8.6-20221018093204.zip" data-event-category="download" data-event-action="latest">
+    <a class="btn btn-large btn-primary btn-block" href="https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.8.6-20221018093204/octopi-0.18.0-1.8.6-20221018093204.zip" data-analytics="&quot;Download Click&quot;, { &quot;props&quot;: { &quot;target&quot;: &quot;latest&quot;} }">
       OctoPi&nbsp;0.18.0 &amp; OctoPrint&nbsp;1.8.6
     </a>
     <small>SHA256: <code>851573629147ec5385b9168a78377b8ed51af0a1d76c2174fe0e4ccb4f637a9d</code></small><br />
@@ -380,7 +412,7 @@ yourself you can do so here.</p>
 <p>The current <strong>OctoPi Release Candidate 1.0.0rc2</strong> can be found here:</p>
 
 <div class="text-center">
-    <a class="btn btn-large btn-block" href="https://unofficialpi.org/Distros/OctoPi/nightly/2022-08-03_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip" data-event-category="download" data-event-action="next">
+    <a class="btn btn-large btn-block" href="https://unofficialpi.org/Distros/OctoPi/nightly/2022-08-03_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip" data-analytics="&quot;Download Click&quot;, { &quot;props&quot;: { &quot;target&quot;: &quot;next_octopi&quot;} }">
       OctoPi&nbsp;1.0.0rc2 &amp; OctoPrint&nbsp;1.8.1
     </a>
     <small><strong>Raspberry Pi 3B, 3B+, 4B or Zero 2 strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
@@ -473,7 +505,7 @@ They should be pretty much identical on other Linux distributions.</p>
             <div class="sponsorcolumn">
                 
     <div class="flufftext">
-        OctoPrint's development is made possible only through the <strong><a href="/support-octoprint/" rel="noopener noreferrer" data-event-category="supportlink" data-event-action="downloadblurb">financial support</a></strong>
+        OctoPrint's development is made possible only through the <strong><a href="/support-octoprint/" rel="noopener noreferrer" data-analytics='"Support Click", { "props": { "origin": "downloadblurb"} }'>financial support</a></strong>
         of its awesome supporters and
     </div>
 
@@ -482,45 +514,45 @@ They should be pretty much identical on other Linux distributions.</p>
         
         
             <div class="sponsor">
-                <a href="https://www.biqu.equipment/" title="BigTreeTech" data-event-category="sponsor" data-event-action="BigTreeTech">
+                <a href="https://www.biqu.equipment/" title="BigTreeTech" data-analytics='"Sponsor Link", { "props": { "sponsor": "BigTreeTech"} }'>
                     <img src="/assets/img/sponsors/bigtreetech.png" alt="BigTreeTech" title="BigTreeTech">
                 </a>
             </div>
         
             <div class="sponsor">
-                <a href="https://www.obico.io/octoprint.html" title="Obico" data-event-category="sponsor" data-event-action="Obico">
-                    <img src="/assets/img/sponsors/obico.png" alt="Obico" title="Obico">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.raise3d.com" title="Raise 3D" data-event-category="sponsor" data-event-action="Raise 3D">
-                    <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.creality3dofficial.com/" title="Creality" data-event-category="sponsor" data-event-action="Creality">
-                    <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.3dprinteros.com/?utm_source=referral&utm_medium=octoprint&utm_campaign=sdk_sponsorship" title="3DPrinterOS" data-event-category="sponsor" data-event-action="3DPrinterOS">
+                <a href="https://www.3dprinteros.com/?utm_source=referral&utm_medium=octoprint&utm_campaign=sdk_sponsorship" title="3DPrinterOS" data-analytics='"Sponsor Link", { "props": { "sponsor": "3DPrinterOS"} }'>
                     <img src="/assets/img/sponsors/3dprinteros.png" alt="3DPrinterOS" title="3DPrinterOS">
                 </a>
             </div>
         
             <div class="sponsor">
-                <a href="https://fiber-punk.com/" title="Fiberpunk" data-event-category="sponsor" data-event-action="Fiberpunk">
+                <a href="https://fiber-punk.com/" title="Fiberpunk" data-analytics='"Sponsor Link", { "props": { "sponsor": "Fiberpunk"} }'>
                     <img src="/assets/img/sponsors/fiberpunk.png" alt="Fiberpunk" title="Fiberpunk">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://www.obico.io/octoprint.html" title="Obico" data-analytics='"Sponsor Link", { "props": { "sponsor": "Obico"} }'>
+                    <img src="/assets/img/sponsors/obico.png" alt="Obico" title="Obico">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://www.creality3dofficial.com/" title="Creality" data-analytics='"Sponsor Link", { "props": { "sponsor": "Creality"} }'>
+                    <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://www.raise3d.com" title="Raise 3D" data-analytics='"Sponsor Link", { "props": { "sponsor": "Raise 3D"} }'>
+                    <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
                 </a>
             </div>
         
     </div>
 
 
-<a class="btn btn-primary btn-block donatelink" href="/support-octoprint/" title="Support the project!" data-event-category="supportlink" data-event-action="download">
+<a class="btn btn-primary btn-block donatelink" href="/support-octoprint/" title="Support the project!" data-analytics='"Support Click", { "props": { "origin": "download"} }'>
     <i class="fa fa-heart"></i> Support the project! <i class="fa fa-heart"></i>
 </a>
 
@@ -549,7 +581,7 @@ They should be pretty much identical on other Linux distributions.</p>
             <div class="sponsorcolumn">
                 
     <div class="flufftext">
-        OctoPrint's development is made possible only through the <strong><a href="/support-octoprint/" rel="noopener noreferrer" data-event-category="supportlink" data-event-action="downloadblurb">financial support</a></strong>
+        OctoPrint's development is made possible only through the <strong><a href="/support-octoprint/" rel="noopener noreferrer" data-analytics='"Support Click", { "props": { "origin": "downloadblurb"} }'>financial support</a></strong>
         of its awesome supporters and
     </div>
 
@@ -558,37 +590,37 @@ They should be pretty much identical on other Linux distributions.</p>
         
         
             <div class="sponsor">
-                <a href="https://fiber-punk.com/" title="Fiberpunk" data-event-category="sponsor" data-event-action="Fiberpunk">
-                    <img src="/assets/img/sponsors/fiberpunk.png" alt="Fiberpunk" title="Fiberpunk">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.obico.io/octoprint.html" title="Obico" data-event-category="sponsor" data-event-action="Obico">
+                <a href="https://www.obico.io/octoprint.html" title="Obico" data-analytics='"Sponsor Link", { "props": { "sponsor": "Obico"} }'>
                     <img src="/assets/img/sponsors/obico.png" alt="Obico" title="Obico">
                 </a>
             </div>
         
             <div class="sponsor">
-                <a href="https://www.3dprinteros.com/?utm_source=referral&utm_medium=octoprint&utm_campaign=sdk_sponsorship" title="3DPrinterOS" data-event-category="sponsor" data-event-action="3DPrinterOS">
-                    <img src="/assets/img/sponsors/3dprinteros.png" alt="3DPrinterOS" title="3DPrinterOS">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.raise3d.com" title="Raise 3D" data-event-category="sponsor" data-event-action="Raise 3D">
+                <a href="https://www.raise3d.com" title="Raise 3D" data-analytics='"Sponsor Link", { "props": { "sponsor": "Raise 3D"} }'>
                     <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
                 </a>
             </div>
         
             <div class="sponsor">
-                <a href="https://www.biqu.equipment/" title="BigTreeTech" data-event-category="sponsor" data-event-action="BigTreeTech">
+                <a href="https://www.3dprinteros.com/?utm_source=referral&utm_medium=octoprint&utm_campaign=sdk_sponsorship" title="3DPrinterOS" data-analytics='"Sponsor Link", { "props": { "sponsor": "3DPrinterOS"} }'>
+                    <img src="/assets/img/sponsors/3dprinteros.png" alt="3DPrinterOS" title="3DPrinterOS">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://fiber-punk.com/" title="Fiberpunk" data-analytics='"Sponsor Link", { "props": { "sponsor": "Fiberpunk"} }'>
+                    <img src="/assets/img/sponsors/fiberpunk.png" alt="Fiberpunk" title="Fiberpunk">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://www.biqu.equipment/" title="BigTreeTech" data-analytics='"Sponsor Link", { "props": { "sponsor": "BigTreeTech"} }'>
                     <img src="/assets/img/sponsors/bigtreetech.png" alt="BigTreeTech" title="BigTreeTech">
                 </a>
             </div>
         
             <div class="sponsor">
-                <a href="https://www.creality3dofficial.com/" title="Creality" data-event-category="sponsor" data-event-action="Creality">
+                <a href="https://www.creality3dofficial.com/" title="Creality" data-analytics='"Sponsor Link", { "props": { "sponsor": "Creality"} }'>
                     <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
                 </a>
             </div>
@@ -596,7 +628,7 @@ They should be pretty much identical on other Linux distributions.</p>
     </div>
 
 
-<a class="btn btn-primary btn-block donatelink" href="/support-octoprint/" title="Support the project!" data-event-category="supportlink" data-event-action="download">
+<a class="btn btn-primary btn-block donatelink" href="/support-octoprint/" title="Support the project!" data-analytics='"Support Click", { "props": { "origin": "download"} }'>
     <i class="fa fa-heart"></i> Support the project! <i class="fa fa-heart"></i>
 </a>
 
@@ -650,7 +682,7 @@ however <em>is</em> recommended.</p>
 <p>OctoPi is available through the <a href="https://www.raspberrypi.org/software/">Raspberry Pi Imager</a>, which you can use to download and setup OctoPi. You can install it yourself, or alternatively simply buy one of the available</p>
 
 <div class="text-center" style="margin-bottom: 1rem;">
-    <a class="btn btn-large btn-block" href="/merch/#kits" data-event-category="download" data-event-action="kits">All-in-one OctoPrint Kits</a>
+    <a class="btn btn-large btn-block" href="/merch/#kits" data-analytics="&quot;Merch Click&quot;, { &quot;props&quot;: { &quot;origin&quot;: &quot;download&quot;} }">All-in-one OctoPrint Kits</a>
 </div>
 
 <h3 id="installing-octopi-using-the-raspberry-pi-imager">Installing OctoPi using the Raspberry Pi Imager</h3>
@@ -758,7 +790,7 @@ yourself you can do so here.</p>
 <h3 id="stable-octopi">Stable OctoPi</h3>
 
 <div class="text-center">
-    <a class="btn btn-large btn-primary btn-block" href="https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.8.6-20221018093204/octopi-0.18.0-1.8.6-20221018093204.zip" data-event-category="download" data-event-action="latest">
+    <a class="btn btn-large btn-primary btn-block" href="https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/0.18.0-1.8.6-20221018093204/octopi-0.18.0-1.8.6-20221018093204.zip" data-analytics="&quot;Download Click&quot;, { &quot;props&quot;: { &quot;target&quot;: &quot;latest&quot;} }">
       OctoPi&nbsp;0.18.0 &amp; OctoPrint&nbsp;1.8.6
     </a>
     <small>SHA256: <code>851573629147ec5385b9168a78377b8ed51af0a1d76c2174fe0e4ccb4f637a9d</code></small><br />
@@ -771,7 +803,7 @@ yourself you can do so here.</p>
 <p>The current <strong>OctoPi Release Candidate 1.0.0rc2</strong> can be found here:</p>
 
 <div class="text-center">
-    <a class="btn btn-large btn-block" href="https://unofficialpi.org/Distros/OctoPi/nightly/2022-08-03_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip" data-event-category="download" data-event-action="next">
+    <a class="btn btn-large btn-block" href="https://unofficialpi.org/Distros/OctoPi/nightly/2022-08-03_2022-04-04-octopi-bullseye-armhf-lite-1.0.0.zip" data-analytics="&quot;Download Click&quot;, { &quot;props&quot;: { &quot;target&quot;: &quot;next_octopi&quot;} }">
       OctoPi&nbsp;1.0.0rc2 &amp; OctoPrint&nbsp;1.8.1
     </a>
     <small><strong>Raspberry Pi 3B, 3B+, 4B or Zero 2 strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
@@ -908,7 +940,7 @@ They should be pretty much identical on other Linux distributions.</p>
                         Error tracking is powered and sponsored by <a href="https://sentry.io">Sentry</a>.
                     </p>
                     <p>
-                        Development would be impossible without the <a href="/support-octoprint/" data-event-category="supportlink" data-event-action="footer">financial support of the community</a>.
+                        Development would be impossible without the <a href="/support-octoprint/" data-analytics='"Support Click", { "props": { "origin": "footer"} }'>financial support of the community</a>.
                     </p>
                   </div>
               </div>
@@ -923,17 +955,16 @@ They should be pretty much identical on other Linux distributions.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1666709566"></script>
-<script src="/assets/js/lodash.min.js?_=1666709566"></script>
-<script src="/assets/js/prettify.min.js?_=1666709566"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1666709566"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1666709566"></script>
-<script src="/assets/js/bootstrap.min.js?_=1666709566"></script>
-<script src="/assets/js/lightbox.min.js?_=1666709566"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1666709566"></script>
-<script src="/assets/js/site.js?_=1666709566"></script>
-<script src="/assets/js/yt-with-consent.js?_=1666709566"></script>
-<script src="/assets/js/autotrack.js?_=1666709566"></script>
+<script src="/assets/js/jquery.min.js?_=1666711438"></script>
+<script src="/assets/js/lodash.min.js?_=1666711438"></script>
+<script src="/assets/js/prettify.min.js?_=1666711438"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1666711438"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1666711438"></script>
+<script src="/assets/js/bootstrap.min.js?_=1666711438"></script>
+<script src="/assets/js/lightbox.min.js?_=1666711438"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1666711438"></script>
+<script src="/assets/js/site.js?_=1666711438"></script>
+<script src="/assets/js/yt-with-consent.js?_=1666711438"></script>
 
 </body>
 </html>

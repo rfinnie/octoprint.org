@@ -5,8 +5,8 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octopi.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2022 06:02:42 -0600</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2022 06:02:42 -0600</lastBuildDate>
+    <pubDate>Tue, 15 Nov 2022 12:22:50 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Nov 2022 12:22:50 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -16,7 +16,7 @@
             Guy Sheffer has published a second release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Thu, 04 Aug 2022 07:30:00 -0500</pubDate>
+        <pubDate>Thu, 04 Aug 2022 12:30:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/</guid>
         <category>OctoPi Announcements</category>
@@ -29,7 +29,7 @@
             Guy Sheffer has published a first release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Mon, 28 Feb 2022 07:40:00 -0600</pubDate>
+        <pubDate>Mon, 28 Feb 2022 13:40:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/02/28/octopi-release-candidate-1-0-0rc1/</guid>
         <category>OctoPi Announcements</category>
@@ -42,7 +42,7 @@
             OctoPi 0.18.0 comes with OctoPrint 1.5.2 and Python 3, among other things.
           ]]>
         </description>
-        <pubDate>Mon, 25 Jan 2021 04:00:00 -0600</pubDate>
+        <pubDate>Mon, 25 Jan 2021 10:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2021/01/25/octopi-release-0-18-0/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/01/25/octopi-release-0-18-0/</guid>
         <category>OctoPi Announcements</category>
@@ -55,7 +55,7 @@
             Guy Sheffer just published a second release candidate for the release of OctoPi 0.18.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Mon, 11 Jan 2021 07:00:00 -0600</pubDate>
+        <pubDate>Mon, 11 Jan 2021 13:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2021/01/11/octopi-release-candidate-0-18-0rc2/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2021/01/11/octopi-release-candidate-0-18-0rc2/</guid>
         <category>OctoPi Announcements</category>
@@ -68,7 +68,7 @@
             Guy Sheffer published a release candidate for the release of OctoPi 0.18.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Thu, 05 Nov 2020 04:20:00 -0600</pubDate>
+        <pubDate>Thu, 05 Nov 2020 10:20:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2020/11/05/octopi-release-candidate-0-18-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octopi-release-candidate-0-18-0rc1/</guid>
         <category>OctoPi Announcements</category>
@@ -81,7 +81,7 @@
             OctoPi 0.17.0 comes with the latest OctoPrint 1.3.12 and Pi 4B support, among other things.
           ]]>
         </description>
-        <pubDate>Thu, 14 Nov 2019 03:15:00 -0600</pubDate>
+        <pubDate>Thu, 14 Nov 2019 09:15:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/11/14/octopi-release-0-17-0/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/11/14/octopi-release-0-17-0/</guid>
         <category>OctoPi Announcements</category>
@@ -94,7 +94,7 @@
             Guy Sheffer published a release candidate for the release of OctoPi 0.17.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Wed, 30 Oct 2019 04:40:00 -0500</pubDate>
+        <pubDate>Wed, 30 Oct 2019 09:40:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/10/30/octopi-release-candidate-0-17-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/10/30/octopi-release-candidate-0-17-0rc1/</guid>
         <category>OctoPi Announcements</category>
@@ -107,7 +107,7 @@
             OctoPi 0.16.0 comes with the latest OctoPrint 1.3.10 and Pi 3A+ support, among other things.
           ]]>
         </description>
-        <pubDate>Tue, 12 Feb 2019 04:10:00 -0600</pubDate>
+        <pubDate>Tue, 12 Feb 2019 10:10:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/02/12/octopi-release-0-16-0/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/02/12/octopi-release-0-16-0/</guid>
         <category>OctoPi Announcements</category>
@@ -120,7 +120,7 @@
             Guy Sheffer published a second release candidate for the release of OctoPi 0.16.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Thu, 31 Jan 2019 04:05:00 -0600</pubDate>
+        <pubDate>Thu, 31 Jan 2019 10:05:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/01/31/octopi-release-candidate-0-16-0rc2/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/01/31/octopi-release-candidate-0-16-0rc2/</guid>
         <category>OctoPi Announcements</category>
@@ -133,7 +133,7 @@
             Guy Sheffer published a release candidate for the release of OctoPi 0.16.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Fri, 25 Jan 2019 05:15:00 -0600</pubDate>
+        <pubDate>Fri, 25 Jan 2019 11:15:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/01/25/octopi-release-candidate-0-16-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/01/25/octopi-release-candidate-0-16-0rc1/</guid>
         <category>OctoPi Announcements</category>

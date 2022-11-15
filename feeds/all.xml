@@ -4,8 +4,8 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2022 06:02:42 -0600</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2022 06:02:42 -0600</lastBuildDate>
+    <pubDate>Tue, 15 Nov 2022 12:22:50 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Nov 2022 12:22:50 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -15,7 +15,7 @@
             The 49th episode of a regular live broadcast for Patrons which was recorded on November 3rd 2022.
           ]]>
         </description>
-        <pubDate>Thu, 10 Nov 2022 05:45:00 -0600</pubDate>
+        <pubDate>Thu, 10 Nov 2022 11:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/11/10/octoprint-on-air-49/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/11/10/octoprint-on-air-49/</guid>
         <category>OctoPrint On Air</category>
@@ -28,7 +28,7 @@
             This sixth bugfix release for 1.8.0 fixes a bug that was supposed to be fixed in 1.8.5.
           ]]>
         </description>
-        <pubDate>Tue, 18 Oct 2022 04:25:00 -0500</pubDate>
+        <pubDate>Tue, 18 Oct 2022 09:25:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/10/18/new-release-1.8.6/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/10/18/new-release-1.8.6/</guid>
         <category>OctoPrint Release Announcements</category>
@@ -41,7 +41,7 @@
             This fifth bugfix release for 1.8.0 fixes two newly reported bugs and gets rid of a runtime warning.
           ]]>
         </description>
-        <pubDate>Mon, 17 Oct 2022 10:00:00 -0500</pubDate>
+        <pubDate>Mon, 17 Oct 2022 15:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/10/17/new-release-1.8.5/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/10/17/new-release-1.8.5/</guid>
         <category>OctoPrint Release Announcements</category>
@@ -54,7 +54,7 @@
             The 48th episode of a regular live broadcast for Patrons which was recorded on September 29th 2022.
           ]]>
         </description>
-        <pubDate>Wed, 05 Oct 2022 08:45:00 -0500</pubDate>
+        <pubDate>Wed, 05 Oct 2022 13:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/10/05/octoprint-on-air-48/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/10/05/octoprint-on-air-48/</guid>
         <category>OctoPrint On Air</category>
@@ -67,7 +67,7 @@
             This fourth bugfix release for 1.8.0 fixes a few newly reported issues and introduces a reverse proxy test page.
           ]]>
         </description>
-        <pubDate>Tue, 27 Sep 2022 10:20:00 -0500</pubDate>
+        <pubDate>Tue, 27 Sep 2022 15:20:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/09/27/new-release-1.8.4/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/09/27/new-release-1.8.4/</guid>
         <category>OctoPrint Release Announcements</category>
@@ -80,7 +80,7 @@
             This third bugfix & security release for 1.8.0 fixes a few new issues reported, including various security vulnerabilities.
           ]]>
         </description>
-        <pubDate>Tue, 20 Sep 2022 06:30:00 -0500</pubDate>
+        <pubDate>Tue, 20 Sep 2022 11:30:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/09/20/new-release-1.8.3/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/09/20/new-release-1.8.3/</guid>
         <category>OctoPrint Release Announcements</category>
@@ -93,7 +93,7 @@
             The 47th episode of a regular live broadcast for Patrons which was recorded on August 18th 2022.
           ]]>
         </description>
-        <pubDate>Mon, 22 Aug 2022 08:45:00 -0500</pubDate>
+        <pubDate>Mon, 22 Aug 2022 13:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/08/22/octoprint-on-air-47/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/08/22/octoprint-on-air-47/</guid>
         <category>OctoPrint On Air</category>
@@ -106,7 +106,7 @@
             This second bugfix & security release for 1.8.0 fixes a few new issues reported, including one security vulnerability.
           ]]>
         </description>
-        <pubDate>Tue, 09 Aug 2022 07:30:00 -0500</pubDate>
+        <pubDate>Tue, 09 Aug 2022 12:30:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/08/09/new-release-1.8.2/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/08/09/new-release-1.8.2/</guid>
         <category>OctoPrint Release Announcements</category>
@@ -119,7 +119,7 @@
             Guy Sheffer has published a second release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
           ]]>
         </description>
-        <pubDate>Thu, 04 Aug 2022 07:30:00 -0500</pubDate>
+        <pubDate>Thu, 04 Aug 2022 12:30:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/08/04/octopi-release-candidate-1-0-0rc2/</guid>
         <category>OctoPi Announcements</category>
@@ -132,7 +132,7 @@
             The 46th episode of a regular live broadcast for Patrons which was recorded on June 23rd 2022.
           ]]>
         </description>
-        <pubDate>Tue, 28 Jun 2022 03:25:00 -0500</pubDate>
+        <pubDate>Tue, 28 Jun 2022 08:25:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/06/28/octoprint-on-air-46/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/06/28/octoprint-on-air-46/</guid>
         <category>OctoPrint On Air</category>

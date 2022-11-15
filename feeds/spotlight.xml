@@ -5,8 +5,8 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/spotlight.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2022 06:02:42 -0600</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2022 06:02:42 -0600</lastBuildDate>
+    <pubDate>Tue, 15 Nov 2022 12:22:50 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Nov 2022 12:22:50 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -16,7 +16,7 @@
             A little exhibit of some awesome OctoPrint setups from all around the world, as shared by enthusiastic users - the very first "OctoPrint around the World" community spotlight feature!
           ]]>
         </description>
-        <pubDate>Wed, 14 Dec 2016 06:45:00 -0600</pubDate>
+        <pubDate>Wed, 14 Dec 2016 12:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2016/12/14/octoprint-around-the-world/?utm_source=rss&amp;utm_medium=spotlight</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2016/12/14/octoprint-around-the-world/</guid>
         <category>OctoPrint Community Spotlights</category>
@@ -32,7 +32,7 @@
 
           ]]>
         </description>
-        <pubDate>Thu, 19 Nov 2015 11:26:11 -0600</pubDate>
+        <pubDate>Thu, 19 Nov 2015 17:26:11 +0000</pubDate>
         <link>https://octoprint.org/blog/2015/11/19/community-spotlight-touchui-plugin/?utm_source=rss&amp;utm_medium=spotlight</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2015/11/19/community-spotlight-touchui-plugin/</guid>
         <category>OctoPrint Community Spotlights</category>
@@ -48,7 +48,7 @@
 
           ]]>
         </description>
-        <pubDate>Tue, 28 Apr 2015 06:47:52 -0500</pubDate>
+        <pubDate>Tue, 28 Apr 2015 11:47:52 +0000</pubDate>
         <link>https://octoprint.org/blog/2015/04/28/community-spotlight-makerbot-clone-support-via-a-plugin/?utm_source=rss&amp;utm_medium=spotlight</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2015/04/28/community-spotlight-makerbot-clone-support-via-a-plugin/</guid>
         <category>OctoPrint Community Spotlights</category>

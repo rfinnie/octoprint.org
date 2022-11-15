@@ -5,8 +5,8 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/news.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Nov 2022 06:02:42 -0600</pubDate>
-    <lastBuildDate>Tue, 15 Nov 2022 06:02:42 -0600</lastBuildDate>
+    <pubDate>Tue, 15 Nov 2022 12:22:50 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Nov 2022 12:22:50 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -16,7 +16,7 @@
             If you still haven't switched your OctoPrint instance to Python 3, now is the time. OctoPrint 1.8.0 and later versions will require Python 3.
           ]]>
         </description>
-        <pubDate>Mon, 31 Jan 2022 09:00:00 -0600</pubDate>
+        <pubDate>Mon, 31 Jan 2022 15:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/01/31/octoprint-1.8.0-will-require-python-3/</guid>
         <category>OctoPrint News</category>
@@ -29,7 +29,7 @@
             Give OctoPrint a spin on Python 3! Run this simple install script.
           ]]>
         </description>
-        <pubDate>Thu, 10 Sep 2020 06:45:00 -0500</pubDate>
+        <pubDate>Thu, 10 Sep 2020 11:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2020/09/10/upgrade-to-py3/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</guid>
         <category>OctoPrint News</category>
@@ -42,7 +42,7 @@
             OctoPrint now has an official Discord server, find the invite at discord.octoprint.org!
           ]]>
         </description>
-        <pubDate>Thu, 07 May 2020 05:00:00 -0500</pubDate>
+        <pubDate>Thu, 07 May 2020 10:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2020/05/07/discord-server-launched/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/05/07/discord-server-launched/</guid>
         <category>OctoPrint News</category>
@@ -55,7 +55,7 @@
             A guest post by Oliver Dathe on how you can help in the fight against the ongoing SARS-CoV-2 pandemic. If you have any printing capacities free, please consider joining the community effort!
           ]]>
         </description>
-        <pubDate>Tue, 31 Mar 2020 08:00:00 -0500</pubDate>
+        <pubDate>Tue, 31 Mar 2020 13:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2020/03/31/3d-printing-against-corona/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2020/03/31/3d-printing-against-corona/</guid>
         <category>OctoPrint News</category>
@@ -68,7 +68,7 @@
             If you have been wondering where to buy OctoPrint merch like shirts and such, wonder no more - the Official Merchandise Shops are there!
           ]]>
         </description>
-        <pubDate>Thu, 28 Nov 2019 09:30:00 -0600</pubDate>
+        <pubDate>Thu, 28 Nov 2019 15:30:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/11/28/merchandise/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/11/28/merchandise/</guid>
         <category>OctoPrint News</category>
@@ -81,7 +81,7 @@
             On February 11th 2019 we migrated the community forums to a new server. This was our experience.
           ]]>
         </description>
-        <pubDate>Wed, 06 Mar 2019 04:20:00 -0600</pubDate>
+        <pubDate>Wed, 06 Mar 2019 10:20:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/03/06/community-forum-migration/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/03/06/community-forum-migration/</guid>
         <category>OctoPrint News</category>
@@ -94,7 +94,7 @@
             In this guest post, community member Jubaleth will tell you about safe ways to access your OctoPrint instance from the internet.
           ]]>
         </description>
-        <pubDate>Mon, 03 Sep 2018 11:20:00 -0500</pubDate>
+        <pubDate>Mon, 03 Sep 2018 16:20:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2018/09/03/safe-remote-access/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2018/09/03/safe-remote-access/</guid>
         <category>OctoPrint News</category>
@@ -107,7 +107,7 @@
             OctoPrint finally has its own community forum at discourse.octoprint.org!
           ]]>
         </description>
-        <pubDate>Tue, 20 Mar 2018 06:40:00 -0500</pubDate>
+        <pubDate>Tue, 20 Mar 2018 11:40:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2018/03/20/community-forum-launched/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2018/03/20/community-forum-launched/</guid>
         <category>OctoPrint News</category>
@@ -120,7 +120,7 @@
             Happy Holidays, a Happy New Year and of course also Happy Printing and we'll see each other again in 2017!
           ]]>
         </description>
-        <pubDate>Fri, 16 Dec 2016 10:45:00 -0600</pubDate>
+        <pubDate>Fri, 16 Dec 2016 16:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2016/12/16/happy-holidays/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2016/12/16/happy-holidays/</guid>
         <category>OctoPrint News</category>
@@ -133,7 +133,7 @@
             A look at the state of OctoPrint, its current funding situation and how things will continue from here on.
           ]]>
         </description>
-        <pubDate>Wed, 25 May 2016 13:00:00 -0500</pubDate>
+        <pubDate>Wed, 25 May 2016 18:00:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2016/05/25/state-of-octoprint/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2016/05/25/state-of-octoprint/</guid>
         <category>OctoPrint News</category>

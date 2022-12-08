@@ -11,11 +11,6 @@
       "image_download_size": 920425786,
       "image_download_sha256": "851573629147ec5385b9168a78377b8ed51af0a1d76c2174fe0e4ccb4f637a9d",
       "init_format": "systemd"
-    },
-    {
-      "name": "OctoPi Nightlies",
-      "description": "Nightly OctoPi builds, untested, bleeding edge",
-      "subitems_url": "https://octoprint.org/files/rpi-imager-nightlies.json"
     }
   ]
 }

@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octopi.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Dec 2022 16:40:56 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Dec 2022 16:40:56 +0000</lastBuildDate>
+    <pubDate>Thu, 08 Dec 2022 17:09:01 +0000</pubDate>
+    <lastBuildDate>Thu, 08 Dec 2022 17:09:01 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>OctoPi Release Candidate 1.0.0rc3 needs testers!</title>
+        <description>
+          <![CDATA[
+            Guy Sheffer published a third release candidate for the release of OctoPi 1.0.0 and is looking for feedback!
+          ]]>
+        </description>
+        <pubDate>Thu, 08 Dec 2022 17:00:00 +0000</pubDate>
+        <link>https://octoprint.org/blog/2022/12/08/octopi-release-candidate-1-0-0rc3/?utm_source=rss&amp;utm_medium=octopi</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/12/08/octopi-release-candidate-1-0-0rc3/</guid>
+        <category>OctoPi Announcements</category>
+      </item>
     
       <item>
         <title>OctoPi Release Candidate 1.0.0rc2 needs testers!</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 31 Jan 2019 10:05:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2019/01/31/octopi-release-candidate-0-16-0rc2/?utm_source=rss&amp;utm_medium=octopi</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2019/01/31/octopi-release-candidate-0-16-0rc2/</guid>
-        <category>OctoPi Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPi Release Candidate 0.16.0rc1 needs testers!</title>
-        <description>
-          <![CDATA[
-            Guy Sheffer published a release candidate for the release of OctoPi 0.16.0 and is looking for feedback!
-          ]]>
-        </description>
-        <pubDate>Fri, 25 Jan 2019 11:15:00 +0000</pubDate>
-        <link>https://octoprint.org/blog/2019/01/25/octopi-release-candidate-0-16-0rc1/?utm_source=rss&amp;utm_medium=octopi</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2019/01/25/octopi-release-candidate-0-16-0rc1/</guid>
         <category>OctoPi Announcements</category>
       </item>
     

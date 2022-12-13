@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+
+    <title>OctoPrint.org - Happy Birthday, OctoPrint!</title>
+    <meta name="description" content="OctoPrint is the snappy web interface for your 3D printer that allows you to control and monitor all aspects of your printer and print jobs, right from your browser.">
+    <meta name="author" content="Gina Häußge">
+    <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
+    <meta name="google-site-verification" content="i7e8SG0JfDqFkxQgr1_ZuirRzwJomS8xzPvb0mLHujM" />
+    <meta name="referrer" content="same-origin">
+
+    
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shim.js?_=1670938338"></script>
+    <![endif]-->
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/assets/css/site.css?_=1670938338">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1670938338">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1670938338">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1670938338">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1670938338">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1670938338">
+
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1670938338"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1670938338"/>
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/img/tentacle-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
+
+    <!-- Le RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="OctoPrint.org: OctoBlog" href="/feeds/all.xml">
+
+    <!-- Le social media meta data -->
+    
+    
+
+    
+
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@OctoPrint3D" />
+    <meta name="twitter:title" content="Happy Birthday, OctoPrint!" />
+    <meta name="twitter:description" content="OctoPrint is turning 10 years old this holiday season! Time to reflect a bit on its history, and to eat cake!" />
+    <meta name="twitter:image" content="https://octoprint.org/assets/img/blog/2022-12/2022-12-13-octoprint-birthday-card.png" />
+
+    <meta property="og:title" content="Happy Birthday, OctoPrint!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://octoprint.org/assets/img/blog/2022-12/2022-12-13-octoprint-birthday-poster.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:description" content="OctoPrint is turning 10 years old this holiday season! Time to reflect a bit on its history, and to eat cake!" />
+    <meta property="og:site_name" content="OctoPrint.org" />
+    <meta property="og:url" content="https://octoprint.org/blog/2022/12/13/happy-birthday-octoprint/" />
+
+    <meta itemscope itemtype="http://schema.org/WebPage" />
+    <meta itemprop="headline" content="Happy Birthday, OctoPrint!" />
+    <meta itemprop="description" content="OctoPrint is turning 10 years old this holiday season! Time to reflect a bit on its history, and to eat cake!" />
+    <meta itemprop="image" content="https://octoprint.org/assets/img/blog/2022-12/2022-12-13-octoprint-birthday-poster.png" />
+
+    <script>
+        var shiftWindow = function() { scrollBy(0, -40) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+
+    <!-- Plausible -->
+    <script defer data-domain="octoprint.org" src="https://plausible.octoprint.org/js/plausible.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script>
+        function handleLinkEvent(event) {
+            var link = event.target;
+            var middle = event.type == "auxclick" && event.which == 2;
+            var click = event.type == "click";
+            while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+                link = link.parentNode;
+            }
+            if (middle || click) {
+                let attributes = link.getAttribute('data-analytics').split(/,(.+)/);
+                let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
+                plausible(...events);
+            }
+            if (!link.target) {
+                if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+                    setTimeout(function () {
+                        location.href = link.href;
+                    }, 150);
+                    event.preventDefault();
+                }
+            }
+        }
+
+        window.addEventListener("load", () => {
+            let links = document.querySelectorAll('a[data-analytics]');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', handleLinkEvent);
+                links[i].addEventListener('auxclick', handleLinkEvent);
+            }
+        })
+    </script>
+
+    <!-- Carbon -->
+    <script>
+        var disableStr = "carbon-disable";
+        function carbonOptout() {
+            //document.cookie = disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org";
+            document.cookie = disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/; domain=octoprint.org; SameSite=Strict";
+            window[disableStr] = true;
+            alert("Carbon Ads sind jetzt deaktiviert! / Carbon Ads are now deactivated!");
+        }
+        if (document.cookie.indexOf(disableStr + "=true") > -1) {
+            window[disableStr] = true;
+        }
+    </script>
+
+    <!-- Cookie consent -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+    <script src="/assets/js/cookieconsent.min.js"></script>
+    <script>
+        if (!String.prototype.startsWith) {
+            String.prototype.startsWith = function(search, pos) {
+            return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+            };
+        }
+
+        
+        window.addEventListener("load", function(){
+            window.cookieconsent.hasTransition = false;
+            window.cookieconsent.initialise({
+                "position": "bottom",
+                "theme": "edgeless",
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "link": "#10a800"
+                    },
+                    "button": {
+                        "background": "#0b7500"
+                    }
+                },
+                "elements": {
+                    "messagelink": '<span id="cookieconsent:desc" class="cc-message">{{message}} <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a> or <a aria-label="privacy policy" tabindex="1" class="cc-link" href="/privacy/" target="_blank">read our Privacy Policy</a></span>'
+                }
+            })
+        });
+        
+
+        /**
+         * Make sure octoprint.github.io stuff gets rewritten to octoprint.org.
+         * See https://github.com/OctoPrint/plugins.octoprint.org/issues/146.
+         */
+        var githubio = "octoprint.github.io/octoprint.org";
+        var url = window.location.href;
+        if (url && (url.startsWith("http://" + githubio) || url.startsWith("https://" + githubio))) {
+            url = url.replace(githubio, "octoprint.org");
+            window.location.replace(url);
+        }
+    </script>
+</head>
+
+<body onload="load()">
+
+<div id="top"></div>
+
+<div id="banner" style="display: none">
+    <a class="close-banner" href="javascript:void(0)">&times;</a>
+    <div class="container content">
+        <p class="text">
+            I work full time on OctoPrint and can only continue thanks to funding by people like you. Give the
+            button a click and learn how you can help!
+        </p>
+        <p class="signature">
+            Thank you,<br>
+            Gina
+        </p>
+        <div class="span4 button">
+            <a class="btn btn-primary btn-large btn-block" href="/support-octoprint/" data-analytics='"Support Click", { "props": { "origin": "banner"} }'><i class="fa fa-heart"></i> Support my work! <i class="fa fa-heart"></i></a>
+        </div>
+    </div>
+</div>
+
+<div id="navigation" class="navbar navbar-inverse navbar-fixed-top unfixed" data-scroll-header>
+  <a class="support-ukraine" href="https://supportukrainenow.org/" target="_blank" rel="nofollow noopener" title="We stand with Ukraine!">
+    🇺🇦 We stand with Ukraine! 🇺🇦
+</a>
+
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand hidden-phone" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"> OctoPrint.org</a>
+      <a class="brand visible-phone" href="/"><img src="/assets/img/tentacle-20x20.png" alt="Tentacle logo" class="tentacle"></a>
+      <a href="javascript:void(0)" class="btn btn-burger btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="fas fa-bars"></i></a>
+      <div class="pull-right">
+        <ul class="nav social-navbar">
+          <li><a href="/merch/" title="Get some merchandise!" data-analytics='"Merch Click", { "props": { "origin": "navbar"} }'><i class="fa fa-shopping-basket"></i></a></li>
+          <li><a href="/support-octoprint/" title="Support OctoPrint!" data-analytics='"Support Click", { "props": { "origin": "navbar"} }'><i class="fas fa-donate"></i></a></li>
+        </ul>
+      </div>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="https://community.octoprint.org">Forum</a></li>
+          <li><a href="/download/">Download</a></li>
+          <li><a href="/support-octoprint/" title="Support the project!" data-analytics='"Support Click", { "props": { "origin": "menu"} }'>Donate</a></li>
+          <li><a href="/merch/" title="Get some merchandise!" data-analytics='"Merch Click", { "props": { "origin": "menu"} }'>Merchandise</a></li>
+          <li><a href="http://plugins.octoprint.org">Plugins</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://docs.octoprint.org">Documentation</a></li>
+              <li><a href="https://community.octoprint.org/c/support/faq">FAQ</a></li>
+              <li><a href="/media/">Media</a></li>
+              <li class="divider"></li>
+              <li><a href="/conduct/">Code of Conduct</a></li>
+              <li><a href="/security/">Security Policy</a></li>
+              <li class="divider"></li>
+              <li><a href="https://github.com/OctoPrint/OctoPrint">Source</a></li>
+              <li><a href="https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md">Contribution Guidelines</a></li>
+              <li><a href="https://github.com/OctoPrint/OctoPrint/issues">Issuetracker</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="wrap">
+    <div id="main">
+    <div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="hero-content pageheader">
+                    <h1>Happy Birthday, OctoPrint!</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container blogpost">
+    <div class="row-fluid pagination">
+        <div class="span12">
+            
+            &nbsp;
+            
+                <small><a class="older-posts" href="/blog/2022/12/08/octopi-release-candidate-1-0-0rc3/" title="Previous Page">OctoPi Release Candidate 1.0.0rc3 needs testers! &raquo;</a></small>
+            
+        </div>
+    </div>
+    <div class="row-fluid content">
+        <div class="span8 text" id="blogpost-content">
+            <p>Like every December, I’m not only looking forward to the holidays 🎄 for my yearly end-of-year vacation, some silent rest time with friends and
+family, the smell of freshly baked cookies 🍪 and Die Hard on the screen 🍿, but also because it always marks another year of OctoPrint’s existence.</p>
+
+<p>This year, it’s a special one, because OctoPrint was born on December 25th 2012, so it’s turning 10 years old! 🎉</p>
+
+<p>Time to do some reflection on the past decade, and I did just that in a very special OctoPrint on Air stream yesterday, where I went over 
+the past 10 years, talked about the milestones, the big events, the challenges and the fun times, fielded some questions and of course also had some cake!</p>
+
+<div class="row-fluid" style="margin-bottom: 10px">
+    <div class="span6">
+        <a href="/assets/img/blog/2022-12/2022-12-13-gina-and-cupcake.jpg" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="Me and an OctoPrint themed cupcake"><img src="/assets/img/blog/2022-12/2022-12-13-gina-and-cupcake.jpg" /></a>
+    </div>
+    <div class="span6">
+        <a href="/assets/img/blog/2022-12/2022-12-13-gina-and-cupcake-bite.jpg" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="Me and the cupcake that's now missing a bite"><img src="/assets/img/blog/2022-12/2022-12-13-gina-and-cupcake-bite.jpg" /></a>
+    </div>
+</div>
+
+<p>All of that you can watch in the video embed below, but I still wanted to also write down some of the things that happened exactly 10 years ago here.</p>
+
+<h2 id="10-years-ago">10 years ago…</h2>
+
+<p>I got my first 3d printer back in November 2012. It was a first-gen Ultimaker, the one that still had an unheated acrylic build plate, 
+a lasercut wooden frame, and no screen and SD card slot, unless you shelled out another 100 bucks for an add-on (which back then I did
+not do).</p>
+
+<div class="row-fluid" style="margin-bottom: 10px">
+    <div class="span6 offset3">
+        <a href="/assets/img/blog/2022-12/2022-12-13-ultimaker.jpg" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="Me and the cupcake that's now missing a bite"><img src="/assets/img/blog/2022-12/2022-12-13-ultimaker.jpg" /></a>
+    </div>
+</div>
+
+<p>I tethered it to my PC via USB and used first Printrun and then the built-in machine control in Cura to print. But that
+got annoying fast: It was loud, it was smelly and it was blocking me from using the PC to do anything else. So I started looking for
+alternatives. The first RPi had just been released a few months earlier, and I figured I could add a cheap USB dongle to it and run 
+some kind of server on it that would allow me to remotely monitor and control the printer.</p>
+
+<p>So I got my hands on a Pi (not that easy back then either), a USB dongle and started looking for suitable software, absolutely sure
+there would already be something fitting the bill. I found some stuff, but nothing that really worked for me: All of the existing options basically consisted of a very
+crude web interface that allowed you to upload one file and print it, but that was it. No monitoring, no control, no nothing.</p>
+
+<p>At that point in time it was already the start of December, my vacation was coming up and I had been itching for some nice pet project
+for a while, so I thought “Hey, how hard it can it be!” - famous last words - and decided to just write my own solution. After some research I settled on
+extending the Cura code with a web server and API and add a web interface to the mix that would allow me to utilize the existing
+communication layer in Cura’s machine control to talk to the printer. I figured that would be the easiest way to get something up
+and running quickly, without having to fully understand the communication protocol of the printer (which I didn’t at the time and
+after some reading had to realize was way more than just streaming the GCode to the printer line by line over a serial interface). So I
+got to work, and on December 25th I had a working prototype of “Cura WebUI” that allowed me to upload and print files, monitor the temperature in a graph 
+and control the printer via a web interface. I posted about it publicly in the Google Plus 3D printing community, including a 
+screenshot.</p>
+
+<div class="row-fluid" style="margin-bottom: 10px">
+    <div class="span12">
+        <a href="/assets/img/blog/2022-12/2022-12-13-first-ever-screenshot.png" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="The first ever screenshot of what is now OctoPrint"><img src="/assets/img/blog/2022-12/2022-12-13-first-ever-screenshot.png" /></a>
+    </div>
+</div>
+
+<p>A day or two later I had restructured the layout a bit, added a file list, things like that. And I actually was printing against a real
+printer for the first time!</p>
+
+<div class="row-fluid" style="margin-bottom: 10px">
+    <div class="span12">
+        <a href="/assets/img/blog/2022-12/2022-12-13-screenshot-layout.png" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="Layout changes and a file list"><img src="/assets/img/blog/2022-12/2022-12-13-screenshot-layout.png" /></a>
+    </div>
+</div>
+
+<p>People seemed to like it, even though the dependency on the full Cura distribution was a bit annoying to some (myself included), so my next few steps were to
+extract my little server/web interface from Cura and make it a standalone thing uncreatively called “Printer WebUI”.</p>
+
+<p>I wanted to be able to monitor my print jobs via a webcam, and so did some experiments with OpenCV, but the poor Pi was incapable to both capture and process the images at the same time
+as it was trying to keep the print job going, so that was a dead-end. But I didn’t give up and instead started looking into other
+options, and found mjpg-streamer, which allowed me to stream MJPG from a webcam that supported it, at only a fraction of CPU
+load on the Pi. I embedded the stream into the web interface and was extremely happy to see it perform well enough to be usable.</p>
+
+<div class="row-fluid" style="margin-bottom: 10px">
+    <div class="span12">
+        <a href="/assets/img/blog/2022-12/2022-12-13-webcam.png" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="Renamed to Printer WebUI and now sporting a webcam tab"><img src="/assets/img/blog/2022-12/2022-12-13-webcam.png" /></a>
+    </div>
+</div>
+
+<p>Shortly after that I also added a first version of the timelapse feature. By then my vacation was pretty much over (we are now in early
+January of 2013), and I figured, well, that was fun, it now does everything I needed it to do, and apparently it also helps others. A nice
+vacation! So I put it aside and went back to work.</p>
+
+<h2 id="and-the-rest-is-history">And the rest is history</h2>
+
+<div class="row-fluid" style="margin-bottom: 10px">
+    <div class="span12">
+        <a href="/assets/img/blog/2022-12/2022-12-13-timeline.png" data-lightbox="/blog/2022/12/13/happy-birthday-octoprint" data-title="The first ever screenshot of what is now OctoPrint"><img src="/assets/img/blog/2022-12/2022-12-13-timeline.png" /></a>
+    </div>
+</div>
+
+<p>I did not expect what happened next. I started getting emails from people from all across the globe thanking me, asking for features to be added,
+requesting help to get it working with their printer. At that point I learned that apparently there isn’t just <em>one</em> variant of that
+printer communication protocol out there, and that a lot of the printers out there behaved very differently on the serial interface. That has become
+a constant source of frustration for me ever since, but back then it was just a minor annoyance (probably because I did not grasp the full scope of the issue yet 😂). I was happy to help people get it
+working, and I was happy to add features that people requested. I was also happy to see that people were actually using it, and that
+it was helping them. Fun fact: I still am to this day 😊</p>
+
+<p>Around spring of 2013 it got named OctoPrint (and how that happened is covered in the video below, so be sure to watch it 😉), Domains got registered, GitHub
+repos got renamed. I reduced my work to 4 days per week in September of 2013 to have one day per week for OctoPrint which continued to grow and grow
+and grow.</p>
+
+<p>By spring of 2014 it had grown so much that I felt I was not able to do it justice anymore working on it only on the side, and frankly that was also
+starting to become quite unhealthy. Just at that time I got an offer by a technology company to work on it full time on their salary, and so in August 2014
+I turned OctoPrint into my full-time job. By April 2016 that sadly no longer proofed financially feasible to that company, and so they had to let me go. An incredibly scary time indeed,
+especially since I had sworn to never become self-employed and every fiber of my being screamed for getting a secure employment again, with it being clear that that would have
+meant the end of my involvement with OctoPrint. But I also felt that I’d 
+kick myself for the rest of my life if I didn’t at least <em>try</em> to make my full-time focus on OctoPrint work out long-term via crowd
+funding, so on April 13th 2016 I launched my <a href="https://patreon.com/foosel">Patreon campaign</a> and then got overwhelmed by the community’s amazing response 🥰</p>
+
+<p>I’ve been self-employed and working <a href="/support-octoprint/">fully crowdfunded</a> on OctoPrint now ever since. I consider it my life’s work, and I am so incredibly grateful for the support I’ve
+received over the years. I am also eternally grateful for the community that has grown around OctoPrint, and for the amazing people and friends I’ve met
+along the way. Thank you all for being part of this journey with me, and for making it what it is today! 💕</p>
+
+<p>On to the next decade! And of course, as always on the final blog post of the year, also Happy Holidays, Happy New Year, and - most importantly - Happy Printing! 🎄🎅🎁</p>
+
+<p><strong><em>~ Gina</em></strong></p>
+
+<hr />
+
+<p>PS: And if you want to know more about the history of OctoPrint, be sure to check out OctoPrint on Air #50:</p>
+
+<div class="responsive_iframe">
+	<div class="yt-with-consent" data-vid="OEpnaWX-oHU"></div>
+</div>
+
+
+
+            
+            
+            
+            <div class="postcomments">
+                <h2>Discuss!</h2>
+
+                <div id='discourse-comments'></div>
+
+                <script type="text/javascript">
+                  if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+                    // Apparently Safari is a special snow flake and doesn't understand the referer policies. So
+                    // no comments for Safari. Complain to Apple.
+                    document.getElementById("discourse-comments").innerHTML = "It looks like you are using Safari. " +
+                        "Comment embedding is sadly not supported in Safari. You'll need to " +
+                        "<a href='https://community.octoprint.org/c/blog/'>go to the comment forum instead.</a>";
+                  } else {
+                    DiscourseEmbed = { discourseUrl: 'https://community.octoprint.org/',
+                                       discourseEmbedUrl: 'https://octoprint.org/blog/2022/12/13/happy-birthday-octoprint/',
+                                       discourseReferrerPolicy: 'no-referrer-when-downgrade'};
+
+                    (function() {
+                      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                      d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                      //d.src = "/assets/js/comments.js";
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                    })();
+                  }
+
+                </script>
+            </div>
+            
+        </div>
+        <div class="span4">
+            <div class="postinfo">
+                
+                <dl class="featuredimage">
+                    <img src="/assets/img/blog/2022-12/2022-12-13-octoprint-birthday-poster.png" class="img-rounded">
+                </dl>
+                
+                
+                <dl class="author">
+                    <dt>Author</dt>
+                    <dd>
+                        <a class="authorlink" href="https://github.com/foosel" target="_blank"><span class="authoravatar"><img src="https://github.com/foosel.png?size=100" /></span> Gina Häußge</a>
+                    </dd>
+                </dl>
+                
+                <dl class="published">
+                    <dt>Published</dt>
+                    <dd>13 Dec 2022</dd>
+                </dl>
+                
+                
+                <dl class="category">
+                    <dt>Category</dt>
+                    <dd>News</dd>
+                </dl>
+                
+                
+                <dl class="share">
+                    <dt>Share this</dt>
+                    <dd><ul class="sharebuttons">
+    <li><a title="Twitter" href="http://twitter.com/share?text=%22Happy Birthday, OctoPrint!%22&url=https://octoprint.org/blog/2022/12/13/happy-birthday-octoprint/&via=OctoPrint3D&related=OctoPrint3D" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+    <li><a title="Facebook" href="http://www.facebook.com/sharer.php?u=https://octoprint.org/blog/2022/12/13/happy-birthday-octoprint/&p[title]=Happy Birthday, OctoPrint!" rel="nofollow" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span></a></li>
+</ul>
+</dd>
+                </dl>
+            </div>
+            <div class="ad visible-desktop visible-tablet invisible-mobile">
+                <script>
+    if (!window["carbon-disable"] && !window.matchMedia("(max-width: 767px)").matches) {
+        (function() {
+            var po = document.createElement("script");
+            po.type = "text/javascript";
+            po.async = true;
+            po.src  = "//cdn.carbonads.com/carbon.js?serve=CKYIL53W&placement=octoprintorg";
+            po.id = "_carbonads_js";
+            var s = document.currentScript;
+            s.parentNode.insertBefore(po, s);
+        })();
+    }
+</script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+      <footer>
+          <div class="container">
+              <div class="row">
+                <div class="span4 footer-left-column">
+                    <h2>On the web</h2>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fab fa-github fa-fw"></i></span><a href="https://github.com/OctoPrint/OctoPrint" target="_blank">GitHub</a></li>
+                        <li><span class="fa-li"><i class="fas fa-users fa-fw"></i></span><a href="https://community.octoprint.org" target="_blank">Community Forum</a></li>
+                        <li><span class="fa-li"><i class="fab fa-discord fa-fw"></i></span><a href="https://discord.octoprint.org" target="_blank">Discord</a></li>
+                        <li><span class="fa-li"><i class="fas fa-hashtag fa-fw"></i></span><a href="ircs://irc.libera.chat:6697/#octoprint" target="_blank">IRC</a> (#octoprint on <a href="https://libera.chat" target="_blank">libera.chat</a>)</li>
+                        <li><span class="fa-li"><i class="fab fa-twitter fa-fw"></i></span><a href="https://twitter.com/OctoPrint3D" target="_blank" rel="me">Twitter</a></li>
+                        <li><span class="fa-li"><i class="fab fa-mastodon fa-fw"></i></span><a href="https://fosstodon.org/@octoprint" target="_blank" rel="me">Mastodon</a></li>
+                        <li><span class="fa-li"><i class="fab fa-facebook-f fa-fw"></i></span><a href="https://facebook.com/OctoPrint" target="_blank" rel="me">Facebook</a></li>
+                        <li><span class="fa-li"><i class="fab fa-youtube fa-fw"></i></span><a href="https://www.youtube.com/c/OctoPrint3D" target="_blank">YouTube</a></li>
+                        <li><span class="fa-li"><i class="fas fa-tachometer-alt fa-fw"></i></span><a href="https://status.octoprint.org" target="_blank">Site Status</a></li>
+                        <li><span class="fa-li"><i class="fas fa-hammer fa-fw"></i></span><a href="/conduct/" rel="nofollow">Code of Conduct</a></li>
+                        <li><span class="fa-li"><i class="fas fa-lock fa-fw"></i></span><a href="/security/" rel="nofollow">Security Policy</a></li>
+                    </ul>
+                </div>
+                <div class="span4">
+                    <h2>Recent Posts</h2>
+                    <div class="recent-posts">
+                        
+                        <div><a class="post-link" href="/blog/2022/12/13/happy-birthday-octoprint/">Happy Birthday, OctoPrint!</a><br><small>13 Dec 2022</small></div>
+                        
+                        <div><a class="post-link" href="/blog/2022/12/08/octopi-release-candidate-1-0-0rc3/">OctoPi Release Candidate 1.0.0rc3 needs testers!</a><br><small>08 Dec 2022</small></div>
+                        
+                        <div><a class="post-link" href="/blog/2022/12/05/octoprint-on-air-50/">Announcement: OctoPrint On Air #50 LIVE</a><br><small>05 Dec 2022</small></div>
+                        
+                        <div><a class="post-link" href="/blog/2022/11/10/octoprint-on-air-49/">OctoPrint On Air #49</a><br><small>10 Nov 2022</small></div>
+                        
+                        <div><a class="post-link" href="/blog/2022/10/18/new-release-1.8.6/">New release: 1.8.6</a><br><small>18 Oct 2022</small></div>
+                        
+                    </div>
+                </div>
+                <div class="span4 footer-right-column">
+                    <h2>Big Thanks</h2>
+                    <p>
+                        Cross-browser testing services are kindly provided by <a href="https://www.browserstack.com">BrowserStack</a>.
+                        Profiling is done with the help of <a href="https://www.pyvmmonitor.com">PyVmMonitor</a>.
+                        Error tracking is powered and sponsored by <a href="https://sentry.io">Sentry</a>.
+                    </p>
+                    <p>
+                        Development would be impossible without the <a href="/support-octoprint/" data-analytics='"Support Click", { "props": { "origin": "footer"} }'>financial support of the community</a>.
+                    </p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="span12 text-center legal">
+                      <small>"OctoPrint" is a <a href="/trademark-rules/">registered trademark</a> &middot; <a href="/imprint/" rel="nofollow">Imprint</a> &middot; <a href="/privacy/" rel="nofollow">Privacy Policy</a></small>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+<a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
+
+<script src="/assets/js/jquery.min.js?_=1670938338"></script>
+<script src="/assets/js/lodash.min.js?_=1670938338"></script>
+<script src="/assets/js/prettify.min.js?_=1670938338"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1670938338"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1670938338"></script>
+<script src="/assets/js/bootstrap.min.js?_=1670938338"></script>
+<script src="/assets/js/lightbox.min.js?_=1670938338"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1670938338"></script>
+<script src="/assets/js/site.js?_=1670938338"></script>
+<script src="/assets/js/yt-with-consent.js?_=1670938338"></script>
+
+</body>
+</html>

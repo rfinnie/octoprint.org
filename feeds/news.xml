@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/news.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Dec 2022 12:50:40 +0000</pubDate>
-    <lastBuildDate>Tue, 13 Dec 2022 12:50:40 +0000</lastBuildDate>
+    <pubDate>Tue, 13 Dec 2022 13:32:18 +0000</pubDate>
+    <lastBuildDate>Tue, 13 Dec 2022 13:32:18 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Happy Birthday, OctoPrint!</title>
+        <description>
+          <![CDATA[
+            OctoPrint is turning 10 years old this holiday season! Time to reflect a bit on its history, and to eat cake!
+          ]]>
+        </description>
+        <pubDate>Tue, 13 Dec 2022 13:30:00 +0000</pubDate>
+        <link>https://octoprint.org/blog/2022/12/13/happy-birthday-octoprint/?utm_source=rss&amp;utm_medium=news</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2022/12/13/happy-birthday-octoprint/</guid>
+        <category>OctoPrint News</category>
+      </item>
     
       <item>
         <title>OctoPrint 1.8.0 will require Python 3</title>
@@ -123,19 +136,6 @@
         <pubDate>Fri, 16 Dec 2016 16:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2016/12/16/happy-holidays/?utm_source=rss&amp;utm_medium=news</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2016/12/16/happy-holidays/</guid>
-        <category>OctoPrint News</category>
-      </item>
-    
-      <item>
-        <title>On the state of OctoPrint</title>
-        <description>
-          <![CDATA[
-            A look at the state of OctoPrint, its current funding situation and how things will continue from here on.
-          ]]>
-        </description>
-        <pubDate>Wed, 25 May 2016 18:00:00 +0000</pubDate>
-        <link>https://octoprint.org/blog/2016/05/25/state-of-octoprint/?utm_source=rss&amp;utm_medium=news</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2016/05/25/state-of-octoprint/</guid>
         <category>OctoPrint News</category>
       </item>
     

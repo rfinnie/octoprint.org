@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1677159666"></script>
+    <script src="/assets/js/html5shim.js?_=1677161297"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1677159666">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1677159666">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1677159666">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1677159666">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1677159666">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1677159666">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1677161297">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1677161297">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1677161297">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1677161297">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1677161297">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1677161297">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1677159666"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1677159666"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1677161297"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1677161297"/>
 
 
     <!-- Le fav and touch icons -->
@@ -300,7 +300,7 @@ however <em>is</em> recommended.</p>
 <blockquote>
   <p>🤚 <strong>Before you begin</strong></p>
 
-  <p>Read and follow these instructions <strong>precisely</strong>. Most importantly, <strong>leave the system username as “pi”, do not change it to anything else or OctoPrint won’t work!</strong></p>
+  <p>Read and follow these instructions <strong>precisely</strong>.</p>
 </blockquote>
 
 <ol>
@@ -315,13 +315,11 @@ however <em>is</em> recommended.</p>
 
     <ul>
       <li>
-        <p><strong>Configure your wifi options</strong>: Set your SSID, password and WiFi country:
-<img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></p>
+        <p><strong>Configure your wifi options</strong>: Set your SSID, password and WiFi country.</p>
       </li>
       <li>
         <p><strong>Change the <em>system</em> password</strong> in “Set username and password” by entering a new password to use for the system user “pi”. This is <em>not</em> the password you’ll use for logging into
-OctoPrint but one that you’ll have to use to log into your Pi via SSH should you ever need to. <strong>Leave the username as “pi”, do not change it to anything else!</strong>
-<img src="/assets/img/download/advanced-password.png" alt="Advanced Options - Wifi Setup" /></p>
+OctoPrint but one that you’ll have to use to log into your Pi via SSH should you ever need to.</p>
       </li>
       <li>
         <p>Optionally: Change the configured timezone in “Set locale settings”</p>
@@ -330,6 +328,8 @@ OctoPrint but one that you’ll have to use to log into your Pi via SSH should y
         <p>Optionally: Change the hostname in “Set hostname”</p>
       </li>
     </ul>
+
+    <p><img src="/assets/img/download/advanced-options.png" alt="Advanced options, showing the &quot;Set username and password&quot; box ticked and a new password set, and showing the &quot;Configure wireless LAN&quot; box ticked and an SSID and Password set." /></p>
   </li>
   <li>
     <p><strong>Install the image to your SD card</strong>, then plug everything in to your Raspberry Pi and boot it up. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
@@ -408,21 +408,9 @@ yourself you can do so here.</p>
     <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, 400, Zero, Zero W and Zero 2.</small><br />
 </div>
 
-<h3 id="octopi-release-candidate">OctoPi Release Candidate</h3>
-
-<p>The current <strong>OctoPi Release Candidate 1.0.0rc3</strong> can be found here:</p>
-
-<div class="text-center">
-    <a class="btn btn-large btn-block" href="https://unofficialpi.org/Distros/OctoPi/nightly/2022-10-27_2022-09-22-octopi-bullseye-armhf-lite-1.0.0.zip" data-analytics="&quot;Download Click&quot;, { &quot;props&quot;: { &quot;target&quot;: &quot;next_octopi&quot;} }">
-      OctoPi&nbsp;1.0.0rc3 &amp; OctoPrint&nbsp;1.8.6
-    </a>
-    <small><strong>Raspberry Pi 3B, 3B+, 4B or Zero 2 strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
-    <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, 400, Zero, Zero W and Zero 2.</small><br />
-</div>
-
 <h3 id="octopi-nightlies">OctoPi Nightlies</h3>
 
-<p>You can also get the <a href="https://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the highly experimental <a href="https://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
+<p>You can also get the <a href="https://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the <a href="https://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
 
 <h2 id="further-resources">Further resources</h2>
 
@@ -528,8 +516,14 @@ They should be pretty much identical on other Linux distributions.</p>
             </div>
         
             <div class="sponsor">
-                <a href="https://www.creality3dofficial.com/" title="Creality" data-analytics='"Sponsor Link", { "props": { "sponsor": "Creality"} }'>
-                    <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
+                <a href="https://www.biqu.equipment/" title="BigTreeTech" data-analytics='"Sponsor Link", { "props": { "sponsor": "BigTreeTech"} }'>
+                    <img src="/assets/img/sponsors/bigtreetech.png" alt="BigTreeTech" title="BigTreeTech">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://www.raise3d.com" title="Raise 3D" data-analytics='"Sponsor Link", { "props": { "sponsor": "Raise 3D"} }'>
+                    <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
                 </a>
             </div>
         
@@ -546,14 +540,8 @@ They should be pretty much identical on other Linux distributions.</p>
             </div>
         
             <div class="sponsor">
-                <a href="https://www.raise3d.com" title="Raise 3D" data-analytics='"Sponsor Link", { "props": { "sponsor": "Raise 3D"} }'>
-                    <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.biqu.equipment/" title="BigTreeTech" data-analytics='"Sponsor Link", { "props": { "sponsor": "BigTreeTech"} }'>
-                    <img src="/assets/img/sponsors/bigtreetech.png" alt="BigTreeTech" title="BigTreeTech">
+                <a href="https://www.creality3dofficial.com/" title="Creality" data-analytics='"Sponsor Link", { "props": { "sponsor": "Creality"} }'>
+                    <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
                 </a>
             </div>
         
@@ -598,20 +586,26 @@ They should be pretty much identical on other Linux distributions.</p>
         
         
             <div class="sponsor">
-                <a href="https://www.creality3dofficial.com/" title="Creality" data-analytics='"Sponsor Link", { "props": { "sponsor": "Creality"} }'>
-                    <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
-                </a>
-            </div>
-        
-            <div class="sponsor">
                 <a href="https://www.obico.io/octoprint.html" title="Obico" data-analytics='"Sponsor Link", { "props": { "sponsor": "Obico"} }'>
                     <img src="/assets/img/sponsors/obico.png" alt="Obico" title="Obico">
                 </a>
             </div>
         
             <div class="sponsor">
+                <a href="https://www.creality3dofficial.com/" title="Creality" data-analytics='"Sponsor Link", { "props": { "sponsor": "Creality"} }'>
+                    <img src="/assets/img/sponsors/creality.png" alt="Creality" title="Creality">
+                </a>
+            </div>
+        
+            <div class="sponsor">
                 <a href="https://fiber-punk.com/" title="Fiberpunk" data-analytics='"Sponsor Link", { "props": { "sponsor": "Fiberpunk"} }'>
                     <img src="/assets/img/sponsors/fiberpunk.png" alt="Fiberpunk" title="Fiberpunk">
+                </a>
+            </div>
+        
+            <div class="sponsor">
+                <a href="https://www.raise3d.com" title="Raise 3D" data-analytics='"Sponsor Link", { "props": { "sponsor": "Raise 3D"} }'>
+                    <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
                 </a>
             </div>
         
@@ -624,12 +618,6 @@ They should be pretty much identical on other Linux distributions.</p>
             <div class="sponsor">
                 <a href="https://www.biqu.equipment/" title="BigTreeTech" data-analytics='"Sponsor Link", { "props": { "sponsor": "BigTreeTech"} }'>
                     <img src="/assets/img/sponsors/bigtreetech.png" alt="BigTreeTech" title="BigTreeTech">
-                </a>
-            </div>
-        
-            <div class="sponsor">
-                <a href="https://www.raise3d.com" title="Raise 3D" data-analytics='"Sponsor Link", { "props": { "sponsor": "Raise 3D"} }'>
-                    <img src="/assets/img/sponsors/raise3d.png" alt="Raise 3D" title="Raise 3D">
                 </a>
             </div>
         
@@ -698,7 +686,7 @@ however <em>is</em> recommended.</p>
 <blockquote>
   <p>🤚 <strong>Before you begin</strong></p>
 
-  <p>Read and follow these instructions <strong>precisely</strong>. Most importantly, <strong>leave the system username as “pi”, do not change it to anything else or OctoPrint won’t work!</strong></p>
+  <p>Read and follow these instructions <strong>precisely</strong>.</p>
 </blockquote>
 
 <ol>
@@ -713,13 +701,11 @@ however <em>is</em> recommended.</p>
 
     <ul>
       <li>
-        <p><strong>Configure your wifi options</strong>: Set your SSID, password and WiFi country:
-<img src="/assets/img/download/advanced-wifi.png" alt="Advanced Options - Wifi Setup" /></p>
+        <p><strong>Configure your wifi options</strong>: Set your SSID, password and WiFi country.</p>
       </li>
       <li>
         <p><strong>Change the <em>system</em> password</strong> in “Set username and password” by entering a new password to use for the system user “pi”. This is <em>not</em> the password you’ll use for logging into
-OctoPrint but one that you’ll have to use to log into your Pi via SSH should you ever need to. <strong>Leave the username as “pi”, do not change it to anything else!</strong>
-<img src="/assets/img/download/advanced-password.png" alt="Advanced Options - Wifi Setup" /></p>
+OctoPrint but one that you’ll have to use to log into your Pi via SSH should you ever need to.</p>
       </li>
       <li>
         <p>Optionally: Change the configured timezone in “Set locale settings”</p>
@@ -728,6 +714,8 @@ OctoPrint but one that you’ll have to use to log into your Pi via SSH should y
         <p>Optionally: Change the hostname in “Set hostname”</p>
       </li>
     </ul>
+
+    <p><img src="/assets/img/download/advanced-options.png" alt="Advanced options, showing the &quot;Set username and password&quot; box ticked and a new password set, and showing the &quot;Configure wireless LAN&quot; box ticked and an SSID and Password set." /></p>
   </li>
   <li>
     <p><strong>Install the image to your SD card</strong>, then plug everything in to your Raspberry Pi and boot it up. <strong>Do not format the SD card after installing, even if prompted to do so.</strong> This will break the installation and you will have to start over!</p>
@@ -806,21 +794,9 @@ yourself you can do so here.</p>
     <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, 400, Zero, Zero W and Zero 2.</small><br />
 </div>
 
-<h3 id="octopi-release-candidate">OctoPi Release Candidate</h3>
-
-<p>The current <strong>OctoPi Release Candidate 1.0.0rc3</strong> can be found here:</p>
-
-<div class="text-center">
-    <a class="btn btn-large btn-block" href="https://unofficialpi.org/Distros/OctoPi/nightly/2022-10-27_2022-09-22-octopi-bullseye-armhf-lite-1.0.0.zip" data-analytics="&quot;Download Click&quot;, { &quot;props&quot;: { &quot;target&quot;: &quot;next_octopi&quot;} }">
-      OctoPi&nbsp;1.0.0rc3 &amp; OctoPrint&nbsp;1.8.6
-    </a>
-    <small><strong>Raspberry Pi 3B, 3B+, 4B or Zero 2 strongly recommended, Raspberry Pi Zero/Zero W not officially supported!</strong></small><br />
-    <small>Image compatible with Raspberry Pi A, B, A+, B+, 2B, 3A+, 3B, 3B+, 4B 1/2/4/8GB, 400, Zero, Zero W and Zero 2.</small><br />
-</div>
-
 <h3 id="octopi-nightlies">OctoPi Nightlies</h3>
 
-<p>You can also get the <a href="https://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the highly experimental <a href="https://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
+<p>You can also get the <a href="https://unofficialpi.org/Distros/OctoPi/nightly/">32bit nightlies here</a> or the <a href="https://unofficialpi.org/Distros/OctoPi/nightly-arm64/">64bit nightlies here</a>.</p>
 
 <h2 id="further-resources">Further resources</h2>
 
@@ -969,16 +945,16 @@ They should be pretty much identical on other Linux distributions.</p>
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1677159666"></script>
-<script src="/assets/js/lodash.min.js?_=1677159666"></script>
-<script src="/assets/js/prettify.min.js?_=1677159666"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1677159666"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1677159666"></script>
-<script src="/assets/js/bootstrap.min.js?_=1677159666"></script>
-<script src="/assets/js/lightbox.min.js?_=1677159666"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1677159666"></script>
-<script src="/assets/js/site.js?_=1677159666"></script>
-<script src="/assets/js/yt-with-consent.js?_=1677159666"></script>
+<script src="/assets/js/jquery.min.js?_=1677161297"></script>
+<script src="/assets/js/lodash.min.js?_=1677161297"></script>
+<script src="/assets/js/prettify.min.js?_=1677161297"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1677161297"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1677161297"></script>
+<script src="/assets/js/bootstrap.min.js?_=1677161297"></script>
+<script src="/assets/js/lightbox.min.js?_=1677161297"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1677161297"></script>
+<script src="/assets/js/site.js?_=1677161297"></script>
+<script src="/assets/js/yt-with-consent.js?_=1677161297"></script>
 
 </body>
 </html>

@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Apr 2023 13:29:36 +0000</pubDate>
-    <lastBuildDate>Wed, 12 Apr 2023 13:29:36 +0000</lastBuildDate>
+    <pubDate>Wed, 12 Apr 2023 13:51:41 +0000</pubDate>
+    <lastBuildDate>Wed, 12 Apr 2023 13:51:41 +0000</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>New release candidate: 1.9.0rc4</title>
+        <description>
+          <![CDATA[
+            The fourth release candidate for the upcoming 1.9.0 release, fixing some issues reported on the last ones and improving on some newly added functionality.
+          ]]>
+        </description>
+        <pubDate>Wed, 12 Apr 2023 14:25:00 +0000</pubDate>
+        <link>https://octoprint.org/blog/2023/04/12/new-release-candidate-1.9.0rc4/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2023/04/12/new-release-candidate-1.9.0rc4/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
     
       <item>
         <title>New release candidate: 1.9.0rc3</title>
@@ -123,19 +136,6 @@
         <pubDate>Tue, 09 Aug 2022 12:30:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/08/09/new-release-1.8.2/?utm_source=rss&amp;utm_medium=releases</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/08/09/new-release-1.8.2/</guid>
-        <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>New release: 1.8.1</title>
-        <description>
-          <![CDATA[
-            This first bugfix & security release for 1.8.0 fixes a few new issues reported, including one security vulnerability.
-          ]]>
-        </description>
-        <pubDate>Tue, 24 May 2022 10:00:00 +0000</pubDate>
-        <link>https://octoprint.org/blog/2022/05/24/new-release-1.8.1/?utm_source=rss&amp;utm_medium=releases</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/05/24/new-release-1.8.1/</guid>
         <category>OctoPrint Release Announcements</category>
       </item>
     

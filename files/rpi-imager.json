@@ -11,6 +11,18 @@
       "image_download_size": 1076919888,
       "image_download_sha256": "7a614d76665ce00710306e615398897decb196b9972cd9fcd48a0d16a634964b",
       "init_format": "systemd"
+    },
+    {
+      "name": "OctoPi (new camera stack)",
+      "description": "OctoPi 1.0.0 with OctoPrint 1.9.0 (build 20230523124648 from branch camera-streamer)",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.0.0-1.9.0-20230523124648/octopi-1.0.0-1.9.0-20230523124648.zip",
+      "icon": "https://octopi.octoprint.org/rpi-imager.png",
+      "release_date": "2023-05-23",
+      "extract_size": 2906653696,
+      "extract_sha256": "3704f7b222597a1d0662413b57ec69e1c5e16ab3c727974c9ddd056820633369",
+      "image_download_size": 1084401613,
+      "image_download_sha256": "40d9b5adb1e6c82a24fbe9875aa5dedc97e24393f5f34a134320ccc50080b60a",
+      "init_format": "systemd"
     }
   ]
 }

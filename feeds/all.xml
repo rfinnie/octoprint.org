@@ -4,9 +4,22 @@
     <title>OctoBlog</title>
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/all.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jun 2023 11:24:57 +0000</pubDate>
-    <lastBuildDate>Mon, 19 Jun 2023 11:24:57 +0000</lastBuildDate>
+    <pubDate>Mon, 19 Jun 2023 12:13:32 +0000</pubDate>
+    <lastBuildDate>Mon, 19 Jun 2023 12:13:32 +0000</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>OctoPrint On Air #52</title>
+        <description>
+          <![CDATA[
+            The 52nd episode of a regular live broadcast for Patrons which was recorded on June 15th 2023.
+          ]]>
+        </description>
+        <pubDate>Mon, 19 Jun 2023 12:05:00 +0000</pubDate>
+        <link>https://octoprint.org/blog/2023/06/19/octoprint-on-air-52/?utm_source=rss&amp;utm_medium=all</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2023/06/19/octoprint-on-air-52/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>A new camera stack for OctoPi</title>
@@ -123,19 +136,6 @@
         <link>https://octoprint.org/blog/2023/03/02/new-release-1.8.7/?utm_source=rss&amp;utm_medium=all</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2023/03/02/new-release-1.8.7/</guid>
         <category>OctoPrint Release Announcements</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #51</title>
-        <description>
-          <![CDATA[
-            The 51st episode of a regular live broadcast for Patrons which was recorded on February 16th 2023.
-          ]]>
-        </description>
-        <pubDate>Tue, 28 Feb 2023 13:20:00 +0000</pubDate>
-        <link>https://octoprint.org/blog/2023/02/28/octoprint-on-air-51/?utm_source=rss&amp;utm_medium=all</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2023/02/28/octoprint-on-air-51/</guid>
-        <category>OctoPrint On Air</category>
       </item>
     
   </channel>

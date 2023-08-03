@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoprintonair.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Aug 2023 10:29:50 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Aug 2023 10:29:50 +0000</lastBuildDate>
+    <pubDate>Thu, 03 Aug 2023 11:13:43 +0000</pubDate>
+    <lastBuildDate>Thu, 03 Aug 2023 11:13:43 +0000</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>OctoPrint On Air #53</title>
+        <description>
+          <![CDATA[
+            The 53rd episode of a regular devlog about all things OctoPrint which was recorded on August 1st 2023.
+          ]]>
+        </description>
+        <pubDate>Thu, 03 Aug 2023 11:05:00 +0000</pubDate>
+        <link>https://octoprint.org/blog/2023/08/03/octoprint-on-air-53/?utm_source=rss&amp;utm_medium=octoprintonair</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2023/08/03/octoprint-on-air-53/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #52</title>
@@ -123,19 +136,6 @@
         <pubDate>Thu, 07 Apr 2022 11:45:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/?utm_source=rss&amp;utm_medium=octoprintonair</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #43</title>
-        <description>
-          <![CDATA[
-            The 43rd episode of a regular live broadcast for Patrons which was recorded on February 17th 2022.
-          ]]>
-        </description>
-        <pubDate>Thu, 24 Feb 2022 11:00:00 +0000</pubDate>
-        <link>https://octoprint.org/blog/2022/02/24/octoprint-on-air-43/?utm_source=rss&amp;utm_medium=octoprintonair</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/02/24/octoprint-on-air-43/</guid>
         <category>OctoPrint On Air</category>
       </item>
     

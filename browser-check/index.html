@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
 
     <title>OctoPrint.org - Browser Check</title>
-    <meta name="description" content="Check if your browser supports the features that OctoPrint uses">
+    <meta name="description" content="Check if your browser supports the JavaScript features that OctoPrint uses">
     <meta name="author" content="Gina Häußge">
     <meta name="google-site-verification" content="0EFsbaNygJcEinKPmzP-hTf0Ju6wDIpJxO5zvQtOQT0" />
     <meta name="google-site-verification" content="i7e8SG0JfDqFkxQgr1_ZuirRzwJomS8xzPvb0mLHujM" />
@@ -17,22 +17,22 @@
     
 
     <!--[if lt IE 9]>
-    <script src="/assets/js/html5shim.js?_=1693232842"></script>
+    <script src="/assets/js/html5shim.js?_=1693235583"></script>
     <![endif]-->
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    <link rel="stylesheet" href="/assets/css/site.css?_=1693232842">
-    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1693232842">
-    <link rel="stylesheet" href="/assets/css/prettify.css?_=1693232842">
-    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1693232842">
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1693232842">
-    <link rel="stylesheet" href="/assets/css/syntax.css?_=1693232842">
+    <link rel="stylesheet" href="/assets/css/site.css?_=1693235583">
+    <link rel="stylesheet" href="/assets/css/bootstrap-responsive.css?_=1693235583">
+    <link rel="stylesheet" href="/assets/css/prettify.css?_=1693235583">
+    <link rel="stylesheet" href="/assets/css/lightbox.css?_=1693235583">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css?_=1693235583">
+    <link rel="stylesheet" href="/assets/css/syntax.css?_=1693235583">
 
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1693232842"/>
-    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1693232842"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick.css?_=1693235583"/>
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick-1.5.9/slick-theme.css?_=1693235583"/>
 
 
     <!-- Le fav and touch icons -->
@@ -56,20 +56,20 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@OctoPrint3D" />
     <meta name="twitter:title" content="Browser Check" />
-    <meta name="twitter:description" content="Check if your browser supports the features that OctoPrint uses" />
+    <meta name="twitter:description" content="Check if your browser supports the JavaScript features that OctoPrint uses" />
     <meta name="twitter:image" content="https://octoprint.org/assets/img/octoprint-avatar-240x240.png" />
 
     <meta property="og:title" content="Browser Check" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://octoprint.org/assets/img/octoprint-600x400.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:description" content="Check if your browser supports the features that OctoPrint uses" />
+    <meta property="og:description" content="Check if your browser supports the JavaScript features that OctoPrint uses" />
     <meta property="og:site_name" content="OctoPrint.org" />
     <meta property="og:url" content="https://octoprint.org/browser-check/" />
 
     <meta itemscope itemtype="http://schema.org/WebPage" />
     <meta itemprop="headline" content="Browser Check" />
-    <meta itemprop="description" content="Check if your browser supports the features that OctoPrint uses" />
+    <meta itemprop="description" content="Check if your browser supports the JavaScript features that OctoPrint uses" />
     <meta itemprop="image" content="https://octoprint.org/assets/img/octoprint-600x400.png" />
 
     <script>
@@ -359,6 +359,20 @@
     }
 </script>
 <script>
+    function testConst() {
+        try {
+            const test = 1;
+            if (typeof test !== undefined && test === 1) {
+                print(PASS);
+            } else {
+                print(FAIL);
+            }
+        } catch(err) {
+            print(FAIL + " (" + err.message + ")");
+        }
+    }
+</script>
+<script>
     function testSpread() {
         var arr1 = [1, 2, 3];
         var obj1 = { a: 1, b: 2, c: 3 };
@@ -396,7 +410,7 @@
     }
 </script>
 
-This page allows you to do a quick check whether your browser supports the features that OctoPrint uses.
+This page allows you to do a quick check whether your browser supports the JavaScript features that OctoPrint uses.
 
 <table class="table es-table">
     <thead>
@@ -407,45 +421,62 @@ This page allows you to do a quick check whether your browser supports the featu
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="es-feature"><a href="https://caniuse.com/es5" target="_blank" rel="noopener noreferrer">ES5</a></td>
+        <tr class="es-entry">
+            <td colspan="3">ES5</td>
+        </tr>
+        <tr class="es-subentry">
+            <td class="es-feature"><a href="https://caniuse.com/es5" target="_blank" rel="noopener noreferrer">general ES5 support</a></td>
             <td class="es-since"></td>
             <td class="es-supported"><script>(typeof testES5 !== undefined && typeof testES5 === "function") ? testES5() : print(FAIL)</script></td>
         </tr>
-        <tr>
+        <tr class="es-entry">
+            <td colspan="3" class="es-feature">ES6</td>
+        </tr>
+        <tr class="es-subentry">
             <td class="es-feature"><a href="https://caniuse.com/arrow-functions" target="_blank" rel="noopener noreferrer">arrow functions</a></td>
             <td class="es-since">1.9.0</td>
             <td class="es-supported"><script>(typeof testArrowFunctions !== undefined && typeof testArrowFunctions === "function") ? testArrowFunctions() : print(FAIL)</script></td>
         </tr>
-        <tr>
-            <td class="es-feature"><a href="https://caniuse.com/async-functions" target="_blank" rel="noopener noreferrer">async/await</a></td>
+        <tr class="es-subentry">
+            <td class="es-feature"><a href="https://caniuse.com/const" target="_blank" rel="noopener noreferrer">const</a></td>
             <td class="es-since">1.9.0</td>
-            <td class="es-supported"><script>(typeof testAsyncAwait !== undefined && typeof testAsyncAwait === "function") ? testAsyncAwait() : print(FAIL)</script></td>
+            <td class="es-supported"><script>(typeof testConst !== undefined && typeof testConst === "function") ? testConst() : print(FAIL)</script></td>
         </tr>
-        <tr>
-            <td class="es-feature"><a href="https://caniuse.com/mdn-javascript_functions_method_definitions_async_generator_methods" target="_blank" rel="noopener noreferrer">async generators</a></td>
-            <td class="es-since">1.9.0</td>
-            <td class="es-supported"><script>(typeof testAsyncGenerator !== undefined && typeof testAsyncGenerator === "function") ? testAsyncGenerator() : print(FAIL)</script></td>
-        </tr>
-        <tr>
+        <tr class="es-subentry">
             <td class="es-feature"><a href="https://caniuse.com/es6-generators" target="_blank" rel="noopener noreferrer">generators</a></td>
             <td class="es-since">1.9.0</td>
             <td class="es-supported"><script>(typeof testGenerator !== undefined && typeof testGenerator === "function") ? testGenerator() : print(FAIL)</script></td>
         </tr>
-        <tr>
+        <tr class="es-subentry">
             <td class="es-feature"><a href="https://caniuse.com/let" target="_blank" rel="noopener noreferrer">let</a></td>
             <td class="es-since">1.9.0</td>
             <td class="es-supported"><script>(typeof testLet !== undefined && typeof testLet === "function") ? testLet() : print(FAIL)</script></td>
         </tr>
-        <tr>
-            <td class="es-feature"><a href="https://caniuse.com/mdn-javascript_operators_spread" target="_blank" rel="noopener noreferrer">spread syntax</a></td>
-            <td class="es-since">1.9.0</td>
-            <td class="es-supported"><script>(typeof testSpread !== undefined && typeof testSpread === "function") ? testSpread() : print(FAIL)</script></td>
-        </tr>
-        <tr>
+        <tr class="es-subentry">
             <td class="es-feature"><a href="https://caniuse.com/template-literals" target="_blank" rel="noopener noreferrer">template literals</a></td>
             <td class="es-since">1.9.0</td>
             <td class="es-supported"><script>(typeof testTemplateLiterals !== undefined && typeof testTemplateLiterals === "function") ? testTemplateLiterals() : print(FAIL)</script></td>
+        </tr>
+        <tr class="es-entry">
+            <td colspan="3" class="es-feature">ES8</td>
+        </tr>
+        <tr class="es-subentry">
+            <td class="es-feature"><a href="https://caniuse.com/async-functions" target="_blank" rel="noopener noreferrer">async/await</a></td>
+            <td class="es-since">1.9.0</td>
+            <td class="es-supported"><script>(typeof testAsyncAwait !== undefined && typeof testAsyncAwait === "function") ? testAsyncAwait() : print(FAIL)</script></td>
+        </tr>
+        <tr class="es-entry">
+            <td colspan="3" class="es-feature">ES9</td>
+        </tr>
+        <tr class="es-subentry">
+            <td class="es-feature"><a href="https://caniuse.com/mdn-javascript_functions_method_definitions_async_generator_methods" target="_blank" rel="noopener noreferrer">async generators</a></td>
+            <td class="es-since">1.9.0</td>
+            <td class="es-supported"><script>(typeof testAsyncGenerator !== undefined && typeof testAsyncGenerator === "function") ? testAsyncGenerator() : print(FAIL)</script></td>
+        </tr>
+        <tr class="es-subentry">
+            <td class="es-feature"><a href="https://caniuse.com/mdn-javascript_operators_spread" target="_blank" rel="noopener noreferrer">spread syntax</a></td>
+            <td class="es-since">1.9.0</td>
+            <td class="es-supported"><script>(typeof testSpread !== undefined && typeof testSpread === "function") ? testSpread() : print(FAIL)</script></td>
         </tr>
     </tbody>
 </table>
@@ -515,16 +546,16 @@ If any of the tests above say "No", you will need to use a different browser or 
 
 <a href="#top" class="to-top" title="Back to top" data-scroll><i class="fa fa-arrow-up fa-2x"></i></a>
 
-<script src="/assets/js/jquery.min.js?_=1693232842"></script>
-<script src="/assets/js/lodash.min.js?_=1693232842"></script>
-<script src="/assets/js/prettify.min.js?_=1693232842"></script>
-<script src="/assets/js/holder-2.9.3.min.js?_=1693232842"></script>
-<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1693232842"></script>
-<script src="/assets/js/bootstrap.min.js?_=1693232842"></script>
-<script src="/assets/js/lightbox.min.js?_=1693232842"></script>
-<script src="/assets/js/smooth-scroll.min.js?_=1693232842"></script>
-<script src="/assets/js/site.js?_=1693232842"></script>
-<script src="/assets/js/yt-with-consent.js?_=1693232842"></script>
+<script src="/assets/js/jquery.min.js?_=1693235583"></script>
+<script src="/assets/js/lodash.min.js?_=1693235583"></script>
+<script src="/assets/js/prettify.min.js?_=1693235583"></script>
+<script src="/assets/js/holder-2.9.3.min.js?_=1693235583"></script>
+<script src="/assets/vendor/slick-1.5.9/slick.min.js?_=1693235583"></script>
+<script src="/assets/js/bootstrap.min.js?_=1693235583"></script>
+<script src="/assets/js/lightbox.min.js?_=1693235583"></script>
+<script src="/assets/js/smooth-scroll.min.js?_=1693235583"></script>
+<script src="/assets/js/site.js?_=1693235583"></script>
+<script src="/assets/js/yt-with-consent.js?_=1693235583"></script>
 
 </body>
 </html>

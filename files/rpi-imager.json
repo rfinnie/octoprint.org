@@ -2,26 +2,26 @@
   "os_list": [
     {
       "name": "OctoPi (stable)",
-      "description": "OctoPi 1.0.0 with OctoPrint 1.9.2 (build 20230718111854)",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.0.0-1.9.2-20230718111854/octopi-1.0.0-1.9.2-20230718111854.zip",
+      "description": "OctoPi 1.0.0 with OctoPrint 1.9.3 (build 20231009151442)",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.0.0-1.9.3-20231009151442/octopi-1.0.0-1.9.3-20231009151442.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2023-07-18",
+      "release_date": "2023-10-09",
       "extract_size": 2906653696,
-      "extract_sha256": "9edaaf018c902f158e0c772c0925dd0248d885bb00758bff61c0c6df639e01db",
-      "image_download_size": 1103582957,
-      "image_download_sha256": "a5363d055ca163e121e5f072107a982707c3447aa036737f671c58181a2d62fb",
+      "extract_sha256": "be463887026d00b70118cc6a0d0b60f7a7927e6c1c6488484d0f7fd519328030",
+      "image_download_size": 1075480610,
+      "image_download_sha256": "fb8796639a9afe6abaaf514e411b6a6ba479852bbf234580f6a5ec72967ec48c",
       "init_format": "systemd"
     },
     {
       "name": "OctoPi (new camera stack)",
-      "description": "OctoPi 1.0.0 with OctoPrint 1.9.2 (build 20230720144556 from branch camera-streamer)",
-      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.0.0-1.9.2-20230720144556/octopi-1.0.0-1.9.2-20230720144556.zip",
+      "description": "OctoPi 1.0.0 with OctoPrint 1.9.3 (build 20231009154319 from branch camera-streamer)",
+      "url": "https://github.com/OctoPrint/OctoPi-UpToDate/releases/download/1.0.0-1.9.3-20231009154319/octopi-1.0.0-1.9.3-20231009154319.zip",
       "icon": "https://octopi.octoprint.org/rpi-imager.png",
-      "release_date": "2023-07-20",
+      "release_date": "2023-10-09",
       "extract_size": 2906653696,
-      "extract_sha256": "31278e0defe102b28895e9f8a8aaa4baa1dd7dd837daa047eb234d6ee414eae2",
-      "image_download_size": 1109969087,
-      "image_download_sha256": "b033f37b06fc8bb835d540672f75ec4bb061492fb44030c64c7657da310f9ce4",
+      "extract_sha256": "47d7af040271115e8e2f9ebdd6bfbb4217edf9c3be76997b991a9d8559775db2",
+      "image_download_size": 1101037446,
+      "image_download_sha256": "1d9bdd3571944960fa7b694f57aabb6d76dd2b98fccab3519d1d7f671f6faf5a",
       "init_format": "systemd"
     }
   ]

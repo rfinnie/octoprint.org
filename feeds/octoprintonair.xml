@@ -5,9 +5,22 @@
     
     <link>https://octoprint.org/blog/</link>
     <atom:link href="https://octoprint.org/feeds/octoprintonair.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Oct 2023 09:25:37 +0000</pubDate>
-    <lastBuildDate>Wed, 25 Oct 2023 09:25:37 +0000</lastBuildDate>
+    <pubDate>Wed, 25 Oct 2023 10:08:33 +0000</pubDate>
+    <lastBuildDate>Wed, 25 Oct 2023 10:08:33 +0000</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>OctoPrint On Air #54</title>
+        <description>
+          <![CDATA[
+            The 54th episode of a regular devlog about all things OctoPrint which was recorded on October 23rd 2023.
+          ]]>
+        </description>
+        <pubDate>Wed, 25 Oct 2023 10:00:00 +0000</pubDate>
+        <link>https://octoprint.org/blog/2023/10/25/octoprint-on-air-54/?utm_source=rss&amp;utm_medium=octoprintonair</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2023/10/25/octoprint-on-air-54/</guid>
+        <category>OctoPrint On Air</category>
+      </item>
     
       <item>
         <title>OctoPrint On Air #53</title>
@@ -123,19 +136,6 @@
         <pubDate>Mon, 23 May 2022 11:50:00 +0000</pubDate>
         <link>https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/?utm_source=rss&amp;utm_medium=octoprintonair</link>
         <guid isPermaLink="true">https://octoprint.org/blog/2022/05/23/octoprint-on-air-45/</guid>
-        <category>OctoPrint On Air</category>
-      </item>
-    
-      <item>
-        <title>OctoPrint On Air #44</title>
-        <description>
-          <![CDATA[
-            The 44th episode of a regular live broadcast for Patrons which was recorded on March 31st 2022.
-          ]]>
-        </description>
-        <pubDate>Thu, 07 Apr 2022 11:45:00 +0000</pubDate>
-        <link>https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/?utm_source=rss&amp;utm_medium=octoprintonair</link>
-        <guid isPermaLink="true">https://octoprint.org/blog/2022/04/07/octoprint-on-air-44/</guid>
         <category>OctoPrint On Air</category>
       </item>
     
